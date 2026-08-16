@@ -1,0 +1,1705 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+
+    <title>Matrix Application: Cryptology</title>
+
+
+
+    <meta charset="UTF-8">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka (SamDom4Peace) gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in matrix application in cryptology.">
+
+    <meta name="keywords" content="samuel, dominic, chukwuemeka, samuel dominic chukwuemeka, 
+        math, mathematics, arithmetic, algebra, matrix, element, member, row, column, order, size, dimension,
+        matrices, row matrix, row vector, column matrix, column vector, zero matrix, null matrix, 
+        rectangular matrix, square matrix, diagonal matrix, scalar matrix, identity matrix, unit matrix, 
+        triangular matrix, transpose, symmetric matrix, skew symmetric matrix, minor, cofactor, 
+        determinant, augmented matrix, row echelon matrix, rank, pivot, reduced row echelon matrix, 
+        adjoint, inverse, cramer's rule, row operations, row reduction, guass-jordan method, 
+        guassian elimination method, triangular method, matrix inverse method, cryptology, singular, non-invertible, 
+        non-singular, invertible, linear transformation">
+
+    <link href="styles/Matrices.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="w3-padding-24 cornsilk">
+        <h1>Cryptology: Encode and Decode Secret Messages</h1>
+    </header>
+    <!-- End Header -->
+
+    <br><br>
+
+    <!-- Page Content -->
+
+    <!-- Navigation Bar -->
+    <div class="w3-container w3-padding">
+        <div class="w3-content w3-padding-36">
+
+            <div class="w3-row-padding">
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics"
+                            onclick="location.href='https://scholarlycommunication.github.io/Presentations/';">Presentations</button>
+                    </div>
+                </div>
+                <div class="w3-col l6 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#objectives';">Objectives and Overview</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#references';">References</button>
+                    </div>
+                </div>
+                <div class="w3-col l6 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#generalProjectRequirements';">General Project
+                            Requirements</button>
+                    </div>
+                </div>
+                <div class="w3-col l6 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#specificProjectRequirements';">Specific Project
+                            Requirements</button>
+                    </div>
+                </div>
+                <div class="w3-col l6 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#exampleGuide2by2';">Example Guide (2 by 2
+                            Matrices)</button>
+                    </div>
+                </div>
+                <div class="w3-col l6 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#exampleGuide3by3';">Example Guide (3 by 3
+                            Matrices)</button>
+                    </div>
+                </div>
+                <div class="w3-col l6 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#rubric';">Grading Rubric</button>
+                    </div>
+                </div>
+                <div class="w3-col l6 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#studentsProjects';">Samples of Students
+                            Projects</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Navigation Bar -->
+
+    <!-- Objectives -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="objectives">
+            <h2>Objectives</h2>
+            <p>
+                One of the applications of Matrices is in Cryptology. <br>
+                One of the applications of Cryptology is the encoding and decoding of secret messages.
+                <br><br>
+                Students will: <br>
+                (1.) Encode a secret message. <br>
+                (2.) Decode the secret message. <br>
+                (3.) Meet one of the learning objectives of the VCCS (Virginia Community College System) standards for:
+                <br>
+                <a href="https://courses.vccs.edu/courses/MTH161-PreCalculusI/detail" target="_blank">MTH 161:
+                    PreCalculus I</a> <br>
+                <i>
+                    (Presents topics in power, polynomial, rational, exponential, and logarithmic functions, and
+                    <b>systems of equations</b> and inequalities.)
+                </i>
+                <br><br>
+                <a href="https://courses.vccs.edu/courses/MTH165-FiniteMath/detail" target="_blank">MTH 165: Finite
+                    Math</a> <br>
+                <i>
+                    (Presents topics in <b>systems of equations</b>, <b>matrices</b>, linear programming, mathematics of
+                    finance, counting theory, probability, and Markov Chains.)
+                </i>
+                <br><br>
+                <a href="https://courses.vccs.edu/courses/MTH167-PreCalculuswithTrigonometry/detail" target="_blank">MTH
+                    167: PreCalculus with Trigonometry</a> <br>
+                <i>
+                    (Presents topics in power, polynomial, rational, exponential, and logarithmic functions, <b>systems
+                        of equations</b>, trigonometry, and trigonometric applications, including Law of Sines and
+                    Cosines, and an introduction to conics.)
+                </i>
+                <br><br>
+                <a href="https://courses.vccs.edu/courses/MTH266-LinearAlgebra/detail" target="_blank">MTH 266: Linear
+                    Algebra</a> <br>
+                <i>
+                    (Covers <b>matrices</b>, vector spaces, determinants, <b>solutions of systems of linear
+                        equations</b>, basis and dimension, eigenvalues, and eigenvectors.)
+                </i>
+                <br><br>
+                (4.) Meet the QM (Quality Matters) and USDOE (United States Department of Education) requirements for
+                distance
+                education as regards the provision of RSI (Regular and Substantive Interaction). <br>
+                <a href="https://www.federalregister.gov/documents/2020/09/02/2020-18636/distance-education-and-innovation"
+                    target="_blank">Federal Register: Distance Education and Innovation</a> <br>
+                <a href="https://www.stjohns.edu/sites/default/files/2021-08/New_Federal_Requirements_for_Distance_Education.pdf"
+                    target="_blank">St. John's University: New Federal Requirements for Distance Education: Regular and
+                    Substantive
+                    Interaction (RSI)</a> <br>
+                Student &ndash; Content Interaction: Very high <br>
+                Student &ndash; Student Interaction: Very high (if the project is a group project) <br>
+                Student &ndash; Faculty Interaction: High
+            </p>
+
+            <h2>Cryptology</h2>
+            <p>
+                <b>Cryptology</b> is the science or the study of secret messages. <br>
+                It is the process of: <br>
+                encoding and decoding OR <br>
+                encrypting and decrypting OR <br>
+                enciphering and deciphering OR <br>
+                writing and cracking OR <br>
+                making and breaking secret messages/codes/texts.
+                <br><br>
+                Cryptology consists of: <br>
+                <b>Cryptography:</b> This is the process of enciphering/encoding secret messages. <br>
+                <b>Cryptanalysis:</b> This is the process of deciphering/decoding secret messages.
+                <br><br>
+                The project is an applied project for Cryptology using Matrices. <br>
+                Matrices are used to encode and decode secret messages.
+            </p>
+        </div>
+    </div>
+    <!-- End Objectives -->
+
+    <!-- Overview: Notes -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="overview">
+
+        </div>
+    </div>
+    <!-- End Overview: Notes -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://scholarlycommunication.github.io/Presentations/Projects/PreCalculus/Matrices/Cryptology.html"
+            class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top
+        </a>
+    </div>
+
+    <!-- General Project Requirements -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="generalProjectRequirements">
+            <h3>General Project Requirements</h3>
+            <p>
+                (1.) This is an individual student or a group (no more than two students) project.
+                <br><br>
+                (A.) For an individual project: <br>
+                (a.) The student will encode a secret message using a 2 by 2 matrix. <br>
+                (b.) The student will decode the secret message. <br>
+                (c.) The student will encode a secret message using a 3 by 3 matrix. <br>
+                (d.) The student will decode the secret message.
+                <br><br>
+                (B.) For a group project: <br>
+                (a.) Only two students may be in a group. <br>
+                (b.) The 1st student will encode a secret message using a 2 by 2 matrix. <br>
+                (c.) The 2nd student will decode the secret message. <br>
+                (d.) The 2nd student will encode a secret message using a 3 by 3 matrix. <br>
+                (e.) The 1st student will decode the secret message.
+                <br><br>
+                (2.) (a.) A scenario or at least a sentence that includes the secret message is required. <br>
+                Using proper grammar, write a scenario or a sentence that includes the encrypted (encoded) message.
+                <br><br>
+                (b.) All decrypted (decoded) messages <u>must</u> be good messages, and be <u>at least two words.</u>
+                <br>
+                Colloquial expressions; bad words; profane words; insensitive words related to race, sex, tribe,
+                religion,
+                national origin and gender among others will not be accepted. <br>
+                If any such words appear, the student who encoded that message will not gain any point. <br>
+                The student who decoded the message will not be penalized.
+                <br><br>
+                (3.) All work/steps must be shown in decoding the message. <br>
+                Points will be deducted for any missing steps. <br>
+                Please review the examples I did. <br>
+                Did I miss any step? You should not miss any step.
+                <br><br>
+                (4.) As a student, you have free access to Microsoft Office suite of apps. <br>
+                (a.) Please download the <b>desktop apps of Microsoft Office</b> on your desktop/laptop (Windows and/or
+                Mac only). <br>
+                Do not use a chromebook. <br>
+                Do not use a tablet/iPad. <br>
+                Do not use a smartphone. <br>
+                Do not use the web app/sharepoint access of Microsoft Office. <br>
+                (<i>Please contact the IT/Tech Support for assistance if you do not know how to download the desktop
+                    app.</i>) <br>
+                In that regard, the project is to be typed using the desktop version/app of Microsoft Office Word
+                <b>only.</b>
+                <br><br>
+                (b.) The file name for the Microsoft Office Word project should be saved as:
+                <b>firstName</b>&ndash;<b>lastName</b>&ndash;<b>project</b> <br>
+                Use only hyphens between your first name and your last name; and between your last name and the word,
+                project. <br>
+                No spaces.
+                <br><br>
+                (c.) For all English terms/work: use Times New Roman; font size of 14; line spacing of 1.5. <br>
+                Further, please make sure you have appropriate spacing between each heading and/or section as
+                applicable. <br>
+                Your work should be well-formatted and visually appealing.
+                <br><br>
+                <img src="images/ProjectRequirements/first.jpg" alt="first step">
+                <br><br>
+                (d.) For all Math terms/work: symbols, variables, numbers, formulas, expressions, equations and
+                fractions among others,
+                the Math Equation Editor is required. <br>
+                (i.) The font is set to Cambria Math by default (set it to that font if it is not); font size of 14, and
+                align accordingly (preferably left-aligned). <br>
+                (ii.) To ensure appropriate spacing between your Math work, use a line spacing of 2.0. <br>
+                Alternatively, you may use line spacing of 1.5 but insert a space after each equation as applicable.
+                <br>
+                Your work should be well-formatted, organized, well-spaced (not compact), and visually appealing.
+                <br><br>
+                <img src="images/ProjectRequirements/second.png" alt="second step">
+                <br><br>
+                <img src="images/ProjectRequirements/third.jpg" alt="third step">
+                <br><br>
+                (e.) Include page numbers. You may include at the top of the pages or at the bottom of the pages but not
+                both.
+                <br><br>
+                <img src="images/ProjectRequirements/fourth.jpg" alt="fourth step">
+                <br><br>
+                (5.) Two projects are required: One 2 by 2 project and one 3 by 3 project. <br>
+                All work must be shown.
+                <br><br>
+                (6.) Please review the examples I did. <br>
+                You may <u>not</u> do the same examples that I did. <br>
+                These are the minimum expectations.
+                <br><br>
+                (7.) Mr. C (SamDom For Peace) wants you to do this real-world project very well. <br>
+                Hence, he highly recommends that you submit a draft so he can give you feedback. <br>
+                Draft projects are not graded because they are drafts. They are only for feedback. <br>
+                Submitting drafts is highly recommended. <br>
+                If your professor gives you an opportunity to submit a draft, please use that opportunity. <br>
+                Submitting drafts is not required. <br>
+                It is highly recommended because I want to give you the opportunity to do your project very well and
+                make an excellent grade in it.
+                <br><br>
+                Please turn in your draft in the <b>Discussions</b> page &rightarrow; <b>Projects: Drafts</b> forum in
+                the Canvas course
+                (if you would like your colleagues to read my comments and avoid any mistakes that you made). <br>
+                You may also send it to me via email (if you do not want your colleagues to see my comments and learn
+                from the comments). <br>
+                I shall review and provide feedback. <br>
+                Then, review my feedback and make changes as necessary. <br>
+                Keep working with me until I give you the <i>green light</i> to turn in your actual project. This must
+                be done before the
+                final due date to turn in the actual project.
+                <br><br>
+                When everything is fine (after you make changes as applicable based on my feedback), please submit your
+                work in the appropriate area: <b>Assignments</b> page &rightarrow; <b>Project</b> in the Canvas course.
+                <br>
+                Only the projects submitted in the appropriate place in the Canvas course are graded.
+                <br><br>
+                (8.) All work must be turned in by the final due date to receive credit. <br>
+                Please note the due dates listed in the course syllabus for the submission of the draft and the actual
+                project.
+                In the course syllabus, we have the: <br>
+                (a.) Initial due date for the Project Draft: Please turn in your draft.
+                <br><br>
+                (b.) Initial due date for the Project: If your draft is not ready for submission, keep working with me.
+                Make changes based on my feedback and keep working with me. <br>
+                If you prefer not to turn in a draft, please review all the resources provided for you and do your
+                project well and submit. <br>
+                <br><br>
+                (c.) Final due date for the Project Draft: This is necessary if you want a written feedback for your
+                draft. <br>
+                After this date, written feedback would not be provided for your draft. However, verbal feedback would
+                still be provided
+                during Office Hours/Student Engagement Hours/Live Sessions.
+                <br><br>
+                (d.) Final due date for the Project: All work must be turned in by this date to receive credit. <br>
+                After this date, no work may be accepted.
+            </p>
+        </div>
+    </div>
+    <!-- End General Project Requirements -->
+
+    <!-- Specific Project Requirements -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="specificProjectRequirements">
+            <h3>Specific Project Requirements</h3>
+            <p>
+                (1.) The encoding matrix must be invertible. <br>
+                This means that it must have an inverse. <br>
+                This means that it must be a square matrix. <br>
+                Each student should use a different encoding matrix.
+                <br><br>
+                (2.) The elements of the encoding matrix should be positive integers only. <br>
+                Zeros, Negative integers, Fractions, and Decimals are not acceptable.
+                <br><br>
+                (3.) The elements of the encoded message must be positive integers only. <br>
+                Zeros, Negative integers, Fractions, and Decimals are not acceptable.
+                <br><br>
+                (4.) The elements of the decoding matrix must be integers only. <br>
+                Fractions and Decimals will are not acceptable.
+                <br><br>
+                (5.) The elements of the decoded message must be non-negative integers only. <br>
+                Negative integers, Fractions, and Decimals are not acceptable.
+            </p>
+
+            <br><br>
+
+            <table>
+                <caption>Required Information. <br>
+                    The use of a table is optional.
+                </caption>
+                <tr>
+                    <td style="width: 30%;"><b>Name(s)</b>:</td>
+                    <td style="width: 70%;"><i>Your name(s)</i></td>
+                </tr>
+                <tr>
+                    <td><b>Date</b>:</td>
+                    <td><i>The date</i></td>
+                </tr>
+                <tr>
+                    <td><b>Instructor</b>:</td>
+                    <td>Samuel Chukwuemeka</td>
+                </tr>
+                <tr>
+                    <td><b>Project</b>:</td>
+                    <td>Matrix Application in Cryptology</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <b>Objectives</b>: <br>
+                        (1.) Encrypt/Encode/Encipher (<i>use any one term</i>) a secret message using a 2 &times; 2
+                        matrix. <br>
+                        (2.) Decrypt/Decode/Decipher (<i>use any one term</i>) the secret message encrypted/encoded with
+                        a 2 &times; 2 matrix. <br>
+                        (3.) Encrypt/Encode/Encipher (<i>use any one term</i>) a secret message using a 3 &times; 3
+                        matrix. <br>
+                        (4.) Decrypt/Decode/Decipher (<i>use any one term</i>) the secret message encrypted/encoded with
+                        a 3 &times; 3 matrix.
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <b>Scenario/Story for the 2 by 2 encoded secret message</b>: <br>
+                        (<i>For Group Project:</i> Task Done By: <i>Name of 1st Student</i>)
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <b>Decoding the secret message encoded with 2 by 2 matrix</b>: <br>
+                        (<i>For Group Project:</i> Task Done By: <i>Name of 2nd Student</i>)
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <b>Scenario/Story for the 3 by 3 encoded secret message</b>: <br>
+                        (<i>For Group Project:</i> Task Done By: <i>Name of 2nd Student</i>)
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <b>Decoding the secret message encoded with 3 by 3 matrix</b>: <br>
+                        (<i>For Group Project:</i> Task Done By: <i>Name of 1st Student</i>)
+                    </td>
+                </tr>
+                <tr>
+                    <td>References:</td>
+                    <td>
+                        <i>
+                            Cite your source(s) accordingly. <br>
+                            Indicate the type of citation format.
+                        </i>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- End Specific Project Requirements -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://scholarlycommunication.github.io/Presentations/Projects/PreCalculus/Matrices/Cryptology.html"
+            class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top
+        </a>
+    </div>
+
+    <!-- Example Guide: 2 by 2 Matrices -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="exampleGuide2by2">
+            <h2>Example Guide (2 &times; 2 Matrices)</h2>
+            <p>
+                Some examples of 2 &times; 2 encoding matrices that you can use are:
+                <br><br>
+                $
+                \begin{bmatrix}
+                5 & 3 \\[3ex]
+                2 & 1
+                \end{bmatrix}
+                $
+                $
+                \begin{bmatrix}
+                7 & 4 \\[3ex]
+                2 & 1
+                \end{bmatrix}
+                $
+                $
+                \begin{bmatrix}
+                3 & 4 \\[3ex]
+                1 & 1
+                \end{bmatrix}
+                $
+                $
+                \begin{bmatrix}
+                1 & 1 \\[3ex]
+                2 & 3
+                \end{bmatrix}
+                $
+                $
+                \begin{bmatrix}
+                3 & 4 \\[3ex]
+                2 & 3
+                \end{bmatrix}
+                $
+                $
+                \begin{bmatrix}
+                1 & 2 \\[3ex]
+                2 & 3
+                \end{bmatrix}
+                $
+                <br><br>
+                Please verify that they meet the requirements.
+            </p>
+            <hr>
+            <p>
+                <u>Given:</u> a scenario between Samuel and his Mother. <br>
+                Mom: Samuel my son, what did you learn in church today? <br>
+                Samuel: Mom, the priest said something very important. <br>
+                He told us to always .............................. <br>
+                <span class="wordSpacing cyan">124 48 47 16 55 22 80 29 20 8</span> <br>
+                and his message is encoded with the encoding matrix <br>
+                <span class="wordSpacing cyan">5 2 3 1</span> <br><br>
+
+                <i>If you were the Mom, and your son wrote this to you, what would you do? &#x263A; &#x263A;
+                    &#x263A;
+                </i>
+                <br><br>
+
+                <u>To:</u> decode the message <br>
+                The Cipher Key is:
+            </p>
+
+            <table class="w3-center">
+                <tr>
+                    <td>
+                        $A$
+                    </td>
+                    <td>
+                        $B$
+                    </td>
+                    <td>
+                        $C$
+                    </td>
+                    <td>
+                        $D$
+                    </td>
+                    <td>
+                        $E$
+                    </td>
+                    <td>
+                        $F$
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        $1$
+                    </td>
+                    <td>
+                        $2$
+                    </td>
+                    <td>
+                        $3$
+                    </td>
+                    <td>
+                        $4$
+                    </td>
+                    <td>
+                        $5$
+                    </td>
+                    <td>
+                        $6$
+                    </td>
+                </tr>
+                <tr class='separator'>
+                    <td>
+                        $G$
+                    </td>
+                    <td>
+                        $H$
+                    </td>
+                    <td>
+                        $I$
+                    </td>
+                    <td>
+                        $J$
+                    </td>
+                    <td>
+                        $K$
+                    </td>
+                    <td>
+                        $L$
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        $7$
+                    </td>
+                    <td>
+                        $8$
+                    </td>
+                    <td>
+                        $9$
+                    </td>
+                    <td>
+                        $10$
+                    </td>
+                    <td>
+                        $11$
+                    </td>
+                    <td>
+                        $12$
+                    </td>
+                </tr>
+                <tr class='separator'>
+                    <td>
+                        $M$
+                    </td>
+                    <td>
+                        $N$
+                    </td>
+                    <td>
+                        $O$
+                    </td>
+                    <td>
+                        $P$
+                    </td>
+                    <td>
+                        $Q$
+                    </td>
+                    <td>
+                        $R$
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        $13$
+                    </td>
+                    <td>
+                        $14$
+                    </td>
+                    <td>
+                        $15$
+                    </td>
+                    <td>
+                        $16$
+                    </td>
+                    <td>
+                        $17$
+                    </td>
+                    <td>
+                        $18$
+                    </td>
+                </tr>
+                <tr class='separator'>
+                    <td>
+                        $S$
+                    </td>
+                    <td>
+                        $T$
+                    </td>
+                    <td>
+                        $U$
+                    </td>
+                    <td>
+                        $V$
+                    </td>
+                    <td>
+                        $W$
+                    </td>
+                    <td>
+                        $X$
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        $19$
+                    </td>
+                    <td>
+                        $20$
+                    </td>
+                    <td>
+                        $21$
+                    </td>
+                    <td>
+                        $22$
+                    </td>
+                    <td>
+                        $23$
+                    </td>
+                    <td>
+                        $24$
+                    </td>
+                </tr>
+                <tr class='separator'>
+                    <td>
+                        $Y$
+                    </td>
+                    <td>
+                        $Z$
+                    </td>
+                    <td>
+                        $ $
+                    </td>
+                    <td>
+                        $?$
+                    </td>
+                    <td>
+                        $!$
+                    </td>
+                    <td>
+                        $.$
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        $25$
+                    </td>
+                    <td>
+                        $26$
+                    </td>
+                    <td>
+                        $27, 0$
+                    </td>
+                    <td>
+                        $28$
+                    </td>
+                    <td>
+                        $29$
+                    </td>
+                    <td>
+                        $30, 0$
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                <b>1st Step:</b> <br>
+                Because this question deals with $2 * 2$ matrix, write the <b>encoding matrix</b> in a $2 * 2$ matrix
+                form <br>
+                <span class="wordSpacing">5 2 3 1</span> <br>
+                Write the elements per column (not per row) <br>
+                <b>Encoding Matrix, A</b> <br><br>
+                $
+                A = \begin{bmatrix}
+                5 & 3 \\[3ex]
+                2 & 1
+                \end{bmatrix}
+                $
+            </p>
+            <br>
+            <p>
+                <b>2nd Step:</b> <br>
+                Because this question deals with $2 * 2$ matrix, write the <b>encoded message</b> in matrix form such
+                that the number of rows is $2$ <br>
+                <i>Ask students why they have to do it that way?</i> <br>
+                <span class="wordSpacing">124 48 47 16 55 22 80 29 20 8</span> <br>
+                <b>Encoded Message, B</b> <br>
+                Write the elements per column (not per row) <br><br>
+                $
+                B = \begin{bmatrix}
+                124 & 47 & 55 & 80 & 20 \\[3ex]
+                48 & 16 & 22 & 29 & 8
+                \end{bmatrix}
+                $
+            </p>
+            <br>
+            <p>
+                <b>3rd Step:</b> <br>
+                Determine the <b>Decoding Matrix: $A^{-1}$</b> <br>
+                We shall use both methods: The Formula Method and the Row Reduction Method. <br>
+                You may use any one you wish. <br><br>
+                $
+                \underline{Formula\:\: Method} \\[3ex]
+                A^{-1} = \dfrac{adj\: A}{\det\: A} \\[5ex]
+                For\:\: A = \begin{bmatrix}
+                a & b \\[3ex]
+                c & d
+                \end{bmatrix} = \begin{bmatrix}
+                5 & 3 \\[3ex]
+                2 & 1
+                \end{bmatrix} \\[5ex]
+                a = 5 \\[3ex]
+                b = 3 \\[3ex]
+                c = 2 \\[3ex]
+                d = 1 \\[3ex]
+                adj\: A = \begin{bmatrix}
+                d & -b \\[3ex]
+                -c & a
+                \end{bmatrix} \\[5ex]
+                -b = -1 * 3 = -3 \\[3ex]
+                -c = -1 * 2 = -2 \\[3ex]
+                \therefore adj\: A = \begin{bmatrix}
+                1 & -3 \\[3ex]
+                -2 & 5
+                \end{bmatrix} \\[3ex]
+                $
+                <br><br>
+                $
+                det\: A = ad - cb \\[3ex]
+                = 5(1) - 2(3) \\[3ex]
+                = 5 - 6 \\[3ex]
+                = -1 \\[3ex]
+                $
+                <br><br>
+                $
+                A^{-1} = \dfrac{adj\: A}{\det\: A} =
+                \begin{bmatrix}
+                \dfrac{1}{-1} & \dfrac{-3}{-1} \\[5ex]
+                \dfrac{-2}{-1} & \dfrac{5}{-1}
+                \end{bmatrix} \\[10ex]
+                A^{-1} = \begin{bmatrix}
+                -1 & 3 \\[3ex]
+                2 & -5
+                \end{bmatrix} \\[16ex]
+
+
+                \underline{Row\:\: Reduction\:\: Method} \\[3ex]
+                A \ \ | \ \ I = I \ \ | \ \ A^{-1} \\[3ex]
+                \left[
+                \begin{array}{cc|cc}
+                5 & 3 & 1 & 0 \\[3ex]
+                2 & 1 & 0 & 1
+                \end{array}
+                \right]
+                \underrightarrow{-2R_1 + 5R_2}
+                \left[
+                \begin{array}{cc|cc}
+                5 & 3 & 1 & 0 \\[3ex]
+                0 & -1 & -2 & 5
+                \end{array}
+                \right] \\[3ex]
+                $
+                <br><br>
+                $
+                \underrightarrow{3R_2 + R_1}
+                \left[
+                \begin{array}{cc|cc}
+                5 & 0 & -5 & 15 \\[3ex]
+                0 & -1 & -2 & 5
+                \end{array}
+                \right]
+                \begin{matrix} \underrightarrow{R_1 \div 5} \\ \underrightarrow{-R_2} \end{matrix}
+                \left[
+                \begin{array}{cc|cc}
+                1 & 0 & -1 & 3 \\[3ex]
+                0 & 1 & 2 & -5
+                \end{array}
+                \right] \\[3ex]
+                $
+                <br><br>
+                $
+                A^{-1} = \begin{bmatrix}
+                -1 & 3 \\[3ex]
+                2 & -5
+                \end{bmatrix}
+                $
+            </p>
+            <br>
+            <p>
+                <b>4th Step:</b> <br>
+                Determine the <b>Decoded Message</b> <br>
+                Decoded Message = $A^{-1} * B$ <br><br>
+                <i>Ask students if the matrices are conformable for multiplication</i> <br><br>
+                Order of Matrix $A^{-1} = 2 * 2$ <br>
+                Order of Matrix $B = 2 * 5$ <br>
+                Number of columns of $A^{-1}, (2)$ = Number of rows of $B, (2)$ <br>
+                The matrices can multiply. <br>
+                Order of Product, $A^{-1}B$ = Number of rows of $A^{-1}$ by Number of columns of $B$ <br>
+                Order of $A^{-1}B = 2 * 5$ <br><br>
+                $
+                \begin{bmatrix}
+                -1 & 3 \\[3ex]
+                2 & -5
+                \end{bmatrix}
+                *
+                \begin{bmatrix}
+                124 & 47 & 55 & 80 & 20 \\[3ex]
+                48 & 16 & 22 & 29 & 8
+                \end{bmatrix} \\[3ex]
+                $
+                <br><br>
+                $
+                -1 * 124 + 3 * 48 = -124 + 144 = 20 \\[3ex]
+                -1 * 47 + 3 * 16 = -47 + 48 = 1 \\[3ex]
+                -1 * 55 + 3 * 22 = -55 + 66 = 11 \\[3ex]
+                -1 * 80 + 3 * 29 = -80 + 87 = 7 \\[3ex]
+                -1 * 20 + 3 * 8 = -20 + 24 = 4 \\[5ex]
+
+                2 * 124 + (-5) * 48 = 248 - 240 = 8 \\[3ex]
+                2 * 47 + (-5) * 16 = 94 - 80 = 14 \\[3ex]
+                2 * 55 + (-5) * 22 = 110 - 110 = 0 \\[3ex]
+                2 * 80 + (-5) * 29 = 160 - 145 = 15 \\[3ex]
+                2 * 20 + (-5) * 8 = 40 - 40 = 0 \\[3ex]
+                $
+                <br><br>
+                $
+                A^{-1} * B = \begin{bmatrix}
+                20 & 1 & 11 & 7 & 4 \\[3ex]
+                8 & 14 & 0 & 15 & 0
+                \end{bmatrix}
+                $
+            </p>
+            <br>
+            <p>
+                <b>5th Step:</b> <br>
+                Determine the <b>Message</b> using the Cipher Key <br><br>
+                Decoded Message: <span class="wordSpacing">20 8 1 14 11 0 7 15 4 0</span> <br>
+                Message: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <span class="wordSpacing">T H A N K &ensp; G O D .</span>
+                <br><br>
+                The Priest's basic message is <mark>THANK GOD.</mark>
+            </p>
+
+            <hr>
+
+            <p>
+                <u>Given:</u> a secret message, THANK GOD. <br>
+                <u>To Encode:</u> the secret message using a $2 * 2$ encoding matrix
+            </p>
+            <p>
+                <b>1st Step:</b> <br>
+                Write the decoded message using the Cipher Key <br>
+                Convert the characters to digits using the Cipher Key. <br>
+                Message: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <span class="wordSpacing">T H A N K &ensp; G O D .</span> <br>
+                Decoded Message: <span class="wordSpacing">20 8 1 14 11 0 7 15 4 0</span> <br>
+                You may use 27 for the space, and $30$ for the period if you wish.
+            </p>
+            <br>
+            <p>
+                <b>2nd Step:</b> <br>
+                Because this question deals with $2 * 2$ matrix, write the decoded message in matrix form such that the
+                number of rows is $2$ <br>
+                <i>Ask students why they have to do it that way?</i> <br>
+                Make sure the number of digits is divisible by $2$ (an even number). <br>
+                <span class="wordSpacing">20 8 1 14 11 0 7 15 4 0</span> <br>
+                It has $10$ digits. Divide it by $2$. <br>
+                $10$ digits divided by $2$ rows gives $5$ digits in each row. <br>
+                Write the elements per column (not per row) <br>
+                <b>Decoded Message</b> <br><br>
+                $
+                \begin{bmatrix}
+                20 & 1 & 11 & 7 & 4 \\[3ex]
+                8 & 14 & 0 & 15 & 0
+                \end{bmatrix}
+                $
+            </p>
+            <br>
+            <p>
+                <b>3rd Step:</b> <br>
+                Find an <b>encoding matrix</b> <br>
+                (1.) that has only positive integers. The elements of the encoding matrix has no zeros, negative
+                integers, fractions and/or decimals. <br>
+                (2.) that is invertible. The encoding matrix has an inverse. <br>
+                (3.) such that the elements of the inverse of that matrix has only integers. <br>
+                The inverse of the encoding matrix is the decoding matrix. <br>
+                The elements of the decoding matrix should be only integers. <br>
+                The elements of the decoding matrix should <u>not</u> have fractions or decimals. <br>
+                You may use the calculators on the <a href="https://samuelchukwuemeka.github.io/matrix-algebra/"
+                    target="_blank">Matrix Algebra</a> website,
+                Microsoft Excel Spreadsheet, or Google Spreadsheet to find a suitable encoding matrix. <br>
+                Encoding Matrix: <span class="wordSpacing">5 2 3 1</span> <br>
+            </p>
+            <br>
+            <p>
+                <b>4th Step:</b> <br>
+                Because this question deals with $2 * 2$ matrix, write the encoding matrix as a $2 * 2$ matrix <br>
+                Encoding Matrix: <span class="wordSpacing yellow">5 2 3 1</span> <br>
+                Write the elements per column (not per row) <br>
+                <b>Encoding Matrix</b> <br><br>
+                $
+                \begin{bmatrix}
+                5 & 3 \\[3ex]
+                2 & 1
+                \end{bmatrix}
+                $
+            </p>
+            <br>
+            <p>
+                <b>5th Step:</b> <br>
+                Encoded Message = Encoding Matrix * Decoded Message <br>
+                Let us make sure they can multiply. <br>
+                Order of Encoding Matrix = $2 * 2$ <br>
+                Order of Decoded Message = $2 * 5$ <br>
+                Number of columns of Encoding Matrix = Number of rows of Decoded Message <br>
+                The matrices can multiply. <br>
+                Order of Product = Number of rows of Encoding Matrix by Number of columns of Decoded Message <br>
+                Order of Product = $2 * 5$ <br><br>
+                $
+                \begin{bmatrix}
+                5 & 3 \\[3ex]
+                2 & 1
+                \end{bmatrix}
+                *
+                \begin{bmatrix}
+                20 & 1 & 11 & 7 & 4 \\[3ex]
+                8 & 14 & 0 & 15 & 0
+                \end{bmatrix} \\[3ex]
+                $
+                <br><br>
+                $
+                5(20) + 3(8) = 100 + 24 = 124 \\[3ex]
+                5(1) + 3(14) = 5 + 42 = 47 \\[3ex]
+                5(11) + 3(0) = 55 + 0 = 55 \\[3ex]
+                5(7) + 3(15) = 35 + 45 = 80 \\[3ex]
+                5(4) + 3(0) = 20 + 0 = 20 \\[5ex]
+
+                2(20) + 1(8) = 40 + 8 = 48 \\[3ex]
+                2(1) + 1(14) = 2 + 14 = 16 \\[3ex]
+                2(11) + 1(0) = 22 + 0 = 22 \\[3ex]
+                2(7) + 1(15) = 14 + 15 = 29 \\[3ex]
+                2(4) + 1(0) = 8 + 0 = 8 \\[5ex]
+
+                Encoded \:\; Message = \begin{bmatrix}
+                124 & 47 & 55 & 80 & 20 \\[3ex]
+                48 & 16 & 22 & 29 & 8
+                \end{bmatrix} \\[3ex]
+                $
+                <br>
+                Release and write the elements per column (not per row) <br>
+                Encoded Message = <span class="wordSpacing yellow">124 48 47 16 55 22 80 29 20 8</span>
+            </p>
+        </div>
+    </div>
+    <!-- End Example Guide: 2 by 2 Matrices -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://scholarlycommunication.github.io/Presentations/Projects/PreCalculus/Matrices/Cryptology.html"
+            class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top
+        </a>
+    </div>
+
+    <!-- Example Guide: 3 by 3 Matrices -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="exampleGuide3by3">
+            <h2>Example Guide (3 &times; 3 Matrices)</h2>
+            <p>
+                Some examples of 3 &times; 3 encoding matrices that you can use are:
+                <br><br>
+                $
+                \begin{bmatrix}
+                1 & 1 & 1 \\[3ex]
+                2 & 1 & 2 \\[3ex]
+                2 & 3 & 1
+                \end{bmatrix}
+                $
+                $
+                \begin{bmatrix}
+                3 & 1 & 2 \\[3ex]
+                1 & 1 & 3 \\[3ex]
+                3 & 2 & 5
+                \end{bmatrix}
+                $
+                $
+                \begin{bmatrix}
+                1 & 2 & 2 \\[3ex]
+                1 & 1 & 3 \\[3ex]
+                2 & 2 & 5
+                \end{bmatrix}
+                $
+                $
+                \begin{bmatrix}
+                1 & 2 & 2 \\[3ex]
+                1 & 1 & 1 \\[3ex]
+                2 & 2 & 1
+                \end{bmatrix}
+                $
+                $
+                \begin{bmatrix}
+                1 & 2 & 1 \\[3ex]
+                1 & 2 & 5 \\[3ex]
+                1 & 3 & 2
+                \end{bmatrix}
+                $
+                <br><br>
+                Please verify that they meet the requirements.
+            </p>
+            <hr>
+            <p>
+                <u>Given:</u> Please complete this sentence. <br>
+                If you ....................................., the world will be a good place to live. <br>
+                The "blank" is this encoded message: <br>
+                <span class="wordSpacing cyan">49 83 91 25 50 30 33 41 91 28 51 52 17 26 40 33 48 84</span> <br>
+                encoded with the encoding matrix <br>
+                <span class="wordSpacing cyan">1 2 2 1 1 3 1 2 1</span>
+                <br><br>
+                <u>To:</u> decode the message <br>
+                The Cipher Key is:
+            </p>
+
+            <table class="w3-center">
+                <tr>
+                    <td>
+                        $A$
+                    </td>
+                    <td>
+                        $B$
+                    </td>
+                    <td>
+                        $C$
+                    </td>
+                    <td>
+                        $D$
+                    </td>
+                    <td>
+                        $E$
+                    </td>
+                    <td>
+                        $F$
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        $1$
+                    </td>
+                    <td>
+                        $2$
+                    </td>
+                    <td>
+                        $3$
+                    </td>
+                    <td>
+                        $4$
+                    </td>
+                    <td>
+                        $5$
+                    </td>
+                    <td>
+                        $6$
+                    </td>
+                </tr>
+                <tr class='separator'>
+                    <td>
+                        $G$
+                    </td>
+                    <td>
+                        $H$
+                    </td>
+                    <td>
+                        $I$
+                    </td>
+                    <td>
+                        $J$
+                    </td>
+                    <td>
+                        $K$
+                    </td>
+                    <td>
+                        $L$
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        $7$
+                    </td>
+                    <td>
+                        $8$
+                    </td>
+                    <td>
+                        $9$
+                    </td>
+                    <td>
+                        $10$
+                    </td>
+                    <td>
+                        $11$
+                    </td>
+                    <td>
+                        $12$
+                    </td>
+                </tr>
+                <tr class='separator'>
+                    <td>
+                        $M$
+                    </td>
+                    <td>
+                        $N$
+                    </td>
+                    <td>
+                        $O$
+                    </td>
+                    <td>
+                        $P$
+                    </td>
+                    <td>
+                        $Q$
+                    </td>
+                    <td>
+                        $R$
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        $13$
+                    </td>
+                    <td>
+                        $14$
+                    </td>
+                    <td>
+                        $15$
+                    </td>
+                    <td>
+                        $16$
+                    </td>
+                    <td>
+                        $17$
+                    </td>
+                    <td>
+                        $18$
+                    </td>
+                </tr>
+                <tr class='separator'>
+                    <td>
+                        $S$
+                    </td>
+                    <td>
+                        $T$
+                    </td>
+                    <td>
+                        $U$
+                    </td>
+                    <td>
+                        $V$
+                    </td>
+                    <td>
+                        $W$
+                    </td>
+                    <td>
+                        $X$
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        $19$
+                    </td>
+                    <td>
+                        $20$
+                    </td>
+                    <td>
+                        $21$
+                    </td>
+                    <td>
+                        $22$
+                    </td>
+                    <td>
+                        $23$
+                    </td>
+                    <td>
+                        $24$
+                    </td>
+                </tr>
+                <tr class='separator'>
+                    <td>
+                        $Y$
+                    </td>
+                    <td>
+                        $Z$
+                    </td>
+                    <td>
+                        $ $
+                    </td>
+                    <td>
+                        $?$
+                    </td>
+                    <td>
+                        $!$
+                    </td>
+                    <td>
+                        $.$
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        $25$
+                    </td>
+                    <td>
+                        $26$
+                    </td>
+                    <td>
+                        $27, 0$
+                    </td>
+                    <td>
+                        $28$
+                    </td>
+                    <td>
+                        $29$
+                    </td>
+                    <td>
+                        $30, 0$
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                <b>1st Step:</b> <br>
+                Because this question deals with $3 * 3$ matrix, write the encoding matrix in a $3 * 3$ matrix form <br>
+                <span class="wordSpacing">1 2 2 1 1 3 1 2 1</span> <br>
+                Write the elements per column (not per row) <br>
+                <b>Encoding Matrix, A</b> <br><br>
+                $
+                A = \begin{bmatrix}
+                1 & 1 & 1 \\[3ex]
+                2 & 1 & 2 \\[3ex]
+                2 & 3 & 1
+                \end{bmatrix}
+                $
+            </p>
+            <br>
+            <p>
+                <b>2nd Step:</b> <br>
+                Because this question deals with $3 * 3$ matrix, write the encoded message in matrix form such that the
+                number of rows is $3$ <br>
+                <i>Ask students why they have to do it that way?</i> <br>
+                <span class="wordSpacing">49 83 91 25 50 30 33 41 91 28 51 52 17 26 40 33 48 84</span> <br>
+                <b>Encoded Message, B</b> <br>
+                Write the elements per column (not per row) <br><br>
+                $
+                B = \begin{bmatrix}
+                49 & 25 & 33 & 28 & 17 & 33 \\[3ex]
+                83 & 50 & 41 & 51 & 26 & 48 \\[3ex]
+                91 & 30 & 91 & 52 & 40 & 84
+                \end{bmatrix}
+                $
+            </p>
+            <br>
+            <p>
+                <b>3rd Step:</b> <br>
+                Determine the <b>Decoding Matrix, $A^{-1}$</b> <br>
+                We shall use both methods: The Formula Method and the Row Reduction Method. <br>
+                You may use any one you wish.
+                <br><br>
+                $
+                \underline{Formula\:\: Method} \\[3ex]
+                A^{-1} = \dfrac{adj\: A}{\det\: A} \\[5ex]
+                For\:\: A = \begin{bmatrix}
+                a & b & c \\[3ex]
+                d & e & f \\[3ex]
+                g & h & i
+                \end{bmatrix} = \begin{bmatrix}
+                1 & 1 & 1 \\[3ex]
+                2 & 1 & 2 \\[3ex]
+                2 & 3 & 1
+                \end{bmatrix} \\[5ex]
+                a = 1 \\[3ex]
+                b = 1 \\[3ex]
+                c = 1 \\[3ex]
+                d = 2 \\[3ex]
+                e = 1 \\[3ex]
+                f = 2 \\[3ex]
+                g = 2 \\[3ex]
+                h = 3 \\[3ex]
+                i = 1 \\[3ex]
+                $
+                <br><br>
+                $
+                adj\: A = \begin{bmatrix}
+                ei - hf & hc - bi & bf - ec \\[3ex]
+                gf - di & ai - gc & dc - af \\[3ex]
+                dh - ge & gb - ah & ae - db
+                \end{bmatrix} \\[10ex]
+                ei - hf = 1(1) - 3(2) = 1 - 6 = -5 \\[3ex]
+                hc - bi = 3(1) - 1(1) = 3 - 1 = 2 \\[3ex]
+                bf - ec = 1(2) - 1(1) = 2 - 1 = 1 \\[3ex]
+                gf - di = 2(2) - 2(1) = 4 - 2 = 2 \\[3ex]
+                ai - gc = 1(1) - 2(1) = 1 - 2 = -1 \\[3ex]
+                dc - af = 2(1) - 1(2) = 2 - 2 = 0 \\[3ex]
+                dh - ge = 2(3) - 2(1) = 6 - 2 = 4 \\[3ex]
+                gb - ah = 2(1) - 1(3) = 2 - 3 = -1 \\[3ex]
+                ae - db = 1(1) - 2(1) = 1 - 2 = -1 \\[5ex]
+                \therefore adj\: A = \begin{bmatrix}
+                -5 & 2 & 1 \\[3ex]
+                2 & -1 & 0 \\[3ex]
+                4 & -1 & -1
+                \end{bmatrix} \\[3ex]
+                $
+                <br><br>
+                $
+                det\: A = aei + bgf + cdh - ahf - bdi - cge \\[3ex]
+                aei = 1 * 1 * 1 = 1 \\[3ex]
+                bgf = 1 * 2 * 2 = 4 \\[3ex]
+                cdh = 1 * 2 * 3 = 6 \\[3ex]
+                ahf = 1 * 3 * 2 = 6 \\[3ex]
+                bdi = 1 * 2 * 1 = 2 \\[3ex]
+                cge = 1 * 2 * 1 = 2 \\[5ex]
+                \therefore det\: A = 1 + 4 + 6 - 6 - 2 - 2 = 1 \\[3ex]
+                $
+                <br><br>
+                $
+                A^{-1} = \dfrac{adj\: A}{\det\: A} =
+                \begin{bmatrix}
+                \dfrac{-5}{1} & \dfrac{2}{1} & \dfrac{1}{1} \\[5ex]
+                \dfrac{2}{1} & \dfrac{-1}{1} & \dfrac{0}{1} \\[5ex]
+                \dfrac{4}{1} & \dfrac{-1}{1} & \dfrac{-1}{1}
+                \end{bmatrix} \\[16ex]
+                \therefore A^{-1} = \begin{bmatrix}
+                -5 & 2 & 1 \\[3ex]
+                2 & -1 & 0 \\[3ex]
+                4 & -1 & -1
+                \end{bmatrix} \\[16ex]
+
+                \underline{Row\:\: Reduction\:\: Method} \\[3ex]
+                A \ \ | \ \ I = I \ \ | \ \ A^{-1} \\[3ex]
+                \left[
+                \begin{array}{ccc|ccc}
+                1 & 1 & 1 & 1 & 0 & 0 \\[3ex]
+                2 & 1 & 2 & 0 & 1 & 0 \\[3ex]
+                2 & 3 & 1 & 0 & 0 & 1
+                \end{array}
+                \right]
+                \begin{matrix} \underrightarrow{-2R_1 + R_2} \\ \underrightarrow{-2R_1 + R_3} \end{matrix}
+                \left[
+                \begin{array}{ccc|ccc}
+                1 & 1 & 1 & 1 & 0 & 0 \\[3ex]
+                0 & -1 & 0 & -2 & 1 & 0 \\[3ex]
+                0 & 1 & -1 & -2 & 0 & 1
+                \end{array}
+                \right] \\[5ex]
+
+                \begin{matrix} \underrightarrow{R_2 + R_1} \\ \underrightarrow{R_2 + R_3} \end{matrix}
+                \left[
+                \begin{array}{ccc|ccc}
+                1 & 0 & 1 & -1 & 1 & 0 \\[3ex]
+                0 & -1 & 0 & -2 & 1 & 0 \\[3ex]
+                0 & 0 & -1 & -4 & 1 & 1
+                \end{array}
+                \right]
+                \underrightarrow{R_3 + R_1}
+                \left[
+                \begin{array}{ccc|ccc}
+                1 & 0 & 0 & -5 & 2 & 1 \\[3ex]
+                0 & -1 & 0 & -2 & 1 & 0 \\[3ex]
+                0 & 0 & -1 & -4 & 1 & 1
+                \end{array}
+                \right] \\[3ex]
+
+                \begin{matrix} \underrightarrow{-R_2} \\ \underrightarrow{-R_3} \end{matrix}
+                \left[
+                \begin{array}{ccc|ccc}
+                1 & 0 & 0 & -5 & 2 & 1 \\[3ex]
+                0 & 1 & 0 & 2 & -1 & 0 \\[3ex]
+                0 & 0 & 1 & 4 & -1 & -1
+                \end{array}
+                \right] \\[3ex]
+                $
+                <br><br>
+                $
+                A^{-1} = \begin{bmatrix}
+                -5 & 2 & 1 \\[3ex]
+                2 & -1 & 0 \\[3ex]
+                4 & -1 & -1
+                \end{bmatrix}
+                $
+            </p>
+            <br>
+            <p>
+                <b>4th Step:</b> <br>
+                Determine the <b>Decoded Message</b> <br>
+                Decoded Message = $A^{-1} * B$ <br><br>
+                <i>Ask students if the matrices are conformable for multiplication</i> <br><br>
+                Order of Matrix $A^{-1} = 3 * 3$ <br>
+                Order of Matrix $B = 3 * 6$ <br>
+                Number of columns of $A^{-1}, (3)$ = Number of rows of $B, (3)$ <br>
+                The matrices can multiply. <br>
+                Order of Product, $A^{-1}B$ = Number of rows of $A^{-1}$ by Number of columns of $B$ <br>
+                Order of $A^{-1}B = 3 * 6$ <br><br>
+                $
+                \begin{bmatrix}
+                -5 & 2 & 1 \\[3ex]
+                2 & -1 & 0 \\[3ex]
+                4 & -1 & -1
+                \end{bmatrix}
+                *
+                \begin{bmatrix}
+                49 & 25 & 33 & 28 & 17 & 33 \\[3ex]
+                83 & 50 & 41 & 51 & 26 & 48 \\[3ex]
+                91 & 30 & 91 & 52 & 40 & 84
+                \end{bmatrix}\\[3ex]
+                $
+                <br><br>
+                $
+                -5 * 49 + 2 * 83 + 1 * 91 = -245 + 166 + 91 = 12 \\[3ex]
+                -5 * 25 + 2 * 50 + 1 * 30 = -125 + 100 + 30 = 5 \\[3ex]
+                -5 * 33 + 2 * 41 + 1 * 91 = -165 + 82 + 91 = 8 \\[3ex]
+                -5 * 28 + 2 * 51 + 1 * 52 = -140 + 102 + 52 = 14 \\[3ex]
+                -5 * 17 + 2 * 26 + 1 * 40 = -85 + 52 + 40 = 7 \\[3ex]
+                -5 * 33 + 2 * 48 + 1 * 84 = -165 + 96 + 84 = 15 \\[5ex]
+
+                2 * 49 + (-1) * 83 + 0 * 91 = 98 - 83 + 0 = 15 \\[3ex]
+                2 * 25 + (-1) * 50 + 0 * 30 = 50 - 50 + 0 = 0 \\[3ex]
+                2 * 33 + (-1) * 41 + 0 * 91 = 66 - 41 + 0 = 25 \\[3ex]
+                2 * 28 + (-1) * 51 + 0 * 52 = 56 - 51 + 0 = 5 \\[3ex]
+                2 * 17 + (-1) * 26 + 0 * 40 = 34 - 26 + 0 = 8 \\[3ex]
+                2 * 33 + (-1) * 48 + 0 * 84 = 66 - 48 + 0 = 18 \\[5ex]
+
+                4 * 49 + (-1) * 83 + (-1) * 91 = 196 - 83 - 91 = 22 \\[3ex]
+                4 * 25 + (-1) * 50 + (-1) * 30 = 100 - 50 - 30 = 20 \\[3ex]
+                4 * 33 + (-1) * 41 + (-1) * 91 = 132 - 41 - 91 = 0 \\[3ex]
+                4 * 28 + (-1) * 51 + (-1) * 52 = 112 - 51 - 52 = 9 \\[3ex]
+                4 * 17 + (-1) * 26 + (-1) * 40 = 68 - 26 - 40 = 2 \\[3ex]
+                4 * 33 + (-1) * 48 + (-1) * 84 = 132 - 48 - 84 = 0 \\[5ex]
+
+                A^{-1} * B = \begin{bmatrix}
+                12 & 5 & 8 & 14 & 7 & 15 \\[3ex]
+                15 & 0 & 25 & 5 & 8 & 18 \\[3ex]
+                22 & 20 & 0 & 9 & 2 & 0
+                \end{bmatrix}
+                $
+            </p>
+            <br>
+            <p>
+                <b>5th Step:</b> <br>
+                Determine the <u>Message</u> using the Cipher Key <br><br>
+                Decoded Message: <span class="wordSpacing">12 15 22 5 0 20 8 25 0 14 5 9 7 8 2 15 18 0</span> <br>
+                Message: &ensp; &ensp; &nbsp; &nbsp; &nbsp; &nbsp; &ensp;
+                <span class="wordSpacing">L O V E &nbsp; T H Y &ensp; N E I G H B O R .</span>
+                <br><br>
+                The message is <mark>LOVE THY NEIGHBOR.</mark>
+            </p>
+
+            <hr>
+
+            <p>
+                <u>Given:</u> a secret message, LOVE THY NEIGHBOR. <br>
+                <u>To Encode:</u> the secret message using a $3 * 3$ encoding matrix
+            </p>
+            <p>
+                <b>1st Step:</b> <br>
+                Write the decoded message using the Cipher Key <br>
+                Convert the characters to digits using the Cipher Key. <br>
+                Message: &ensp; &ensp; &nbsp; &nbsp; &nbsp; &nbsp; &ensp;<span class="wordSpacing">L O V E &nbsp; T H Y
+                    &ensp; N E I G H B O R .</span> <br>
+                Decoded Message: <span class="wordSpacing">12 15 22 5 0 20 8 25 0 14 5 9 7 8 2 15 18 0</span> <br>
+                You may use $27$ for the space, and $30$ for the period if you wish.
+            </p>
+            <br>
+            <p>
+                <b>2nd Step:</b> <br>
+                Because this question deals with $3 * 3$ matrix, write the decoded message in matrix form such that the
+                number of rows is $3$ <br>
+                <i>Ask students why they have to do it that way?</i> <br>
+                Make sure the number of digits is divisible by $3$. <br>
+                <span class="wordSpacing">12 15 22 5 0 20 8 25 0 14 5 9 7 8 2 15 18 0</span>
+                <br><br>
+                It has 18 digits. Divide it by 3. <br>
+                18 digits divided by 3 rows gives 6 digits in each row. <br>
+                Write the elements per column (not per row)
+                <br><br>
+                <b>Decoded Message</b>
+                <br><br>
+                $
+                \begin{bmatrix}
+                12 & 5 & 8 & 14 & 7 & 15 \\[3ex]
+                15 & 0 & 25 & 5 & 8 & 18 \\[3ex]
+                22 & 20 & 0 & 9 & 2 & 0
+                \end{bmatrix}
+                $
+            </p>
+            <br>
+            <p>
+                <b>3rd Step:</b> <br>
+                Find an encoding matrix: <br>
+                (1.) that has only positive integers. The elements of the encoding matrix has no zeros, negative
+                integers, fractions and/or decimals. <br>
+                (2.) that is invertible. The encoding matrix has an inverse. <br>
+                (3.) such that the elements of the inverse of that matrix has only integers. <br>
+                The inverse of the encoding matrix is the decoding matrix. <br>
+                The elements of the decoding matrix should be only integers. <br>
+                The elements of the decoding matrix should <u>not</u> have fractions or decimals. <br>
+                You may use the calculators on the <a href="https://samuelchukwuemeka.github.io/matrix-algebra/"
+                    target="_blank">Matrix Algebra</a> website,
+                Microsoft Excel Spreadsheet, or Google Spreadsheet to find a suitable encoding matrix. <br>
+                Encoding Matrix: <span class="wordSpacing">1 2 2 1 1 3 1 2 1</span> <br>
+            </p>
+            <br>
+            <p>
+                <b>4th Step:</b> <br>
+                Because this question deals with $3 * 3$ matrix, write the encoding matrix as a $3 * 3$ matrix <br>
+                Encoding Matrix: <span class="wordSpacing gold">1 2 2 1 1 3 1 2 1</span> <br>
+                Write the elements per column (not per row) <br>
+                <b>Encoding Matrix</b> <br><br>
+                $
+                \begin{bmatrix}
+                1 & 1 & 1 \\[3ex]
+                2 & 1 & 2 \\[3ex]
+                2 & 3 & 1
+                \end{bmatrix}
+                $
+            </p>
+            <br>
+            <p>
+                <b>5th Step:</b> <br>
+                Write the <b>Encoded Message</b> <br>
+                Encoded Message = Encoding Matrix * Decoded Message <br>
+                Let us make sure they can multiply. <br>
+                Order of Encoding Matrix = $3 * 3$ <br>
+                Order of Decoded Message = $3 * 6$ <br>
+                Number of columns of Encoding Matrix = Number of rows of Decoded Message <br>
+                The matrices can multiply. <br>
+                Order of Product = Number of rows of Encoding Matrix by Number of columns of Decoded Message <br>
+                Order of Product = $3 * 6$ <br><br>
+                $
+                \begin{bmatrix}
+                1 & 1 & 1 \\[3ex]
+                2 & 1 & 2 \\[3ex]
+                2 & 3 & 1
+                \end{bmatrix}
+                *
+                \begin{bmatrix}
+                12 & 5 & 8 & 14 & 7 & 15 \\[3ex]
+                15 & 0 & 25 & 5 & 8 & 18 \\[3ex]
+                22 & 20 & 0 & 9 & 2 & 0
+                \end{bmatrix} \\[3ex]
+                $
+                <br><br>
+                $
+                1(12) + 1(15) + 1(22) = 12 + 15 + 22 = 49 \\[3ex]
+                1(5) + 1(0) + 1(20) = 5 + 0 + 20 = 25 \\[3ex]
+                1(8) + 1(25) + 1(0) = 8 + 25 + 0 = 33 \\[3ex]
+                1(14) + 1(5) + 1(9) = 14 + 5 + 9 = 28 \\[3ex]
+                1(7) + 1(8) + 1(2) = 7 + 8 + 2 = 17 \\[3ex]
+                1(15) + 1(18) + 1(0) = 15 + 18 + 0 = 33 \\[5ex]
+
+                2(12) + 1(15) + 2(22) = 24 + 15 + 44 = 83 \\[3ex]
+                2(5) + 1(0) + 2(20) = 10 + 0 + 40 = 50 \\[3ex]
+                2(8) + 1(25) + 2(0) = 16 + 25 + 0 = 41 \\[3ex]
+                2(14) + 1(5) + 2(9) = 28 + 5 + 18 = 51 \\[3ex]
+                2(7) + 1(8) + 2(2) = 14 + 8 + 4 = 26 \\[3ex]
+                2(15) + 1(18) + 2(0) = 30 + 18 + 0 = 48 \\[5ex]
+
+                2(12) + 3(15) + 1(22) = 24 + 45 + 22 = 91 \\[3ex]
+                2(5) + 3(0) + 1(20) = 10 + 0 + 20 = 30 \\[3ex]
+                2(8) + 3(25) + 1(0) = 16 + 75 + 0 = 91 \\[3ex]
+                2(14) + 3(5) + 1(9) = 28 + 15 + 9 = 52 \\[3ex]
+                2(7) + 3(8) + 1(2) = 14 + 24 + 2 = 40 \\[3ex]
+                2(15) + 3(18) + 1(0) = 30 + 54 + 0 = 84 \\[3ex]
+                $
+                <br><br>
+                $
+                Encoded \:\; Message = \begin{bmatrix}
+                49 & 25 & 33 & 28 & 17 & 33 \\[3ex]
+                83 & 50 & 41 & 51 & 26 & 48 \\[3ex]
+                91 & 30 & 91 & 52 & 40 & 84
+                \end{bmatrix} \\[3ex]
+                $
+                <br><br>
+                Release and write the elements per column (not per row) <br>
+                Encoded Message = <span class="wordSpacing yellow">49 83 91 25 50 30 33 41 91 28 51 52 17 26 40 33 48
+                    84</span>
+            </p>
+        </div>
+    </div>
+    <!-- End Example Guide: 3 by 3 Matrices -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://scholarlycommunication.github.io/Presentations/Projects/PreCalculus/Matrices/Cryptology.html"
+            class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top
+        </a>
+    </div>
+
+    <!-- Students Projects -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="studentsProjects">
+            <h2>Students Projects</h2>
+            First Sample: <b>Alexandra:</b> Matrix Application in Cryptology <br>
+            <object data="images/Projects/Alexandra-Cryptology.pdf" width="1400" height="700"></object>
+            <br><br>
+            <i>
+                The teacher should guide each student to the successful completion of the project. <br>
+                Let students know you are willing to help.
+            </i>
+        </div>
+    </div>
+    <!-- End Students Projects -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://scholarlycommunication.github.io/Presentations/Projects/PreCalculus/Matrices/Cryptology.html"
+            class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top
+        </a>
+    </div>
+
+    <!-- References -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="references">
+            <h3>References</h3>
+            <p>
+                Chukwuemeka, S.D (2016, April 30). <i>Samuel Chukwuemeka Tutorials - Math, Science, and Technology.</i>
+                Retrieved from <a href="https://mathematicscourses.github.io/PreCalculus/"
+                    target="_blank">https://mathematicscourses.github.io/PreCalculus/</a>
+                <br><br>
+
+            </p>
+        </div>
+    </div>
+    <!-- End References -->
+
+
+    <!-- END PAGE CONTENT -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://scholarlycommunication.github.io/Presentations/Projects/PreCalculus/Matrices/Cryptology.html"
+            class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="cornsilk w3-center w3-padding-24">
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-3NJS4BW8RZ' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2018 &nbsp; SamDom4Peace Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages11.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

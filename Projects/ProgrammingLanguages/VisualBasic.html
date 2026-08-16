@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+
+    <title>Visual Basic Programming</title>
+
+
+
+    <meta charset="UTF-8">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka gives all the credit to our LORD GOD and Anointed Savior, JESUS CHRIST. We are experts in Visual Basic (VB) programming.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samdom for peace, samuel dominic chukwuemeka, math, mathematics, 
+    computer science, machine language, assembly language, low level language, high level language, information technology, 
+    programming languages, visual basic, VB, IDE (Integrated Development Environment), text editor, compiler, computer program, 
+    computer programming, computer programming language, computer programmer, coder, object-oriented programming, computer software, 
+    computer hardware, object-oriented programming, designer window, solution explorer, toolbox, controls, properties windows,
+    interface, form, event, procedure, method, event handler, event procedure, code window, sub procedure, subroutine, 
+    console application, desktop application, GUI, graphical user interface, standard input stream">
+
+    <link href="styles/ProgrammingLanguages.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="w3-padding-24 cornsilk">
+        <h1>Visual Basic (VB.NET) Programming Language</h1>
+    </header>
+    <!-- End Header -->
+
+    <br><br>
+
+    <!-- Page Content -->
+
+    <!-- Navigation Bar -->
+    <div class="w3-container w3-padding">
+        <div class="w3-content w3-padding-32">
+
+            <div class="w3-row-padding">
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics"
+                            onclick="location.href='https://scholarlycommunication.github.io/Presentations/';">Presentations</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#midtermProject';">Midterm Project</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#finalProject';">Final Project</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#references';">References</button>
+                    </div>
+                </div>
+            </div>
+
+            <h5 id="midtermProject">Midterm Project</h5>
+            <div class="w3-row-padding">
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#learningOutcomes';">Learning Outcomes</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#projectRequirements';">Project
+                            Requirements</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#studentsProjects';">Students Projects</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Navigation Bar -->
+
+    <div class="w3-container w3-padding" id="objectives">
+        <div class="w3-padding-36">
+            <h2>Objectives</h2>
+            <p>
+                Students will: <br>
+                (1.) Discuss piecewise functions. <br>
+                (2.) Discuss real-world applications of piecewise-functions. <br>
+                (3.) Solve problems involving the application of piecewise functions. <br>
+                (4.) Meet one of the learning objectives of the VCCS (Virginia Community College System) standards for:
+                <br>
+                <a href="https://courses.vccs.edu/courses/MTH161-PreCalculusI/detail" target="_blank">MTH 161:
+                    PreCalculus I</a> <br>
+                <i>
+                    (Presents topics in power, polynomial, rational, exponential, and logarithmic functions, and systems
+                    of equations and inequalities.).
+                </i>
+                <br><br>
+                <a href="https://courses.vccs.edu/courses/MTH167-PreCalculuswithTrigonometry/detail" target="_blank">MTH
+                    167:
+                    PreCalculus with Trigonometry</a> <br>
+                <i>
+                    (Presents topics in power, polynomial, rational, exponential, and logarithmic functions, systems of
+                    equations, trigonometry, and trigonometric applications, including Law of Sines and Cosines, and an
+                    introduction to conics.).
+                </i>
+                <br><br>
+                (5.) Meet the QM (Quality Matters) and USDOE (United States Department of Education) requirements for
+                distance
+                education as regards the provision of RSI (Regular and Substantive Interaction). <br>
+                <a href="https://www.federalregister.gov/documents/2020/09/02/2020-18636/distance-education-and-innovation"
+                    target="_blank">Federal Register: Distance Education and Innovation</a> <br>
+                <a href="https://www.stjohns.edu/sites/default/files/2021-08/New_Federal_Requirements_for_Distance_Education.pdf"
+                    target="_blank">St. John's University: New Federal Requirements for Distance Education: Regular and
+                    Substantive
+                    Interaction (RSI)</a> <br>
+                Student &ndash; Content Interaction: Very high <br>
+                Student &ndash; Student Interaction: Flexible <br>
+                Student &ndash; Faculty Interaction: High
+            </p>
+        </div>
+    </div>
+
+    <!-- Example Guide -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="exampleGuide">
+            <h2>Water Rates by Calhoun County Water Authority; State of Alabama, USA</h2>
+            <p>
+                Another important real-world application of Piecewise Functions is in the filing of federal income
+                taxes. <br>
+                We shall illustrate this application by filing the "Single" option for the $2018$ federal tax return.
+                <br>
+                We shall design a calculator for these taxes. <br>
+                We shall verify our calculations with the calculators of some tax companies. <br>
+                For the simple calculations (only taxes), we shall verify it using the:
+                <a href="https://www.taxact.com/tools/tax-bracket-calculator" target="_blank">calculator from TaxAct</a>
+                <br>
+                Let us define some important terms used in Income Taxes.
+                <br><br>
+                The <b>gross income</b> is the total yearly income. This is the total income earned in a year. <br>
+                It is the total pre-tax earnings for the year. <br>
+                Let the gross income = $GI$
+                <br><br>
+                Sometimes, there are certain portions of the gross income that is not taxed. <br>
+                In other words, there are certain untaxed portions of the gross income. <br>
+                Those untaxed portions of the gross income are known as <b>deductions</b> or <b>adjustments.</b> <br>
+                Let the adjustments = $A$ <br>
+                The difference between the gross income and the adjustments is known as the <b>adjusted gross income</b>
+                <br>
+                Let the adjusted gross income = $AGI$ <br>
+                The <b>adjusted gross income</b> is the income after allowable tax deductions.
+                <br><br>
+                The information used for the 2018 tax rates, standard deductions, and exemptions is found in these
+                websites: <br>
+                (1.) <a href="https://www.bankrate.com/finance/taxes/tax-brackets.aspx" target="_blank">Bankrate</a>
+                <br>
+                (2.) <a
+                    href="https://www.forbes.com/sites/kellyphillipserb/2018/03/07/new-irs-announces-2018-tax-rates-standard-deductions-exemption-amounts-and-more/#2b339ae83133"
+                    target="_blank">Forbes</a>
+                <br><br>
+                <i>Ask students to <b>compare</b> and <b>contrast</b> the two tables.</i>
+                <br><br>
+                The information from the first website (Bankrate) is summarized here. <br>
+                We shall work with this one first.
+            </p>
+            <table>
+                <tr>
+                    <th class="green">Tax Rate</th>
+                    <th class="green">Single</th>
+                    <th class="green">Head of household</th>
+                    <th class="green">
+                        Married Filing Jointly <br>
+                        Or Qualifying Widow
+                    </th>
+                    <th class="green">Married Filing Separately</th>
+                </tr>
+                <tr>
+                    <td>$10\%$</td>
+                    <td>Up to $\$9,525$</td>
+                    <td>Up to $\$13,600$</td>
+                    <td>Up to $\$19,050$</td>
+                    <td>Up to $\$9,525$</td>
+                </tr>
+                <tr>
+                    <td>$12\%$</td>
+                    <td>$\$9,526 \:\:to\:\: \$38,700$</td>
+                    <td>$\$13,601 \:\:to\:\: \$51,800$</td>
+                    <td>$\$19,051 \:\:to\:\: \$77,400$</td>
+                    <td>$\$9,526 \:\:to\:\: \$38,700$</td>
+                </tr>
+                <tr>
+                    <td>$22\%$</td>
+                    <td>$\$38,701 \:\:to\:\: \$82,500$</td>
+                    <td>$\$51,801 \:\:to\:\: \$82,500$</td>
+                    <td>$\$77,401 \:\:to\:\: \$165,000$</td>
+                    <td>$\$38,701 \:\:to\:\: \$82,500$</td>
+                </tr>
+                <tr>
+                    <td>$24\%$</td>
+                    <td>$\$82,501 \:\:to\:\: \$157,500$</td>
+                    <td>$\$82,501 \:\:to\:\: \$157,500$</td>
+                    <td>$\$165,001 \:\:to\:\: \$315,000$</td>
+                    <td>$\$82,501 \:\:to\:\: \$157,000$</td>
+                </tr>
+                <tr>
+                    <td>$32\%$</td>
+                    <td>$\$157,501 \:\:to\:\: \$200,000$</td>
+                    <td>$\$157,501 \:\:to\:\: \$200,000$</td>
+                    <td>$\$315,001 \:\:to\:\: \$400,000$</td>
+                    <td>$\$157,001 \:\:to\:\: \$200,000$</td>
+                </tr>
+                <tr>
+                    <td>$35\%$</td>
+                    <td>$\$200,001 \:\:to\:\: \$500,000$</td>
+                    <td>$\$200,001 \:\:to\:\: \$500,000$</td>
+                    <td>$\$400,001 \:\:to\:\: \$600,000$</td>
+                    <td>$\$200,001 \:\:to\:\: \$300,000$</td>
+                </tr>
+                <tr>
+                    <td>$37\%$</td>
+                    <td>$\$500,001 \:\:or\:\: more$</td>
+                    <td>$\$500,001 \:\:or\:\: more$</td>
+                    <td>$\$600,001 \:\:or\:\: more$</td>
+                    <td>$\$300,001 \:\:or\:\: more$</td>
+                </tr>
+            </table>
+            <p>
+                <b>Calculate the taxes for single individuals whose taxable incomes are:</b>
+                (1.) $\$7,000.00$ <br>
+                (2.) $\$12,575.00$ <br>
+                (3.) $\$43,750.00$ <br>
+                (4.) $\$120,327.00$ <br>
+                (5.) $\$165,428.00$ <br>
+                (6.) $\$234,543.00$ <br>
+                (7.) $\$700,712.00$
+
+                <br><br>
+
+                <b>Simplify the percents.</b> <br>
+                $
+                10\% = \dfrac{10}{100} = 0.1 \\[5ex]
+                12\% = \dfrac{12}{100} = 0.12 \\[5ex]
+                22\% = \dfrac{22}{100} = 0.22 \\[5ex]
+                24\% = \dfrac{24}{100} = 0.24 \\[5ex]
+                32\% = \dfrac{32}{100} = 0.32 \\[5ex]
+                35\% = \dfrac{35}{100} = 0.35 \\[5ex]
+                37\% = \dfrac{37}{100} = 0.37
+                $
+
+                <b>Solution: $1st$ Method: Manual/Arithmetic Method</b> <br>
+                (1.) $\$7,000.00$ falls in the first piece. <br>
+                tax for $\$7000.00$ income @ $10\%$ per $\$$ earned = $7000 * 0.1 = 700$ <br>
+                tax for taxable income of <mark>$\$7,000.00$</mark> = <mark>$\$700.00$</mark> <br><br>
+
+                (2.) $\$12,575.00$ falls in the second piece. <br>
+                Before we use the second piece, we have to go through the first piece first. <br>
+                <b>First Piece for $\$9525.00$ </b> <br>
+                <b>$9525.00$ of the $12575.00$ is taxed at $10\%$</b> <br>
+                tax for $\$9525.00$ income @ $10\%$ per $\$$ earned = $9525.00 * 0.1 = 952.50$ <br>
+                We are done with the maximum taxable income that can be taxed at the first piece of $10\%$ <br>
+                We have to move on to the second piece. <br>
+                $12575.00 - 9525.00 = 3050.00$ <br>
+                The rest of the $\$3050.00$ is taxed at $12\%$ <br>
+                <b>Second Piece for $\$3050.00$ </b> <br>
+                tax for $\$3050.00$ income @ $12\%$ per $\$$ earned = $3050.00 * 0.12 = 366.00$ <br>
+                $952.50 + 366.00 = 1318.50$ <br>
+                tax for taxable income of <mark>$\$12,575.00$</mark> = <mark>$\$1,318.50$</mark> <br><br>
+
+                (3.) $\$43,750.00$ falls in the third piece. <br>
+                Before we use the third piece, we have to go through the first and second pieces. <br>
+                <b>First Piece for $\$9525.00$ </b> <br>
+                <b>$9525.00$ of the $12575.00$ is taxed at $10\%$</b> <br>
+                tax for $\$9525.00$ income @ $10\%$ per $\$$ earned = $9525.00 * 0.1 = 952.50$ <br>
+                We are done with the maximum taxable income that can be taxed at the first piece of $10\%$ <br>
+                We have to move on to the second piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the second tax rate. <br><br>
+                <i>
+                    Student: So, do we need to subtract $9525.00$ from $43750.28$ <br>
+                    Teacher: No, we do not. <br>
+                    Here is the thing. <br>
+                    We know already that $43750.28$ falls in the third tax bracket. <br>
+                    Student: That is correct. <br>
+                    Teacher: $9,525$ of that money is taxed at $10\%$ <br>
+                    Student: Okay... <br>
+                    Teacher: Any money above $9525$ but not exceeding $38700$ is taxed at $12\%$ <br>
+                    Not all the money (43750.00 - 9525 = 34225.00) is taxed at $12\%$ <br>
+                    Let us look at it this way <br>
+                    For $43750.28$ <br>
+                    $[0, 9525]$ is taxed at $10\%$ <br>
+                    $(9525, 38700]$ is taxed at $12\%$ <br>
+                    $(38700, 43750.28]$ is taxed at $22\%$ <br>
+                    Do you realize the mistake that would have been made if $34225.00$ was taxed at $12\%$ <br>
+                    Student: Yes, the U,S government would lose money. <br>
+                    Teacher: That is right...and we do not ... <br>
+                    Student: want them to lose money. <br>
+                    Teacher: Correct. That money could be used to help the poor. <br>
+                    Student: I hope they help poor people. There is a high rate of hunger and poverty in the world. <br>
+                    Teacher: I hope and pray so too. <br>
+                    So, as you can see: <br>
+                    The range of $9525 - 0 = 9525$ is taxed at $10\%$ <br>
+                    Student: The range of $38700 - 9525 = 29175$ is taxed at $12\%$ <br>
+                    Teacher: Correct! Go ahead... <br>
+                    Student: and the range of $43750.00 - 38700 = 5050.00$ is taxed at $22\%$
+                    Teacher: Perfecto!
+                </i>
+                <br><br>
+                $38700.00 - 9525.00 = 29175.00$ <br>
+                $\$29175.00$ is taxed at $12\%$ <br>
+                <b>Second Piece for $\$29175.00$ </b> <br>
+                tax for $\$29175.00$ income @ $12\%$ per $\$$ earned = $29175.00 * 0.12 = 3501.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the second piece of $12\%$ <br>
+                We have to move on to the third piece. <br>
+                $43750.00 - 38700.00 = 5050.00$ <br>
+                The rest of the $\$5050.00$ is taxed at $22\%$ <br>
+                <b>Third Piece for $\$14575.00$ </b> <br>
+                tax for $\$5050.00$ income @ $22\%$ per $\$$ earned = $5050.00 * 0.22 = 1111.00$ <br>
+                $952.50 + 3501.00 + 1111.00 = 5564.50$ <br>
+                tax for taxable income of <mark>$\$43,750.00$</mark> = <mark>$\$5,564.50$</mark> <br><br>
+
+                (4.) $\$120, 327.00$ falls in the fourth piece. <br>
+                Before we use the fourth piece, we have to go through the first, second, and third pieces. <br>
+                <b>First Piece for $\$9525.00$ </b> <br>
+                <b>$9525.00$ of the $12575.00$ is taxed at $10\%$</b> <br>
+                tax for $\$9525.00$ income @ $10\%$ per $\$$ earned = $9525.00 * 0.1 = 952.50$ <br>
+                We are done with the maximum taxable income that can be taxed at the first piece of $10\%$ <br>
+                We move to the second piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the second tax rate. <br>
+                $38700.00 - 9525.00 = 29175.00$ <br>
+                $\$29175.00$ is taxed at $12\%$ <br>
+                <b>Second Piece for $\$29175.00$ </b> <br>
+                tax for $\$29175.00$ income @ $12\%$ per $\$$ earned = $29175.00 * 0.12 = 3501.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the second piece of $12\%$ <br>
+                We move to the third piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the third tax rate. <br>
+                $82500.00 - 38700.00 = 43800.00$ <br>
+                $\$43800.00$ is taxed at $22\%$ <br>
+                <b>Third Piece for $\$43800.00$ </b> <br>
+                tax for $\$43800.00$ income @ $22\%$ per $\$$ earned = $43800.00 * 0.22 = 9636.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the third piece of $22\%$ <br>
+                We move to the fourth piece. <br>
+                $120327.00 - 82500.00 = 37827.00$ <br>
+                The rest of the $\$37827.00$ is taxed at $24\%$ <br>
+                <b>Fourth Piece for $\$37827.00$ </b> <br>
+                tax for $\$37827.00$ income @ $24\%$ per $\$$ earned = $37827.00 * 0.24 = 9078.48$ <br>
+                $952.50 + 3501.00 + 9636.00 + 9078.48 = 23167.98$ <br>
+                tax for taxable income of <mark>$\$120,327.00$</mark> = <mark>$\$23,167.98$</mark> <br><br>
+
+                (5.) $\$165, 428.00$ falls in the fifth piece. <br>
+                Before we use the fifth piece, we have to go through the first, second, third, and fourth pieces. <br>
+                <b>First Piece for $\$9525.00$ </b> <br>
+                <b>$9525.00$ of the $12575.00$ is taxed at $10\%$</b> <br>
+                tax for $\$9525.00$ income @ $10\%$ per $\$$ earned = $9525.00 * 0.1 = 952.50$ <br>
+                We are done with the maximum taxable income that can be taxed at the first piece of $10\%$ <br>
+                We move to the second piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the second tax rate. <br>
+                $38700.00 - 9525.00 = 29175.00$ <br>
+                $\$29175.00$ is taxed at $12\%$ <br>
+                <b>Second Piece for $\$29175.00$ </b> <br>
+                tax for $\$29175.00$ income @ $12\%$ per $\$$ earned = $29175.00 * 0.12 = 3501.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the second piece of $12\%$ <br>
+                We move to the third piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the third tax rate. <br>
+                $82500.00 - 38700.00 = 43800.00$ <br>
+                $\$43800.00$ is taxed at $22\%$ <br>
+                <b>Third Piece for $\$43800.00$ </b> <br>
+                tax for $\$43800.00$ income @ $22\%$ per $\$$ earned = $43800.00 * 0.22 = 9636.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the third piece of $22\%$ <br>
+                We move to the fourth piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the fourth tax rate. <br>
+                $157500.00 - 82500.00 = 75000.00$ <br>
+                $\$75000.00$ is taxed at $24\%$ <br>
+                <b>Fourth Piece for $\$75000.00$ </b> <br>
+                tax for $\$75000.00$ income @ $24\%$ per $\$$ earned = $75000.00 * 0.24 = 18000.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the fourth piece of $24\%$ <br>
+                We move to the fifth piece. <br>
+                $165428.00 - 157500.00 = 7928.00$ <br>
+                The rest of the $\$7928.00$ is taxed at $32\%$ <br>
+                <b>Fifth Piece for $\$7928.00$ </b> <br>
+                tax for $\$7928.00$ income @ $32\%$ per $\$$ earned = $7928.00 * 0.32 = 2536.96$ <br>
+                $952.50 + 3501.00 + 9636.00 + 18000 + 2536.96 = 34626.46$ <br>
+                tax for taxable income of <mark>$\$165,428.00$</mark> = <mark>$\$34,626.46$</mark> <br><br>
+
+                (6.) $\$234,543.00$ falls in the sixth piece. <br>
+                Before we use the sixth piece, we have to go through the first, second, third, fourth, and fifth pieces.
+                <br>
+                <b>First Piece for $\$9525.00$ </b> <br>
+                <b>$9525.00$ of the $12575.00$ is taxed at $10\%$</b> <br>
+                tax for $\$9525.00$ income @ $10\%$ per $\$$ earned = $9525.00 * 0.1 = 952.50$ <br>
+                We are done with the maximum taxable income that can be taxed at the first piece of $10\%$ <br>
+                We move to the second piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the second tax rate. <br>
+                $38700.00 - 9525.00 = 29175.00$ <br>
+                $\$29175.00$ is taxed at $12\%$ <br>
+                <b>Second Piece for $\$29175.00$ </b> <br>
+                tax for $\$29175.00$ income @ $12\%$ per $\$$ earned = $29175.00 * 0.12 = 3501.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the second piece of $12\%$ <br>
+                We move to the third piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the third tax rate. <br>
+                $82500.00 - 38700.00 = 43800.00$ <br>
+                $\$43800.00$ is taxed at $22\%$ <br>
+                <b>Third Piece for $\$43800.00$ </b> <br>
+                tax for $\$43800.00$ income @ $22\%$ per $\$$ earned = $43800.00 * 0.22 = 9636.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the third piece of $22\%$ <br>
+                We move to the fourth piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the fourth tax rate. <br>
+                $157500.00 - 82500.00 = 75000.00$ <br>
+                $\$75000.00$ is taxed at $24\%$ <br>
+                <b>Fourth Piece for $\$75000.00$ </b> <br>
+                tax for $\$75000.00$ income @ $24\%$ per $\$$ earned = $75000.00 * 0.24 = 18000.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the fourth piece of $24\%$ <br>
+                We move to the fifth piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the fifth tax rate. <br>
+                $200000.00 - 157500.00 = 42500.00$ <br>
+                $\$42500.00$ is taxed at $32\%$ <br>
+                <b>Fifth Piece for $\$42500.00$ </b> <br>
+                tax for $\$42500.00$ income @ $32\%$ per $\$$ earned = $42500.00 * 0.32 = 13600.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the fifth piece of $32\%$ <br>
+                We move to the sixth piece. <br>
+                $234543.00 - 200000.00 = 34543.00$ <br>
+                The rest of the $\$34543.00$ is taxed at $35\%$ <br>
+                <b>Sixth Piece for $\$34543.00$ </b> <br>
+                tax for $\$34543.00$ income @ $35\%$ per $\$$ earned = $34543.00 * 0.35 = 12090.05$ <br>
+                $952.50 + 3501.00 + 9636.00 + 18000 + 13600 + 12090.05 = 57779.55$ <br>
+                tax for taxable income of <mark>$\$234,543.00$</mark> = <mark>$\$57,779.55$</mark> <br><br>
+
+                (7.) $\$700,712.00$ falls in the seventh piece. <br>
+                Before we use the seventh piece (last piece), we have to go through the previous six pieces in order.
+                <br>
+                <b>First Piece for $\$9525.00$ </b> <br>
+                <b>$9525.00$ of the $12575.00$ is taxed at $10\%$</b> <br>
+                tax for $\$9525.00$ income @ $10\%$ per $\$$ earned = $9525.00 * 0.1 = 952.50$ <br>
+                We are done with the maximum taxable income that can be taxed at the first piece of $10\%$ <br>
+                We move to the second piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the second tax rate. <br>
+                $38700.00 - 9525.00 = 29175.00$ <br>
+                $\$29175.00$ is taxed at $12\%$ <br>
+                <b>Second Piece for $\$29175.00$ </b> <br>
+                tax for $\$29175.00$ income @ $12\%$ per $\$$ earned = $29175.00 * 0.12 = 3501.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the second piece of $12\%$ <br>
+                We move to the third piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the third tax rate. <br>
+                $82500.00 - 38700.00 = 43800.00$ <br>
+                $\$43800.00$ is taxed at $22\%$ <br>
+                <b>Third Piece for $\$43800.00$ </b> <br>
+                tax for $\$43800.00$ income @ $22\%$ per $\$$ earned = $43800.00 * 0.22 = 9636.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the third piece of $22\%$ <br>
+                We move to the fourth piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the fourth tax rate. <br>
+                $157500.00 - 82500.00 = 75000.00$ <br>
+                $\$75000.00$ is taxed at $24\%$ <br>
+                <b>Fourth Piece for $\$75000.00$ </b> <br>
+                tax for $\$75000.00$ income @ $24\%$ per $\$$ earned = $75000.00 * 0.24 = 18000.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the fourth piece of $24\%$ <br>
+                We move to the fifth piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the fifth tax rate. <br>
+                $200000.00 - 157500.00 = 42500.00$ <br>
+                $\$42500.00$ is taxed at $32\%$ <br>
+                <b>Fifth Piece for $\$42500.00$ </b> <br>
+                tax for $\$42500.00$ income @ $32\%$ per $\$$ earned = $42500.00 * 0.32 = 13600.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the fifth piece of $32\%$ <br>
+                We move to the sixth piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the sixth tax rate. <br>
+                $500000.00 - 200000.00 = 300000.00$ <br>
+                $\$300000.00$ is taxed at $35\%$ <br>
+                <b>Sixth Piece for $\$300000.00$ </b> <br>
+                tax for $\$300000.00$ income @ $35\%$ per $\$$ earned = $300000.00 * 0.35 = 105000.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the sixth piece of $35\%$ <br>
+                We move to the seventh piece. <br>
+                $700712.00 - 500000.00 = 200712.00$ <br>
+                The rest of the $\$200712.00$ is taxed at $37\%$ <br>
+                <b>Seventh Piece for $\$200712.00$ </b> <br>
+                tax for $\$200712.00$ income @ $37\%$ per $\$$ earned = $200712.00 * 0.37 = 74263.44$ <br>
+                $952.50 + 3501.00 + 9636.00 + 18000 + 13600 + 105000 + 74263.44 = 224952.94$ <br>
+                tax for taxable income of <mark>$\$700,712.00$</mark> = <mark>$\$224,952.94$</mark> <br><br>
+
+                <i>
+                    Some students may ask if it is possible to have just one function that will calculate the tax for
+                    any taxable
+                    income. <br>
+                    Or is it possible to find the tax for a taxable income that falls in the second piece, without
+                    having to go through
+                    the first piece?
+                    <br><br>
+
+                    Those are really interesting questions! <br>
+                    That is one of the reasons for studying piecewise functions &#x263A;&#x263A;&#x263A;
+                    <br><br>
+
+                    Please specify the importance of not rounding intermediate calculations. <br>
+                    Please specify the importance of rounding only the final answer to two decimal place (because it is
+                    dollars and
+                    cents).
+                </i>
+                <br><br>
+
+                <b>Solution: 2nd Method: Piecewise Function/Algebraic Method</b> <br>
+                Do we have to solve this manually all the time? That will be time consuming! <br>
+                We can write it as a piecewise function and use each function to calculate the taxes that corresponds to
+                each taxable
+                income. <br>
+                Besides, writing it as a piecewise function helps us to write a computer program that will calculate the
+                taxes for any
+                amount of taxable income.
+
+                <br><br>
+
+                <b>Define the variables.</b> <br>
+                Let $p$ = taxable income (in $\$$) <br>
+                Let $t$ = taxes (in $\$$) <br>
+                The taxes paid is a function of the income earned. <br>
+                Taxes is the dependent variable. <br>
+                Taxable income is the independent variable. <br>
+                $t = f(p)$ <br>
+                We can also write is as $t(p)$ <br>
+                This application has <u>seven pieces.</u>
+
+                <br><br>
+
+                <u>For the first piece;</u> <br>
+                tax for $\$p$ income @ $10\%$ per $\$$ earned = $p * 0.1 = 0.1p$ <br>
+                $t(p) = 0.1p$ <br><br>
+
+                <u>For the second piece;</u> <br>
+                We have to "finish" with the first piece first <br>
+                <b>First Piece for $\$9525.00$ </b> <br>
+                tax for $\$9525$ income @ $10\%$ per $\$$ earned = $9525 * 0.1 = 952.5$ <br>
+                Then, we move to the second piece. <br>
+                <b>Second Piece for $\$p - 9525.00$ </b> <br>
+                The remaining income, $(p - 9525)$ is taxed at $12\%$ <br>
+                So, we have to multiply the remaining income by $0.12$ <br>
+                $t(p) = 952.5 + 0.12(p - 9525)$ <br>
+                $t(p) = 952.5 + 0.12p - 1143$ <br>
+                $t(p) = 0.12p - 190.5$ <br><br>
+
+                <u>For the third piece;</u> <br>
+                We have to "finish" with the first and second pieces <br>
+                <b>First Piece for $\$9525.00$ </b> <br>
+                tax for $\$9525$ income @ $10\%$ per $\$$ earned = $9525 * 0.1 = 952.5$ <br>
+                Then, we move to the second piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the second tax rate. <br>
+                <i>Please review the scenario in the Manual/Arithmetic Method</i> <br>
+                $38700.00 - 9525.00 = 29175.00$ <br>
+                $\$29175.00$ is taxed at $12\%$ <br>
+                <b>Second Piece for $\$29175.00$ </b> <br>
+                tax for $\$29175.00$ income @ $12\%$ per $\$$ earned = $29175.00 * 0.12 = 3501.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the second piece of $12\%$ <br>
+                We have to move on to the third piece. <br>
+                <b>Third Piece for $\$p - 38700.00$ </b> <br>
+                The remaining income, $(p - 38700)$ is taxed at $22\%$ <br>
+                So, we have to multiply the remaining income by $0.22$ <br>
+                $t(p) = 952.5 + 3501 + 0.22(p - 38700)$ <br>
+                $t(p) = 952.5 + 3501 + 0.22p - 8514$ <br>
+                $t(p) = 0.22p - 4060.5$
+
+                <br><br>
+
+                <u>For the fourth piece;</u> <br>
+                We have to "finish" with the first, second, and third pieces <br>
+                <b>First Piece for $\$9525.00$ </b> <br>
+                tax for $\$9525$ income @ $10\%$ per $\$$ earned = $9525 * 0.1 = 952.5$ <br>
+                Then, we move to the second piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the second tax rate. <br>
+                <i>Please review the scenario in the Manual/Arithmetic Method</i> <br>
+                $38700.00 - 9525.00 = 29175.00$ <br>
+                $\$29175.00$ is taxed at $12\%$ <br>
+                <b>Second Piece for $\$29175.00$ </b> <br>
+                tax for $\$29175.00$ income @ $12\%$ per $\$$ earned = $29175.00 * 0.12 = 3501.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the second piece of $12\%$ <br>
+                We move to the third piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the third tax rate. <br>
+                $82500.00 - 38700.00 = 43800.00$ <br>
+                $\$43800.00$ is taxed at $22\%$ <br>
+                <b>Third Piece for $\$43800.00$ </b> <br>
+                tax for $\$43800.00$ income @ $22\%$ per $\$$ earned = $43800.00 * 0.22 = 9636.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the second piece of $22\%$ <br>
+                We move to the fourth piece. <br>
+                <b>Fourth Piece for $\$p - 82500.00$ </b> <br>
+                The remaining income, $(p - 82500)$ is taxed at $24\%$ <br>
+                So, we have to multiply the remaining income by $0.24$ <br>
+                $t(p) = 952.5 + 3501 + + 9636 + 0.24(p - 82500)$ <br>
+                $t(p) = 952.5 + 3501 + 9636 + 0.24p - 19800$ <br>
+                $t(p) = 0.24p - 5710.5$
+
+                <br><br>
+
+                <u>For the fifth piece;</u> <br>
+                We have to "finish" with the first, second, third, and fourth pieces <br>
+                <b>First Piece for $\$9525.00$ </b> <br>
+                tax for $\$9525$ income @ $10\%$ per $\$$ earned = $9525 * 0.1 = 952.5$ <br>
+                Then, we move to the second piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the second tax rate. <br>
+                <i>Please review the scenario in the Manual/Arithmetic Method</i> <br>
+                $38700.00 - 9525.00 = 29175.00$ <br>
+                $\$29175.00$ is taxed at $12\%$ <br>
+                <b>Second Piece for $\$29175.00$ </b> <br>
+                tax for $\$29175.00$ income @ $12\%$ per $\$$ earned = $29175.00 * 0.12 = 3501.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the second piece of $12\%$ <br>
+                We move to the third piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the third tax rate. <br>
+                $82500.00 - 38700.00 = 43800.00$ <br>
+                $\$43800.00$ is taxed at $22\%$ <br>
+                <b>Third Piece for $\$43800.00$ </b> <br>
+                tax for $\$43800.00$ income @ $22\%$ per $\$$ earned = $43800.00 * 0.22 = 9636.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the third piece of $22\%$ <br>
+                We move to the fourth piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the fourth tax rate. <br>
+                $157500.00 - 82500.00 = 75000.00$ <br>
+                $\$75000.00$ is taxed at $24\%$ <br>
+                <b>Fourth Piece for $\$75000.00$ </b> <br>
+                tax for $\$75000.00$ income @ $24\%$ per $\$$ earned = $75000.00 * 0.24 = 18000.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the fourth piece of $24\%$ <br>
+                We move to the fifth piece. <br>
+                <b>Fifth Piece for $\$p - 157500.00$ </b> <br>
+                The remaining income, $(p - 157500)$ is taxed at $32\%$ <br>
+                So, we have to multiply the remaining income by $0.32$ <br>
+                $t(p) = 952.5 + 3501 + + 9636 + 18000 + 0.32(p - 157500)$ <br>
+                $t(p) = 952.5 + 3501 + 9636 + 18000 + 0.32p - 50400$ <br>
+                $t(p) = 0.32p - 18310.5$
+
+                <br><br>
+
+                <u>For the sixth piece;</u> <br>
+                We have to "finish" with the first, second, third, fourth, and fifth pieces <br>
+                <b>First Piece for $\$9525.00$ </b> <br>
+                tax for $\$9525$ income @ $10\%$ per $\$$ earned = $9525 * 0.1 = 952.5$ <br>
+                Then, we move to the second piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the second tax rate. <br>
+                <i>Please review the scenario in the Manual/Arithmetic Method</i> <br>
+                $38700.00 - 9525.00 = 29175.00$ <br>
+                $\$29175.00$ is taxed at $12\%$ <br>
+                <b>Second Piece for $\$29175.00$ </b> <br>
+                tax for $\$29175.00$ income @ $12\%$ per $\$$ earned = $29175.00 * 0.12 = 3501.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the second piece of $12\%$ <br>
+                We move to the third piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the third tax rate. <br>
+                $82500.00 - 38700.00 = 43800.00$ <br>
+                $\$43800.00$ is taxed at $22\%$ <br>
+                <b>Third Piece for $\$43800.00$ </b> <br>
+                tax for $\$43800.00$ income @ $22\%$ per $\$$ earned = $43800.00 * 0.22 = 9636.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the third piece of $22\%$ <br>
+                We move to the fourth piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the fourth tax rate. <br>
+                $157500.00 - 82500.00 = 75000.00$ <br>
+                $\$75000.00$ is taxed at $24\%$ <br>
+                <b>Fourth Piece for $\$75000.00$ </b> <br>
+                tax for $\$75000.00$ income @ $24\%$ per $\$$ earned = $75000.00 * 0.24 = 18000.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the fourth piece of $24\%$ <br>
+                We move to the fifth piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the fifth tax rate. <br>
+                $200000.00 - 157500.00 = 42500.00$ <br>
+                $\$42500.00$ is taxed at $32\%$ <br>
+                <b>Fifth Piece for $\$42500.00$ </b> <br>
+                tax for $\$42500.00$ income @ $32\%$ per $\$$ earned = $42500.00 * 0.32 = 13600.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the fifth piece of $32\%$ <br>
+                We move to the sixth piece. <br>
+                <b>Sixth Piece for $\$p - 200000.00$ </b> <br>
+                The remaining income, $(p - 200000)$ is taxed at $35\%$ <br>
+                So, we have to multiply the remaining income by $0.35$ <br>
+                $t(p) = 952.5 + 3501 + + 9636 + 18000 + 13600 + 0.35(p - 200000)$ <br>
+                $t(p) = 952.5 + 3501 + 9636 + 18000 + 13600 + 0.35p - 70000$ <br>
+                $t(p) = 0.35p - 24310.5$
+
+                <br><br>
+
+                <u>For the seventh piece;</u> <br>
+                We have to "finish" with the previous six pieces in order <br>
+                <b>First Piece for $\$9525.00$ </b> <br>
+                tax for $\$9525$ income @ $10\%$ per $\$$ earned = $9525 * 0.1 = 952.5$ <br>
+                Then, we move to the second piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the second tax rate. <br>
+                <i>Please review the scenario in the Manual/Arithmetic Method</i> <br>
+                $38700.00 - 9525.00 = 29175.00$ <br>
+                $\$29175.00$ is taxed at $12\%$ <br>
+                <b>Second Piece for $\$29175.00$ </b> <br>
+                tax for $\$29175.00$ income @ $12\%$ per $\$$ earned = $29175.00 * 0.12 = 3501.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the second piece of $12\%$ <br>
+                We move to the third piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the third tax rate. <br>
+                $82500.00 - 38700.00 = 43800.00$ <br>
+                $\$43800.00$ is taxed at $22\%$ <br>
+                <b>Third Piece for $\$43800.00$ </b> <br>
+                tax for $\$43800.00$ income @ $22\%$ per $\$$ earned = $43800.00 * 0.22 = 9636.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the third piece of $22\%$ <br>
+                We move to the fourth piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the fourth tax rate. <br>
+                $157500.00 - 82500.00 = 75000.00$ <br>
+                $\$75000.00$ is taxed at $24\%$ <br>
+                <b>Fourth Piece for $\$75000.00$ </b> <br>
+                tax for $\$75000.00$ income @ $24\%$ per $\$$ earned = $75000.00 * 0.24 = 18000.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the fourth piece of $24\%$ <br>
+                We move to the fifth piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the fifth tax rate. <br>
+                $200000.00 - 157500.00 = 42500.00$ <br>
+                $\$42500.00$ is taxed at $32\%$ <br>
+                <b>Fifth Piece for $\$42500.00$ </b> <br>
+                tax for $\$42500.00$ income @ $32\%$ per $\$$ earned = $42500.00 * 0.32 = 13600.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the fifth piece of $32\%$ <br>
+                We move to the sixth piece. <br>
+                We need to calculate the range of taxable income that should be taxed at the sixth tax rate. <br>
+                $500000.00 - 200000.00 = 300000.00$ <br>
+                $\$300000.00$ is taxed at $35\%$ <br>
+                <b>Sixth Piece for $\$300000.00$ </b> <br>
+                tax for $\$300000.00$ income @ $35\%$ per $\$$ earned = $300000.00 * 0.35 = 105000.00$ <br>
+                We are done with the maximum taxable income that can be taxed at the sixth piece of $35\%$ <br>
+                We move to the seventh piece. <br>
+                <b>Seventh Piece for $\$p - 500000.00$ </b> <br>
+                The remaining income, $(p - 500000)$ is taxed at $37\%$ <br>
+                So, we have to multiply the remaining income by $0.37$ <br>
+                $t(p) = 952.5 + 3501 + + 9636 + 18000 + 13600 + 105000 + 0.37(p - 500000)$ <br>
+                $t(p) = 952.5 + 3501 + 9636 + 18000 + 13600 + 105000 + 0.37p - 185000$ <br>
+                $t(p) = 0.37p - 34310.5$
+
+                <br><br>
+
+                We can now write the piecewise function as: <br>
+
+                $$
+                t(p) =
+                \begin{cases}
+                \\[3ex]
+                0.1p; & \quad 0 \leq p \leq 9525 \\[3ex]
+                0.12p - 190.5; & \quad 9525 \lt p \leq 38700 \\[3ex]
+                0.22p - 4060.5; & \quad 38700 \lt p \leq 82500 \\[3ex]
+                0.24p - 5710.5; & \quad 82500 \lt p \leq 157500 \\[3ex]
+                0.32p - 18310.5; & \quad 157500 \lt p \leq 200000 \\[3ex]
+                0.35p - 24310.5; & \quad 200000 \lt p \leq 500000 \\[3ex]
+                0.37p - 34310.5; & \quad p \gt 500000
+                \end{cases}
+                $$
+
+                Let us recalculate all the questions using the Piecewise Function method. <br><br>
+                (1.) $\$7,000.00$ falls in the first piece. <br><br>
+                $
+                t(p) = 0.1p \\[3ex]
+                t(7000) = 0.1(7000) \\[3ex]
+                = 700 \\[3ex]
+                $
+                tax for taxable income of <mark>$\$7,000.00$</mark> = <mark>$\$700.00$</mark> <br><br>
+
+                (2.) $\$12,575.00$ falls in the second piece. <br><br>
+                $
+                t(p) = 0.12p - 190.5 \\[3ex]
+                t(12575) = 0.12(12575) - 190.5 \\[3ex]
+                = 1509 - 190.5 \\[3ex]
+                = 1318.5 \\[3ex]
+                $
+                tax for taxable income of <mark>$\$12,575.00$</mark> = <mark>$\$1,318.50$</mark> <br><br>
+
+                (3.) $\$43,750.00$ falls in the third piece. <br><br>
+                $
+                t(p) = 0.22p - 4060.5 \\[3ex]
+                t(43750) = 0.22(43750) - 4060.5 \\[3ex]
+                = 9625 - 4060.5 \\[3ex]
+                = 5564.5 \\[3ex]
+                $
+                tax for taxable income of <mark>$\$43,750.00$</mark> = <mark>$\$5,564.50$</mark> <br><br>
+
+                (4.) $\$120,327.00$ falls in the fourth piece. <br><br>
+                $
+                t(p) = 0.24p - 5710.5 \\[3ex]
+                t(120327) = 0.24(120327) - 5710.5 \\[3ex]
+                = 28878.48 - 5710.5 \\[3ex]
+                = 23167.98 \\[3ex]
+                $
+                tax for taxable income of <mark>$\$120,327.00$</mark> = <mark>$\$23,167.98$</mark> <br><br>
+
+                (5.) $\$165,428.00$ falls in the fifth piece. <br><br>
+                $
+                t(p) = 0.32p - 18310.5 \\[3ex]
+                t(165428) = 0.32(165428) - 18310.5 \\[3ex]
+                = 52936.96 - 18310.5 \\[3ex]
+                = 34626.46 \\[3ex]
+                $
+                tax for taxable income of <mark>$\$165,428.00$</mark> = <mark>$\$34,626.46$</mark> <br><br>
+
+                (6.) $\$234,543.00$ falls in the sixth piece. <br><br>
+                $
+                t(p) = 0.35p - 24310.5 \\[3ex]
+                t(234543) = 0.35(234543) - 24310.5 \\[3ex]
+                = 82090.05 - 24310.5 \\[3ex]
+                = 57779.55 \\[3ex]
+                $
+                tax for taxable income of <mark>$\$234,543.00$</mark> = <mark>$\$57,779.55$</mark> <br><br>
+
+                (7.) $\$700,712.00$ falls in the seventh piece. <br><br>
+                $
+                t(p) = 0.37p - 34310.5 \\[3ex]
+                t(700712) = 0.37(700712) - 34310.5 \\[3ex]
+                = 259263.44 - 34310.5 \\[3ex]
+                = 224952.94 \\[3ex]
+                $
+                tax for taxable income of <mark>$\$700,712.00$</mark> = <mark>$\$224,952.94$</mark>
+                <br><br>
+
+                <i>
+                    Which of the two methods do you prefer? <br>
+                    What are your reasons? <br>
+                    What are the pros and cons that you see for each method? <br>
+                    Do you have any other method for solving Piecewise Function applications?
+                </i>
+                <br><br>
+                The Piecewise Function for the <b>Head of Household</b> is:
+                $$
+                t(p) =
+                \begin{cases}
+                \\[3ex]
+                0.1p; & \quad 0 \leq p \leq 13600 \\[3ex]
+                0.12p - 272; & \quad 13600 \lt p \leq 51800 \\[3ex]
+                0.22p - 5452; & \quad 51800 \lt p \leq 82500 \\[3ex]
+                0.24p - 7102; & \quad 82500 \lt p \leq 157500 \\[3ex]
+                0.32p - 19702; & \quad 157500 \lt p \leq 200000 \\[3ex]
+                0.35p - 25702; & \quad 200000 \lt p \leq 500000 \\[3ex]
+                0.37p - 35702; & \quad p \gt 500000
+                \end{cases}
+                $$
+                <br><br>
+                The Piecewise Function for the <b>Married Filing Jointly or Qualifying Widow</b> is:
+                $$
+                t(p) =
+                \begin{cases}
+                \\[3ex]
+                0.1p; & \quad 0 \leq p \leq 19050 \\[3ex]
+                0.12p - 381; & \quad 19050 \lt p \leq 77400 \\[3ex]
+                0.22p - 8121; & \quad 77400 \lt p \leq 165000 \\[3ex]
+                0.24p - 11421; & \quad 165000 \lt p \leq 315000 \\[3ex]
+                0.32p - 36621; & \quad 315000 \lt p \leq 400000 \\[3ex]
+                0.35p - 48621; & \quad 400000 \lt p \leq 600000 \\[3ex]
+                0.37p - 60621; & \quad p \gt 600000
+                \end{cases}
+                $$
+                <br><br>
+                The Piecewise Function for the <b>Married Filing Separately</b> is:
+                $$
+                t(p) =
+                \begin{cases}
+                \\[3ex]
+                0.1p; & \quad 0 \leq p \leq 9525 \\[3ex]
+                0.12p - 190.5; & \quad 9525 \lt p \leq 38700 \\[3ex]
+                0.22p - 4060.5; & \quad 38700 \lt p \leq 82500 \\[3ex]
+                0.24p - 5710.5; & \quad 82500 \lt p \leq 157000 \\[3ex]
+                0.32p - 18270.5; & \quad 157000 \lt p \leq 200000 \\[3ex]
+                0.35p - 24270.5; & \quad 200000 \lt p \leq 300000 \\[3ex]
+                0.37p - 30270.5; & \quad p \gt 300000
+                \end{cases}
+                $$
+            </p>
+        </div>
+    </div>
+    <!-- End Example Guide -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://scholarlycommunication.github.io/Presentations/Projects/PreCalculus/PiecewiseFunctions/FederalTax.html"
+            class="w3-button w3-xlarge w3-square w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+
+    <!-- General Project Requirements -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="projectRequirements">
+            <h2>General Project Requirements</h2>
+            <p>
+                (1.) You may work as a group (peer tutor to teach/correct one another). <br>
+                However, this is an individual project. <br>
+                In other words, you will submit your own project.
+                <br><br>
+                (2.) No two projects should be the same. <br>
+                (a.) You may not do any of my examples even if the rates of the company have changed. <br>
+                Use my examples as guides to completing your own project.
+                <br><br>
+                (b.) You may not do any of the projects of my previous students. <br>
+                The Student Project samples are provided below. Use them as guides to completing your own project.
+
+                <br><br>
+
+                (3.) Research any real-world application of piecewise function. <br>
+                (a.) <b>All information used for this project should be verifiable on the direct website of the
+                    company/organization.</b> <br>
+                (b.) <b>Textbook examples are NOT allowed.</b> <br>
+                (c.) Find any application that has <b>at least 2 pieces</b>, and has <b>at least a function in each
+                    piece that includes the independent variable.</b> <br>
+                (d.) You may only do the income taxes of any of the filing options for the current year or future
+                year(s). <br>
+                If you do the income taxes of the filing options for the current year, it should be before the first IRS
+                deadline
+                for filing taxes.
+                If the IRS deadline is past, then you have to do for future years. <br>
+                You may NOT do the income taxes of any of the filing options of any previous year(s). <br>
+                (e.) Please write the direct website of the company/organization where you got the tax information. <br>
+                (f.) Please note that it is your responsibity to ensure that the tax information is correct. <br>
+                In that regard, please compare your information with the information across several reputable websites.
+                <br>
+                (g.) Please work only on Federal Taxes. Do not work on State, City, or County taxes. <br>
+                (h.) For <b>any filing option</b> you do, please <b>cover all the pieces.</b> <br>
+                You may file: <br>
+                (A.) Single OR <br>
+                (B.) Head of Household OR <br>
+                (C.) Married Filing Jointly or Qualifying Widow OR <br>
+                (D.) Married Filing Separately
+
+                <br><br>
+
+                (4.) As a student, you have free access to Microsoft Office suite of apps. <br>
+                (a.) Please download the <b>desktop apps of Microsoft Office</b> on your desktop/laptop (Windows and/or
+                Mac only). <br>
+                Do not use a chromebook. <br>
+                Do not use a tablet/iPad. <br>
+                Do not use a smartphone. <br>
+                Do not use the web app/sharepoint access of Microsoft Office. <br>
+                (<i>Please contact the IT/Tech Support for assistance if you do not know how to download the desktop
+                    app.</i>) <br>
+                In that regard, the project is to be typed using the desktop version/app of Microsoft Office Word
+                <b>only.</b>
+                <br><br>
+                (b.) The file name for the Microsoft Office Word project should be saved as:
+                <b>firstName</b>&ndash;<b>lastName</b>&ndash;<b>project</b> <br>
+                Use only hyphens between your first name and your last name; and between your last name and the word,
+                project. <br>
+                No spaces.
+                <br><br>
+                (c.) For all English terms/work (entire project): use Times New Roman; font size of 14; line spacing of
+                1.5. <br>
+                Further, please make sure you have appropriate spacing between each heading and/or section as
+                applicable. <br>
+                Your work should be well-formatted and visually appealing.
+                <br><br>
+                <img src="images/ProjectRequirements/first.jpg" alt="first step">
+                <br><br>
+                (d.) For all Math terms/work: symbols, variables, numbers, formulas, expressions, equations and
+                fractions among others,
+                the Math Equation Editor is required. <br>
+                (i.) The font is set to Cambria Math by default (set it to that font if it is not); font size of 14, and
+                align accordingly (preferably left-aligned). <br>
+                (ii.) To ensure appropriate spacing between your Math work, use a line spacing of 2.0. <br>
+                Alternatively, you may use line spacing of 1.5 but insert a space after each equation as applicable.
+                <br>
+                Your work should be well-formatted, organized, well-spaced (not compact), and visually appealing.
+                <br><br>
+                (iii.) Align the functions in each piece of the piecewise function accordingly. <br><br>
+                <img src="images/ProjectRequirements/second.png" alt="second step">
+                <br><br>
+                <img src="images/ProjectRequirements/third.png" alt="third step">
+                <br><br>
+                <img src="images/ProjectRequirements/fourth.jpg" alt="fourth step">
+                <br><br>
+                (e.) Include page numbers. You may include at the top of the pages or at the bottom of the pages but not
+                both. <br>
+                <img src="images/ProjectRequirements/fifth.jpg" alt="fifth step">
+
+                <br><br>
+
+                (5.) <b>Research Skills:</b> Cite your source properly. Use APA, MLA, or Chicago Manual of Style. <br>
+                Indicate the style you used.
+
+                <br><br>
+
+                (6.) <b>Writing Skills:</b> Write the <b>complete address of the direct page of the website</b> where
+                you found the application. <br>
+                Write the <i>main</i> application completely. <br>
+                Write all the information accoridngly as noted in the Example Guide and the Checklist.
+
+                <br><br>
+
+                (7.) (a.) <b>Mathematical Skills:</b> Show all work. <br>
+                <b>Arithmetic:</b> This is the Arithmetic method. <br>
+                Use <b>random numbers</b> to test the real-world application manually for <b>each piece.</b> <br>
+                Show all work including intermediate calculations/values. <br>
+                Write down your results.
+                <br><br>
+                (b.) <b>Algebra:</b> This is the Algebraic Method (Piecewise Function Method). <br>
+                Define your variables accordingly. <br>
+                Write a piecewise function for that application. <br>
+                Test the piecewise function with the <b>same random numbers</b> that you used for the Arithmetic method.
+                <br><br>
+                <u>Please NOTE:</u> <br>
+                (i.) The intermediate results should be the same for both methods. <br>
+                (ii.) The final results should be the same for both methods. <br>
+                If either of the results are not the same, there are issues. Please fix them.
+                <br><br>
+                These are the required information. <br>
+                You may or may not not use a table format. Use whatever format that is visually appealing. <br>
+                Please be creative.
+
+                <br><br>
+
+                (8.) Mr. C (SamDom For Peace) wants you to do this real-world project very well. <br>
+                Hence, he highly recommends that you submit a draft so he can give you feedback.
+                <br><br>
+                (a.) <u>First</u>: (Required): Please submit a clear image of the entire container in the
+                <i><b>Projects: Projects: Company Names and Websites</b></i> page in the Canvas course. <br>
+                The name of the Company that has the application should be written. <br>
+                The complete web address of the web page that has the application should be written. <br>
+                Please be very specific. In other words, I do not have to click on anything to see the application. <br>
+                Once I visit the webpage that you provided, I must see the application directly on that page. <br>
+                I shall review and respond.
+                <br><br>
+                (b.) <u>Second:</u> (Highly Recommended): When the company name and website is approved, please submit
+                your draft. <br>
+                Draft projects are not graded because they are drafts. They are only for feedback. <br>
+                If your professor gives you an opportunity to submit a draft, please use that opportunity. <br>
+                Submitting drafts is highly recommended. Submitting drafts is not required. <br>
+                It is highly recommended because I want to give you the opportunity to do your project very well and
+                make an excellent grade in it.
+                <br><br>
+                Please turn in your draft in the <b>Discussions</b> page &rightarrow; <b>Projects: Drafts</b> forum in
+                the Canvas course
+                (if you would like your colleagues to read my comments and avoid any mistakes that you made). <br>
+                You may also send it to me via email (if you do not want your colleagues to see my comments and learn
+                from the comments). <br>
+                I shall review and provide feedback. <br>
+                Then, review my feedback and make changes as necessary. <br>
+                Keep working with me until I give you the <i>green light</i> to turn in your actual project. This must
+                be done before
+                the final due date to turn in the actual project.
+                <br><br>
+                When everything is fine (after you make changes as applicable based on my feedback), please submit your
+                work in the appropriate area: <b>Assignments</b> page &rightarrow; <b>Piecewise Functions Project</b> in
+                the Canvas
+                course. <br>
+                Only the projects submitted in the appropriate place in the Canvas course are graded.
+
+                <br><br>
+
+                (9.) All work must be turned in by the final due date to receive credit. <br>
+                Please note the due dates listed in the course syllabus for the submission of the draft and the actual
+                project.
+                In the course syllabus, we have the: <br>
+                (a.) Initial due date for the Project Draft: Please turn in your draft.
+                <br><br>
+                (b.) Initial due date for the Project: If your draft is not ready for submission, keep working with me.
+                Make changes
+                based on my feedback and keep working with me. <br>
+                If you prefer not to turn in a draft, please review all the resources provided for you and do your
+                project well and
+                submit. <br>
+                <br><br>
+                (c.) Final due date for the Project Draft: This is necessary if you want a written feedback for your
+                draft. <br>
+                After this date, written feedback would not be provided for your draft. However, verbal feedback would
+                still be provided
+                during Office Hours/Student Engagement Hours/Live Sessions.
+                <br><br>
+                (d.) Final due date for the Project: All work must be turned in by this date to receive credit. <br>
+                After this date, no work may be accepted.
+            </p>
+
+            <table class="projectReq">
+                <caption>Required Information.</caption>
+                <tr>
+                    <td style="width: 30%;">Name:</td>
+                    <td style="width: 70%;"><i>Your name</i></td>
+                </tr>
+                <tr>
+                    <td>Date:</td>
+                    <td><i>The date</i></td>
+                </tr>
+                <tr>
+                    <td>Instructor:</td>
+                    <td>Samuel Chukwuemeka</td>
+                </tr>
+                <tr>
+                    <td>Project:</td>
+                    <td>Federal Tax Rates, Brackets, and Standard Deductions</td>
+                </tr>
+                <tr>
+                    <td>Company:</td>
+                    <td>
+                        Bankrate.com or IRS.com or <i>or any other website you used</i> <br>
+                        (https://www.bankrate.com/taxes/tax-brackets/) <br>
+                        (Name of the company and the direct Website of company that has the piecewise function)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Objectives:</td>
+                    <td>
+                        (1.) Calculate the federal income taxes of any United States resident/citizen within each
+                        taxable income
+                        bracket manually using Arithmetic method for year 2018. <br>
+                        (2.) Write a piecewise function of the federal income tax rates for year 2018. <br>
+                        (3.) Recalculate the <b>same</b> income tax of the United States resident/citizen for those
+                        income
+                        brackets algebraically using the Piecewise Function method for year 2018.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Information:</td>
+                    <td><i>Write the direct information from the direct website</i></td>
+                </tr>
+                <tr>
+                    <td>Arithmetic Method:</td>
+                    <td><i>Test <b>each piece</b> manually</i></td>
+                </tr>
+                <tr>
+                    <td>Piecewise Function:</td>
+                    <td><i>Write the piecewise function of the information</i></td>
+                </tr>
+                <tr>
+                    <td>Piecewise Function Method:</td>
+                    <td><i>Test the <b>same piece</b> algebraically</i></td>
+                </tr>
+                <tr>
+                    <td>Citation:</td>
+                    <td>
+                        <i>Indicate the type of citation format. <br>
+                            Cite your source(s) accordingly.</i>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- End General Project Requirements -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://scholarlycommunication.github.io/Presentations/Projects/PreCalculus/PiecewiseFunctions/FederalTax.html"
+            class="w3-button w3-xlarge w3-square w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+
+    <!-- Students Projects -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="studentsProjects">
+            <h2>Students Projects</h2>
+            <u>Please Note:</u> You should do at least one filing option (one or more). <br>
+            Angel is a diligent student who decided to do all filing options. <br>
+            I am impressed with his work: both the Math Part (document) and the Programming Part (the website app: link
+            is in the document)
+            <br><br>
+            First Sample: Angel: Federal Income Taxes: 2021: Filing in 2022 <br>
+            <object data="images/Projects/Angel-Tax.pdf" width="1400" height="700"></object>
+            <br><br>
+            <i>
+                The teacher should guide each student to the successful completion of the project. <br>
+                Let students know you are willing to help.
+            </i>
+        </div>
+    </div>
+    <!-- End Students Projects -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://scholarlycommunication.github.io/Presentations/Projects/PreCalculus/PiecewiseFunctions/FederalTax.html"
+            class="w3-button w3-xlarge w3-square w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+
+    <!-- Checklist -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="checklist">
+            <h2>Checklist</h2>
+            <p>
+                <b>Checklist for Piecewise Function Project: Water Bill</b> <br>
+                (1.) Project is a piecewise function that has <b>at least 2 pieces</b>, and has <b>at least a function
+                    in each piece that includes the independent variable.</b> <br>
+                (2.) Title of project. <br>
+                (3.) Name of Student. <br>
+                (4.) Name of Instructor. <br>
+                (5.) Objectives of project. <br>
+                (6.) Name of company. <br>
+                (7.) Direct website of company. <br>
+                (8.) Information on website written <i>as is</i> <br>
+                (9.) Arithmetic Method: <br>
+                (a.) Numbers in each piece, including 0 are tested. <br>
+                (b.) All work including conversions are shown. <br>
+                (c.) Intermediate calculations and values (before rounding) are shown. <br>
+                (d.) Final results (rounded) are written and unit (currency) is included. <br>
+                (10.) Piecewise Function: <br>
+                (a.) Variables are defined. <br>
+                (b.) All work is shown to determine the algebraic function for each piece. <br>
+                (c.) Piecewise function is developed and written well using beginning brace. <br>
+                (d.) The function in each piece and the corresponding domain is written well using any of the approved
+                formats including the use of semicolon or comma. <br>
+                (e.) The functions in the piecewise function are aligned properly. <br>
+                (11.) Algebraic Method (Piecewise Function Method): <br>
+                (a.) The same numbers including 0 tested using the Arithmetic Method, are also tested using the
+                Algebraic Method. <br>
+                Testing each number implies that each number within the domain of each piece in the piecewise function
+                is tested in the function for that piece. <br>
+                (b.) Intermediate calculations and values (before rounding) are shown. Intermediate values must be the
+                same as the Arithmetic Method. <br>
+                (c.) Final results (rounded) are the same as the Arithmetic Method and the unit is included. <br>
+                (12.) References: <br>
+                (a.) The reference style is specified. <br>
+                (b.) Sources are cited according to the specified reference style. <br>
+                (13.) Page numbers are included in every page. <br>
+                (14.) Times New Roman font, font size of 14, and line spacing of 1.5 is used for the project. <br>
+                (15.) Cambria Math font, font size of 14, and the Math Equation Editor is used for all Math terms
+                including numbers, arithmetic operations, symbols, variables,
+                fractions, formulas, expressions, and equations among others. <br>
+                (16.) Correct file name.
+            </p>
+        </div>
+    </div>
+    <!-- End Checklist -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://scholarlycommunication.github.io/Presentations/Projects/PreCalculus/PiecewiseFunctions/FederalTax.html"
+            class="w3-button w3-xlarge w3-square w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+
+    <!-- References -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="references">
+            <h3>References</h3>
+            <p>
+                Chukwuemeka, S.D (2016, April 30). <i>Samuel Chukwuemeka Tutorials - Math, Science, and Technology.</i>
+                Retrieved from <a href="https://mathematicscourses.github.io/PreCalculus/"
+                    target="_blank">https://mathematicscourses.github.io/PreCalculus/</a>
+                <br><br>
+                Free Visual Basic .NET Book. (n.d.). Books.Goalkicker.com. Retrieved January 16, 2021, from
+                https://books.goalkicker.com/VisualBasic_NETBook/
+                <br><br>
+                KathleenDollard. (2018, March 28). Visual Basic. Microsoft.com.
+                https://docs.microsoft.com/en-us/dotnet/visual-basic/
+                ‌<br><br>
+                ‌Zak, D. (2016). Programming with Microsoft Visual Basic 2015. Cengage Learning.
+                <br><br>
+
+            </p>
+        </div>
+    </div>
+    <!-- End References -->
+
+
+    <!-- END PAGE CONTENT -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://scholarlycommunication.github.io/Presentations/Projects/PreCalculus/PiecewiseFunctions/FederalTax.html"
+            class="w3-button w3-xlarge w3-square w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="cornsilk w3-center w3-padding-24">
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-3NJS4BW8RZ' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2020 &nbsp; SamDom4Peace Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages9.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

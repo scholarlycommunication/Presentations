@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+
+    <title>Piecewise Function Application: Power Bill</title>
+
+
+
+    <meta charset="UTF-8">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD, JESUS CHRIST. We are experts in piecewise functions.">
+
+    <meta name="keywords"
+        content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, 
+        math, mathematics, functions, piecewise functions, piecewise-defined functions, step functions,
+        stepwise-defined functions, domain, range, intercepts, x-intercept, y-intercept, graphs, slope, power bill, light bill,
+        greatest integer function, floor function, least integer function, ceiling function, pieces, piecewise function graphs">
+
+    <link href="styles/PiecewiseFunctions.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="w3-padding-24 cornsilk">
+        <h1>Where is the light bill? It is a Piecewise Function!</h1>
+    </header>
+    <!-- End Header -->
+
+    <br><br>
+
+    <!-- Page Content -->
+
+    <!-- Navigation Bar -->
+    <div class="w3-container w3-padding">
+        <div class="w3-content w3-padding-36">
+
+            <div class="w3-row-padding">
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#objectives';">Objectives</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#exampleGuide';">Example Guide</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#projectRequirements';">Project
+                            Requirements</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#studentsProjects';">Students Projects</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#checklist';">Checklist</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#rubric';">Rubric</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#references';">References</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics"
+                            onclick="location.href='https://scholarlycommunication.github.io/Presentations/';">Presentations</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Navigation Bar -->
+
+    <div class="w3-container w3-padding" id="objectives">
+        <div class="w3-padding-36">
+            <h2>Objectives</h2>
+            <p>
+                Students will: <br>
+                (1.) Discuss piecewise functions. <br>
+                (2.) Discuss real-world applications of piecewise-functions. <br>
+                (3.) Solve problems involving the application of piecewise functions. <br>
+                (4.) Meet one of the learning objectives of the VCCS (Virginia Community College System) standards for:
+                <br>
+                <a href="https://courses.vccs.edu/courses/MTH161-PreCalculusI/detail" target="_blank">MTH 161:
+                    PreCalculus I</a> <br>
+                <i>
+                    (Presents topics in power, polynomial, rational, exponential, and logarithmic functions, and systems
+                    of equations and inequalities.).
+                </i>
+                <br><br>
+                <a href="https://courses.vccs.edu/courses/MTH167-PreCalculuswithTrigonometry/detail" target="_blank">MTH
+                    167:
+                    PreCalculus with Trigonometry</a> <br>
+                <i>
+                    (Presents topics in power, polynomial, rational, exponential, and logarithmic functions, systems of
+                    equations, trigonometry, and trigonometric applications, including Law of Sines and Cosines, and an
+                    introduction to conics.).
+                </i>
+                <br><br>
+                (5.) Meet the QM (Quality Matters) and USDOE (United States Department of Education) requirements for
+                distance
+                education as regards the provision of RSI (Regular and Substantive Interaction). <br>
+                <a href="https://www.federalregister.gov/documents/2020/09/02/2020-18636/distance-education-and-innovation"
+                    target="_blank">Federal Register: Distance Education and Innovation</a> <br>
+                <a href="https://www.stjohns.edu/sites/default/files/2021-08/New_Federal_Requirements_for_Distance_Education.pdf"
+                    target="_blank">St. John's University: New Federal Requirements for Distance Education: Regular and
+                    Substantive
+                    Interaction (RSI)</a> <br>
+                Student &ndash; Content Interaction: Very high <br>
+                Student &ndash; Student Interaction: Flexible <br>
+                Student &ndash; Faculty Interaction: High
+            </p>
+        </div>
+    </div>
+
+    <!-- Example Guide -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="exampleGuide">
+            <h2>Residential Service Rates by Georgia Power; State of Georgia, USA</h2>
+            <p>
+                As of the 30th day of December, 2018; the <u>power rates</u> for the Residential Service during the
+                Summer
+                Period
+                (June - September) by Georgia Power
+                is found in the Georgia Power Bill Calculator of the Georgia Public Service Commission. <br>
+                The information is <a href="http://www.psc.state.ga.us/calc/electric/GPcalc.asp"
+                    target="_blank">here</a> <br>
+                It is great to know that the Georgia Public Service Commission developed a Power Bill calculator. <br>
+                We shall check our work with their calculator. <br>
+                And of course...we shall also check our work with my calculator.
+            </p>
+            <pre>
+                <u>The information is written here for you:</u>
+                Basic Service:          $10.00 
+                Tier                    Usage                   Cost per KWh
+                1st tier                up to 650KWh            $0.056582
+                2nd tier                next 350KWh             $0.093983
+                3rd tier                over 1000KWh            $0.097273 
+            </pre>
+
+            <p>
+                <b>Calculate the power costs for the following consumption of power.</b>
+                (1.) $0$ KWh <br>
+                (2.) $300$ KWh <br>
+                (3.) $700$ KWh <br>
+                (4.) $1000$ KWh <br>
+                (5.) $1200$ KWh
+                <br><br>
+
+                <b>Solution: $1st$ Method: Manual/Arithmetic Method</b> <br>
+                This application has <u>three pieces.</u> <br>
+                The basic service fee is not a piece. It must be paid whether one consumed any power or not. <br>
+                Let $p$ = power (in KWh) <br>
+                Let $r$ = cost (in dollars per KWh) <br>
+
+                (1.) $0$ KWh falls in the first piece. <br>
+                Basic service fee = <span>$</span>$10.00$ <br>
+                cost for $0$ KWh @ <span>$</span>$0.056582$ per KWh = $0 * 0.056582 = 0$ <br>
+                $10.00 + 0.00 = 10.00$ <br>
+                cost for <mark>$0$</mark> KWh = <mark><span>$</span>$10.00$</mark> <br><br>
+
+                (2.) $300$ KWh falls in the first piece. <br>
+                Basic service fee = <span>$</span>$10.00$ <br>
+                cost for $300$ KWh @ <span>$</span>$0.056582$ per KWh = $300 * 0.056582 = 16.9746$ <br>
+                $10.00 + 16.9746 = 26.9746$ <br>
+                cost for <mark>$300$</mark> KWh = <mark><span>$</span>$26.97$</mark> <br><br>
+
+                (3.) $700$ KWh falls in the second piece. <br>
+                Basic service fee = <span>$</span>$10.00$ <br>
+                Before we use the second piece, we have to go through the first piece first. <br>
+                <b>First Piece for $650$ KWh</b> <br>
+                cost for $650$ KWh @ <span>$</span>$0.056582$ per KWh = $650 * 0.056582 = 36.7783$ <br>
+                $700 - 650 = 50$ <br>
+                We need to find the cost for the remaining $50$ KWh <br>
+                That takes us to the second piece. <br>
+                <b>Second Piece for $50$ KWh</b> <br>
+                cost for $50$ KWh @ <span>$</span>$0.093983$ per KWh = $50 * 0.093983 = 4.69915$ <br>
+                $10.00 + 36.7783 + 4.69915 = 51.47745$ <br>
+                cost for <mark>$700$</mark> KWh = <mark><span>$</span>$51.48$</mark> <br><br>
+
+                (4.) $1000$ KWh falls in the second piece. <br>
+                Basic service fee = <span>$</span>$10.00$ <br>
+                Before we use the second piece, we have to go through the first piece first. <br>
+                <b>First Piece for $650$ KWh</b> <br>
+                cost for $650$ KWh @ <span>$</span>$0.056582$ per KWh = $650 * 0.056582 = 36.7783$ <br>
+                $1000 - 650 = 350$ <br>
+                We need to find the cost for the remaining $350$ KWh <br>
+                That takes us to the second piece. <br>
+                <b>Second Piece for $350$ KWh</b> <br>
+                cost for $350$ KWh @ <span>$</span>$0.093983$ per KWh = $350 * 0.093983 = 32.89405$ <br>
+                $10.00 + 36.7783 + 32.89405 = 79.67235$ <br>
+                cost for <mark>$1000$</mark> KWh = <mark><span>$</span>$79.67$</mark> <br><br>
+
+                (5.) $1200$ KWh falls in the third piece. <br>
+                Basic service fee = <span>$</span>$10.00$ <br>
+                Before we use the third piece, we have to go through the first piece and also through the second piece.
+                <br>
+                <b>First Piece for $650$ KWh</b> <br>
+                cost for $650$ KWh @ <span>$</span>$0.056582$ per KWh = $650 * 0.056582 = 36.7783$ <br>
+                $1000 - 650 = 350$ <br>
+                We need to find the cost for $350$ KWh <br>
+                That takes us to the second piece. <br>
+                <b>Second Piece for $350$ KWh</b> <br>
+                cost for $350$ KWh @ <span>$</span>$0.093983$ per KWh = $350 * 0.093983 = 32.89405$ <br>
+                $1200 - 1000 = 200$ <br>
+                We need to find the cost for the remaining $200$ KWh <br>
+                That takes us to the third piece. <br>
+                <b>Third Piece for $200$ KWh</b> <br>
+                cost for $200$ KWh @ <span>$</span>$0.097273$ per KWh = $200 * 0.097273 = 19.4546$ <br>
+                $10.00 + 36.7783 + 32.89405 + 19.4546 = 99.12695$ <br>
+                cost for <mark>$1200$</mark> KWh = <mark><span>$</span>$99.13$</mark>
+
+                <br><br>
+                <i>
+                    Some students may ask if it is possible to have just one function that will find the cost for any
+                    consumption of power. <br>
+                    Or is it possible to find the cost for the consumption of power that falls in the second piece,
+                    without
+                    having to go through the first piece? <br>
+                    Those are really interesting questions! <br>
+                    That is one of the reasons for studying piecewise functions &#x263A;&#x263A;&#x263A;
+                    <br><br>
+                    Please specify the importance of not rounding intermediate calculations. <br>
+                    Please specify the importance of rounding only the final answer to two decimal place (because it is
+                    dollars
+                    and cents).
+                </i>
+                <br><br>
+
+                <b>Solution: 2nd Method: Piecewise Function/Algebraic Method</b> <br>
+                What if we have to calculate the power rates for "several" consumption of power? <br>
+                Do we have to solve this manually all the time? That will be time consuming! <br>
+                We can write it as a piecewise function and use each function for the consumption of power that
+                correspond to
+                that piece. <br>
+                Besides, writing it as a piecewise function helps us to write a computer program that will find the rate
+                for any
+                consumption of power. <br>
+                This application has <u>three pieces.</u> <br>
+                Let $p$ = power consumed(in KWh) <br>
+                Let $c$ = cost per KWh or power consumed (in dollars) <br>
+                $c = f(p)$ <br>
+                This can be written as: $c(p)$ <br><br>
+
+                <u>For the first piece;</u> <br>
+                Basic service fee = <span>$</span>$10.00$ <br>
+                cost for $p$ KWh @ <span>$</span>$0.056582$ per KWh = $p * 0.056582 = 0.056582p$ <br>
+                $10 + 0.056582p = 0.056582p + 10$ <br>
+                $c(p) = 0.056582p + 10$ <br><br>
+
+                <u>For the second piece;</u> <br>
+                Basic service fee = <span>$</span>$10.00$ <br>
+                We have to "finish" with the first piece first <br>
+                cost for $650$ KWh @ <span>$</span>$0.056582$ per KWh = $650 * 0.056582 = 36.7783$ <br>
+                $10 + 36.7783 = 46.7783$ <br>
+                Then, we can multiply the remaining consumption of power by $0.093983$ <br>
+                $c(p) = 46.7783 + 0.093983(p - 650)$ <br>
+                $c(p) = 46.7783 + 0.093983p - 61.08895$ <br>
+                $c(p) = 0.093983p - 14.31065$ <br><br>
+
+                <u>For the third piece;</u> <br>
+                Basic service fee = <span>$</span>$10.00$ <br>
+                We have to "finish" with the first piece first <br>
+                cost for $650$ KWh @ <span>$</span>$0.056582$ per KWh = $650 * 0.056582 = 36.7783$ <br>
+                $10 + 36.7783 = 46.7783$ <br>
+                Then we have to finish with the second piece next <br>
+                $1000 - 650 = 350$ <br>
+                cost for $350$ KWh @ <span>$</span>$0.093983$ per KWh = $350 * 0.093983 = 32.89405$ <br>
+                $46.7783 + 32.89405 = 79.67235$ <br>
+                Then, we can multiply the remaining consumption of power by $0.097273$ <br>
+                $c(p) = 79.67235 + 0.097273(p - 1000)$ <br>
+                $c(p) = 79.67235 + 0.097273p - 97.273$ <br>
+                $c(p) = 0.097273p - 17.60065$ <br><br>
+
+                We can now write the piecewise function as: <br>
+
+                $$
+                c(p) =
+                \begin{cases}
+                0.056582p + 10; & \quad 0 \leq p \leq 650 \\[3ex]
+                0.093983p - 14.31065; & \quad 650 \lt p \leq 1000 \\[3ex]
+                0.097273p - 17.60065; & \quad p \gt 1000
+                \end{cases}
+                $$
+
+                Let us recalculate all the questions using the Piecewise Function method. <br><br>
+                (1.) 0 KWh falls in the first piece. <br><br>
+                $
+                c(p) = 0.056582p + 10 \\[3ex]
+                c(0) = 0.056582(0) + 10 \\[3ex]
+                = 0 + 10 \\[3ex]
+                = 10 \\[3ex]
+                $
+                cost for <mark>$0$</mark> KWh = <mark><span>$</span>$10.00$</mark> <br><br>
+
+                (2.) 300 KWh falls in the first piece. <br><br>
+                $
+                c(p) = 0.056582p + 10 \\[3ex]
+                c(300) = 0.056582(300) + 10 \\[3ex]
+                = 16.9746 + 10 \\[3ex]
+                = 26.9746 \\[3ex]
+                = 26.97 \\[3ex]
+                $
+                cost for <mark>$300$</mark> KWh = <mark><span>$</span>$26.97$</mark> <br><br>
+
+                (3.) 700 KWh falls in the second piece. <br><br>
+                $
+                c(p) = 0.093983p - 14.31065 \\[3ex]
+                c(700) = 0.093983(700) - 14.31065 \\[3ex]
+                = 65.7881 - 14.31065 \\[3ex]
+                = 51.47745 \\[3ex]
+                = 51.48 \\[3ex]
+                $
+                cost for <mark>$700$</mark> KWh = <mark><span>$</span>$51.48$</mark> <br><br>
+
+                (4.) 1000 KWh falls in the second piece. <br><br>
+                $
+                c(p) = 0.093983p - 14.31065 \\[3ex]
+                c(1000) = 0.093983(1000) - 14.31065 \\[3ex]
+                = 93.983 - 14.31065 \\[3ex]
+                = 79.67235 \\[3ex]
+                = 79.67 \\[3ex]
+                $
+                cost for <mark>$1000$</mark> KWh = <mark><span>$</span>$79.67$</mark> <br><br>
+
+                (5.) 1200 KWh falls in the third piece. <br><br>
+                $
+                c(p) = 0.097273p - 17.60065 \\[3ex]
+                c(1200) = 0.097273(1200) - 17.60065 \\[3ex]
+                = 116.7276 - 17.60065 \\[3ex]
+                = 99.12695 \\[3ex]
+                = 99.13 \\[3ex]
+                $
+                cost for <mark>$1200$</mark> KWh = <mark><span>$</span>$99.13$</mark>
+
+                <br><br>
+                <i>
+                    Which of the two methods do you prefer? <br>
+                    What are your reasons? <br>
+                    What are the pros and cons that you see for each method? <br>
+                    Do you have any other method for solving Piecewise Function applications?
+                </i>
+            </p>
+        </div>
+    </div>
+    <!-- End Example Guide -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://scholarlycommunication.github.io/Presentations/Projects/PreCalculus/PiecewiseFunctions/PowerBill.html"
+            class="w3-button w3-xlarge w3-square w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+
+    <!-- General Project Requirements -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="projectRequirements">
+            <h2>General Project Requirements</h2>
+            <p>
+                (1.) You may work as a group (peer tutor to teach/correct one another). <br>
+                However, this is an individual project. <br>
+                In other words, you will submit your own project.
+
+                <br><br>
+
+                (2.) No two projects should be the same. <br>
+                (a.) You may not do any of my examples even if the rates of the company have changed. <br>
+                Use my examples as guides to completing your own project.
+                <br><br>
+                (b.) You may not do any of the projects of my previous students. <br>
+                The Student Project samples are provided below. Use them as guides to completing your own project.
+
+                <br><br>
+
+                (3.) Research any real-world application of piecewise function. <br>
+                (a.) <b>All information used for this project should be verifiable on the direct website of the
+                    company/organization.</b> <br>
+                (b.) <b>Textbook examples are NOT allowed.</b> <br>
+                (c.) Find any application that has <b>at least 2 pieces</b>, and has <b>at least a function in each
+                    piece that includes the independent variable.</b>
+
+                <br><br>
+
+                (4.) As a student, you have free access to Microsoft Office suite of apps. <br>
+                (a.) Please download the <b>desktop apps of Microsoft Office</b> on your desktop/laptop (Windows and/or
+                Mac only). <br>
+                Do not use a chromebook. <br>
+                Do not use a tablet/iPad. <br>
+                Do not use a smartphone. <br>
+                Do not use the web app/sharepoint access of Microsoft Office. <br>
+                (<i>Please contact the IT/Tech Support for assistance if you do not know how to download the desktop
+                    app.</i>) <br>
+                In that regard, the project is to be typed using the desktop version/app of Microsoft Office Word
+                <b>only.</b>
+                <br><br>
+                (b.) The file name for the Microsoft Office Word project should be saved as:
+                <b>firstName</b>&ndash;<b>lastName</b>&ndash;<b>project</b> <br>
+                Use only hyphens between your first name and your last name; and between your last name and the word,
+                project. <br>
+                No spaces.
+                <br><br>
+                (c.) For all English terms/work (entire project): use Times New Roman; font size of 14; line spacing of
+                1.5. <br>
+                Further, please make sure you have appropriate spacing between each heading and/or section as
+                applicable. <br>
+                Your work should be well-formatted and visually appealing.
+                <img src="images/ProjectRequirements/first.jpg" alt="first step">
+                <br><br>
+                (d.) For all Math terms/work: symbols, variables, numbers, formulas, expressions, equations and
+                fractions among others,
+                the Math Equation Editor is required. <br>
+                (i.) The font is set to Cambria Math by default (set it to that font if it is not); font size of 14, and
+                align accordingly (preferably left-aligned). <br>
+                (ii.) To ensure appropriate spacing between your Math work, use a line spacing of 2.0. <br>
+                Alternatively, you may use line spacing of 1.5 but insert a space after each equation as applicable.
+                <br>
+                Your work should be well-formatted, organized, well-spaced (not compact), and visually appealing.
+                <br><br>
+                (iii.) Align the functions in each piece of the piecewise function accordingly. <br><br>
+                <img src="images/ProjectRequirements/second.png" alt="second step">
+                <br><br>
+                <img src="images/ProjectRequirements/third.png" alt="third step">
+                <br><br>
+                <img src="images/ProjectRequirements/fourth.jpg" alt="fourth step">
+                <br><br>
+                (e.) Include page numbers. You may include at the top of the pages or at the bottom of the pages but not
+                both. <br>
+                <img src="images/ProjectRequirements/fifth.jpg" alt="fifth step">
+
+                <br><br>
+
+                (5.) <b>Research Skills:</b> Cite your source properly. Use APA, MLA, or Chicago Manual of Style. <br>
+                Indicate the style you used.
+
+                <br><br>
+
+                (6.) <b>Writing Skills:</b> Write the <b>complete address of the direct page of the website</b> where
+                you found the application. <br>
+                Write the <i>main</i> application completely. <br>
+                Write all the information accoridngly as noted in the Example Guide and the Checklist.
+
+                <br><br>
+
+                (7.) (a.) <b>Mathematical Skills:</b> Show all work. <br>
+                <b>Arithmetic:</b> This is the Arithmetic method. <br>
+                Use <b>random numbers</b> to test the real-world application manually for <b>each piece.</b> <br>
+                Show all work including intermediate calculations/values. <br>
+                Write down your results.
+                <br><br>
+                (b.) <b>Algebra:</b> This is the Algebraic Method (Piecewise Function Method). <br>
+                Define your variables accordingly. <br>
+                Write a piecewise function for that application. <br>
+                Test the piecewise function with the <b>same random numbers</b> that you used for the Arithmetic method.
+                <br><br>
+                <u>Please NOTE:</u> <br>
+                (i.) The intermediate results should be the same for both methods. <br>
+                (ii.) The final results should be the same for both methods. <br>
+                If either of the results are not the same, there are issues. Please fix them.
+                <br><br>
+                These are the required information. <br>
+                You may or may not not use a table format. Use whatever format that is visually appealing. <br>
+                Please be creative.
+
+                <br><br>
+
+                (8.) Mr. C (SamDom For Peace) wants you to do this real-world project very well. <br>
+                Hence, he highly recommends that you submit a draft so he can give you feedback.
+                <br><br>
+                (a.) <u>First</u>: (Required): Please submit the required information in the
+                <i><b>Projects: Company Names and Websites</b></i> page in the <i>Discussions</i> forum on the Canvas
+                course. <br>
+                An example was given in the forum. <br>
+                The name of the company that has the application should be written. <br>
+                The complete web address of the web page that has the application should be written. <br>
+                The objectives should be written. <br>
+                Please be very specific. In other words, I do not have to click on anything to see the application. <br>
+                Once I visit the webpage that you provided, I must see the application directly on that page. <br>
+                I shall review and respond.
+                <br><br>
+                (b.) <u>Second:</u> (Highly Recommended): When the company name and website is approved, please submit
+                your draft. <br>
+                Draft projects are not graded because they are drafts. They are only for feedback. <br>
+                If your professor gives you an opportunity to submit a draft, please use that opportunity. <br>
+                Submitting drafts is highly recommended. Submitting drafts is not required. <br>
+                It is highly recommended because I want to give you the opportunity to do your project very well and
+                make an excellent grade in it.
+                <br><br>
+                Please turn in your draft in the <b>Discussions</b> page &rightarrow; <b>Projects: Drafts</b> forum in
+                the Canvas course
+                (if you would like your colleagues to read my comments and avoid any mistakes that you made). <br>
+                You may also send it to me via email (if you do not want your colleagues to see my comments and learn
+                from the comments). <br>
+                I shall review and provide feedback. <br>
+                Then, review my feedback and make changes as necessary. <br>
+                Keep working with me until I give you the <i>green light</i> to turn in your actual project. This must
+                be done before
+                the final due date to turn in the actual project.
+                <br><br>
+                When everything is fine (after you make changes as applicable based on my feedback), please submit your
+                work in the appropriate area: <b>Assignments</b> page &rightarrow; <b>Piecewise Functions Project</b> in
+                the Canvas
+                course. <br>
+                Only the projects submitted in the appropriate place in the Canvas course are graded.
+
+                <br><br>
+
+                (9.) All work must be turned in by the final due date to receive credit. <br>
+                Please note the due dates listed in the course syllabus for the submission of the draft and the actual
+                project.
+                In the course syllabus, we have the: <br>
+                (a.) Initial due date for the Project Draft: Please turn in your draft.
+                <br><br>
+                (b.) Initial due date for the Project: If your draft is not ready for submission, keep working with me.
+                Make changes
+                based on my feedback and keep working with me. <br>
+                If you prefer not to turn in a draft, please review all the resources provided for you and do your
+                project well and
+                submit. <br>
+                <br><br>
+                (c.) Final due date for the Project Draft: This is necessary if you want a written feedback for your
+                draft. <br>
+                After this date, written feedback would not be provided for your draft. However, verbal feedback would
+                still be provided
+                during Office Hours/Student Engagement Hours/Live Sessions.
+                <br><br>
+                (d.) Final due date for the Project: All work must be turned in by this date to receive credit. <br>
+                After this date, no work may be accepted.
+            </p>
+
+            <table class="projectReq">
+                <caption>Required Information</caption>
+                <tr>
+                    <td style="width: 30%;">Name:</td>
+                    <td style="width: 70%;"><i>Your name</i></td>
+                </tr>
+                <tr>
+                    <td>Date:</td>
+                    <td><i>The date</i></td>
+                </tr>
+                <tr>
+                    <td>Instructor:</td>
+                    <td>Samuel Chukwuemeka</td>
+                </tr>
+                <tr>
+                    <td>Project:</td>
+                    <td>Power Bill: Residential Rates</td>
+                </tr>
+                <tr>
+                    <td>Company:</td>
+                    <td>
+                        Georgia Public Service Commission (for Georgia Power) <br>
+                        (http://www.psc.state.ga.us/calc/electric/GPcalc.asp) <br>
+                        (Name of the company and the direct Website of company that has the piecewise function)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Objectives:</td>
+                    <td>
+                        (1.) Calculate the winter/summer power bill of the residents of the State of Georgia within each
+                        range of specific power usage manually using Arithmetic method. <br>
+                        (2.) Write a piecewise function of the residential rates. <br>
+                        (3.) Recalculate the <b>same</b> power bill of the residents of the State of Georgia within each
+                        range
+                        of specific power usage algebraically using the Piecewise Function method.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Information:</td>
+                    <td><i>Write the direct information from the direct website</i></td>
+                </tr>
+                <tr>
+                    <td>Arithmetic Method:</td>
+                    <td><i>Test <b>each piece</b> manually</i></td>
+                </tr>
+                <tr>
+                    <td>Piecewise Function:</td>
+                    <td><i>Write the piecewise function of the information</i></td>
+                </tr>
+                <tr>
+                    <td>Piecewise Function Method:</td>
+                    <td><i>Test the <b>same piece</b> algebraically</i></td>
+                </tr>
+                <tr>
+                    <td>Citation:</td>
+                    <td>
+                        <i>Indicate the type of citation format. <br>
+                            Cite your source(s) accordingly.</i>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- End General Project Requirements -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://scholarlycommunication.github.io/Presentations/Projects/PreCalculus/PiecewiseFunctions/PowerBill.html"
+            class="w3-button w3-xlarge w3-square w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+
+    <!-- Students Projects -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="studentsProjects">
+            <h2>Students Projects: Math Part</h2>
+            First Sample: <b>Deya:</b> Alabama Power Company: Residential Power Bill Rates: Summer (June to September)
+            <br>
+            <object data="images/Projects/Deya-PowerBill.pdf" width="1400" height="700"></object>
+            <br><br>
+            Second Sample: <b>Katie:</b> Alabama Power Company: Residential Power Bill Rates: Winter (October to May)
+            <br>
+            <object data="images/Projects/Katie-PowerBill.pdf" width="1400" height="700"></object>
+            <br><br>
+            Third Sample: <b>Karan:</b> Harrisonburg Electric Commission: Power Rates: November through April <br>
+            <object data="images/Projects/Karan-PowerBill.pdf" width="1400" height="700"></object>
+            <br><br>
+            Fourth Sample: <b>Kayla:</b> Shenandoah Valley Electric Cooperative: Power Rates: June through September
+            <br>
+            <object data="images/Projects/Kayla-PowerBill.pdf" width="1400" height="700"></object>
+            <br><br>
+            Fifth Sample: <b>Josiah:</b> Union Electric Company: Power Rates: Winter (October to May) <br>
+            <object data="images/Projects/Josiah-PowerBill.pdf" width="1400" height="700"></object>
+            <br><br>
+            Sixth Sample: <b>Ortiz:</b> Southern Rivers Energy: Power bill: Residential Electric Service Rate: June to
+            September <br>
+            <object data="images/Projects/Ortiz-PowerBill.pdf" width="1400" height="700"></object>
+            <br><br>
+            Seventh Sample: <b>Jeremiah:</b> Dominion Energy South Carolina: Power Bill: Winter Residential Rates:
+            October
+            to May <br>
+            <object data="images/Projects/Jeremiah-PowerBill.pdf" width="1400" height="700"></object>
+            <br><br>
+            Eighth Sample: <b>Danielle:</b> Virginia Electric and Power Company: Residential Power Electricity Supply
+            (ES) Service Charges: June to September <br>
+            <object data="images/Projects/Danielle-PowerBill.pdf" width="1400" height="700"></object>
+            <br><br>
+            Ninth Sample: <b>Anthony:</b> First Energy Corp Electric Company: Power Rates: Summer (June to September)
+            <br>
+            <object data="images/Projects/Anthony-PowerBill.pdf" width="1400" height="700"></object>
+            <br><br>
+            Tenth Sample: <b>Alex:</b> Virginia Electric and Power Company: Power Rates: October to May <br>
+            <object data="images/Projects/Alex-PowerBill.pdf" width="1400" height="700"></object>
+            <br><br>
+
+            <h2>Students Projects: Programming (Computer Science) Part</h2>
+            First Sample: <b>Brigid:</b> Alabama Power: Winter: Billing Months (October through May) <br>
+            <i>
+                The Math part is not shown here. <br>
+                However, the Computer Science (Programming) part done by the same student is shown. <br>
+                The program is a Python file. Please see the instructions regarding how to run it.
+            </i>
+            <br>
+            <pre>
+                Winter (October through May)
+                Base Charge: $14.50 
+                12.2330¢ per KWh for the first 750 KWh,
+                           plus
+                11.0330¢ per KWh for all over 750 KWh.
+            </pre>
+            <br>
+            <b>Run the Python Program: 1st Approach</b> (<b>Strongly Preferred/Highly Recommended Approach</b>) <br>
+            (1.) Copy the code from the text file below.
+            <br><br>
+            <iframe src="Information/AlabamaPower-Winter-2023.txt" width="720" height="405"
+                style="border:1px solid green;"></iframe>
+            <br><br>
+            (2.) Visit the Google Colab website: <a href="https://colab.research.google.com/"
+                target="_blank">https://colab.research.google.com/</a> <br>
+            (3.) Log into your Google account. <br>
+            (4.) Click the <em>Insert</em> menu tab <br>
+            (5.) Click the <em>Code cell</em> option <br>
+            (6.) Paste the code you copied. <br>
+            (7.) Run the program by clicking the <em>Play</em> button.
+            <br><br>
+            <b>Run the Python Program: 2nd Approach</b> <br>
+            (1.) Download the Python file: <a href="https://1drv.ms/u/s!AsqQdg-pomWZgbNjTauyZUZrlgyytQ?e=ntLJB3"
+                target="_blank">Brigid-AlabamaPowerWinter</a> on your computer. <br>
+            <i>No worries, it is a safe file.</i> <br>
+            (2.) Visit the website: <a href="https://www.online-python.com/"
+                target="_blank">https://www.online-python.com/</a> <br>
+            (3.) Click the <em>Open File from Disk</em> menu tab <br>
+            (4.) Open the file from your Download folder. <br>
+            (5.) Run the program.
+            <br><br>
+            <i>
+                The teacher should guide each student to the successful completion of the project. <br>
+                Let students know you are willing to help.
+            </i>
+        </div>
+    </div>
+    <!-- End Students Projects -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://scholarlycommunication.github.io/Presentations/Projects/PreCalculus/PiecewiseFunctions/PowerBill.html"
+            class="w3-button w3-xlarge w3-square w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+
+    <!-- Checklist -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="checklist">
+            <h2>Checklist</h2>
+            <p>
+                <b>Checklist for Piecewise Function Project: Power Bill</b> <br>
+                (1.) Project is a piecewise function that: <br>
+                (a.) Has <b>at least 2 pieces</b> <br>
+                (b.) Has <b>at least a function in each piece that includes the independent variable.</b> <br>
+                (c.) Was approved before submission. <br>
+                (<i>Draft is not required. However, approval of the company is required.</i>)
+                <br><br>
+                (2.) Title of project. <br>
+                (3.) Name of Student. <br>
+                (4.) Name of Instructor. <br>
+                (5.) Objectives of project. <br>
+                (6.) Name of company. <br>
+                (7.) The direct webpage of the company that has the piecewise function application. <br>
+                (8.) Information on the webpage is written <i>as is</i>
+                <br><br>
+                (9.) <b>Arithmetic Method:</b> <br>
+                (a.) Numbers in each piece, including 0 are tested. <br>
+                (b.) All work including conversions are shown. <br>
+                (c.) Intermediate calculations and values (before rounding) are shown. <br>
+                (d.) Final results (rounded) are written and unit (currency) is included.
+                <br><br>
+                (10.) <b>Piecewise Function:</b> <br>
+                (a.) Variables are defined. <br>
+                (b.) All work is shown to determine the algebraic function for each piece. <br>
+                (c.) Piecewise function is developed and written well using beginning brace. <br>
+                (d.) The function in each piece and the corresponding domain is written well using any of the approved
+                formats including the use of semicolon or comma. <br>
+                (e.) The functions in the piecewise function are aligned properly.
+                <br><br>
+                (11.) <b>Algebraic Method (Piecewise Function Method):</b> <br>
+                (a.) The same numbers including 0 tested using the Arithmetic Method, are also tested using the
+                Algebraic Method. <br>
+                Testing each number implies that each number within the domain of each piece in the piecewise function
+                is tested in the function for that piece. <br>
+                (b.) Intermediate calculations and values (before rounding) are shown. Intermediate values must be the
+                same as the Arithmetic Method. <br>
+                (c.) Final results (rounded) are the same as the Arithmetic Method and the unit is included.
+                <br><br>
+                (12.) <b>References:</b> <br>
+                (a.) The reference style is specified. <br>
+                (b.) Sources are cited according to the specified reference style.
+                <br><br>
+                (13.) <b>Other Requirements:</b> <br>
+                (a.) Page numbers are included in every page. <br>
+                (b.) Times New Roman font, font size of 14, and line spacing of 1.5 is used for the project. <br>
+                (c.) Cambria Math font, font size of 14, and the Math Equation Editor is used for all Math terms
+                including numbers, arithmetic operations, symbols, variables,
+                fractions, formulas, expressions, and equations among others. <br>
+                (d.) Correct file name. <br>
+                (e.) Mechanical accuracy. <br>
+                (f.) Good format/Visually appealing.
+            </p>
+        </div>
+    </div>
+    <!-- End Checklist -->
+
+    <!-- Rubric -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="rubric">
+            <h2>Rubric</h2>
+            <table>
+                <caption>Piecewise Function Project Rubric</caption>
+                <tr>
+                    <th style="width: 15%;">Criteria</th>
+                    <th style="width: 75%;" colspan="3">Ratings</th>
+                    <th style="width: 10%;">Points</th>
+                </tr>
+                <tr>
+                    <td>Knowledge Level</td>
+                    <td>
+                        70.1 to 100 pts <br>
+                        <b>Proficient</b> <br>
+                        Deduct points accordingly for any missing requirement in the <a
+                            href="https://scholarlycommunication.github.io/Presentations/Projects/PreCalculus/PiecewiseFunctions/PowerBill.html#checklist">Checklist</a>
+                    </td>
+                    <td>
+                        50.1 to 70 pts <br>
+                        <b>Fair</b> <br>
+                        Deduct points accordingly for any missing requirement in the <a
+                            href="https://scholarlycommunication.github.io/Presentations/Projects/PreCalculus/PiecewiseFunctions/PowerBill.html#checklist">Checklist</a>
+                    </td>
+                    <td>
+                        0 to 50 pts <br>
+                        <b>Novice</b> <br>
+                        Deduct points accordingly for any missing requirement in the <a
+                            href="https://scholarlycommunication.github.io/Presentations/Projects/PreCalculus/PiecewiseFunctions/PowerBill.html#checklist">Checklist</a>
+                    </td>
+                    <td>100 pts</td>
+                </tr>
+
+                <tr>
+                    <td colspan="5" style="text-align: right;">Total Points: 100</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- End Rubric -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://scholarlycommunication.github.io/Presentations/Projects/PreCalculus/PiecewiseFunctions/PowerBill.html"
+            class="w3-button w3-xlarge w3-square w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+
+    <!-- References -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="references">
+            <h3>References</h3>
+            <p>
+                Chukwuemeka, S.D (2016, April 30). <i>Samuel Chukwuemeka Tutorials - Math, Science, and Technology.</i>
+                Retrieved from <a href="https://mathematicscourses.github.io/PreCalculus/"
+                    target="_blank">https://mathematicscourses.github.io/PreCalculus/</a>
+                <br><br>
+                Georgia Public Service Commission. (n.d.). Georgia Public Service Commission. Retrieved from
+                http://www.psc.state.ga.us/calc/electric/GPcalc.asp
+                <br><br>
+
+            </p>
+        </div>
+    </div>
+    <!-- End References -->
+
+
+    <!-- END PAGE CONTENT -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://scholarlycommunication.github.io/Presentations/Projects/PreCalculus/PiecewiseFunctions/PowerBill.html"
+            class="w3-button w3-xlarge w3-square w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="cornsilk w3-center w3-padding-24">
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-3NJS4BW8RZ' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2023 &nbsp; SamDom4Peace Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages7.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

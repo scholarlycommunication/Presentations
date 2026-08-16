@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+
+    <title>C# Programming</title>
+
+
+
+    <meta charset="UTF-8">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in CSharp programming language.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samdom for peace, samuel dominic chukwuemeka, math, mathematics, 
+    computer science, information technology, programming languages, C# program, IDE (Integrated Development Environment), text editor,
+    compiler, program, header file library, white space, braces, curly brackets, semicolon, namespace, standard library, 
+    development toolchain, linker, variable, object, function, main funtion, integer, angle brackets, vary, variable, 
+    data type, data value, value, container, ASCII (American Standard Code for Information Exchange), character (char), 
+    signed character, integer (int), signed integer, unsigned integer, short int, long int, long long int, float, double, 
+    long double, bool, void, size, storage, precision, number, decimal, operators, assignment operator, 
+    arithmetic operators, compound assignment operators, increment operator, decrement operator, relational and comparison operators, 
+    logical operators, conditional tenary operator, comma operator, bitwise operators, basic input/output feature, argument, 
+    console application, desktop application, GUI, grapical user interface, windows forms app, .NET framework, access keys, type conversion, casting, cast, implicit conversion, explicit conversion, helper classes, 
+    user-defined conevrsion">
+
+    <link href="styles/Programming.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="w3-padding-24 khaki">
+        <h1>CSharp Programming Language Projects</h1>
+    </header>
+    <!-- End Header -->
+
+    <br><br>
+
+    <!-- Page Content -->
+
+    <!-- Navigation Bar -->
+    <div class="w3-container w3-padding">
+        <div class="w3-content w3-padding-36">
+
+            <div class="w3-row-padding">
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#objectives';">Objectives</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#exampleCalculators';">Example
+                            Calculators</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#projectRequirements';">Project
+                            Requirements</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#studentsProjects';">Students Projects</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#rubric';">Rubric</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#resources';">Resources</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#references';">References</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics"
+                            onclick="location.href='https://scholarlycommunication.github.io/Presentations/';">Presentations</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Navigation Bar -->
+
+    <!-- Objectives -->
+    <div class="w3-container w3-padding" id="objectives">
+        <div class="w3-padding-36">
+            <h2>Objectives</h2>
+            <p>
+                Students will: <br>
+                (1.)
+
+            </p>
+        </div>
+    </div>
+    <!-- End Objectives -->
+
+    <!-- Example Calculators -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="exampleCalculators">
+
+            May you please: <br>
+            (1.) Review these examples. <br>
+            (2.) Verify the calculations. <br>
+            (3.) Verify the accuracy of the calculators.
+
+            <br><br>
+
+            <!-- Power Bill Calculator: Summer -->
+            <div class="w3-margin-bottom" id="powerBillCalculatorSummer">
+                <div class="khaki w3-hover-black w3-padding w3-center">
+                    <h6>English Language &rightarrow; Mathematics &rightarrow; Computer Science for the 2018 Summer
+                        Period (June - September) Residential Power Rates by Georgia Power</h6>
+                </div>
+            </div>
+
+            <p><u>Information in English</u>: <b>Plain Information</b></p>
+            <pre>
+                Basic Service:          $10.00 
+                Tier                    Usage                   Cost per KWh
+                1st tier                up to 650KWh            $0.056582
+                2nd tier                next 350KWh             $0.093983
+                3rd tier                over 1000KWh            $0.097273 
+            </pre>
+
+            <p>
+                <u>Information in Mathematics</u>: <b>Piecewise Function</b>
+                <br><br>
+                $
+                c(p) =
+                \begin{cases}
+                0.056582p + 10; & \quad 0 \leq p \leq 650 \\[3ex]
+                0.093983p - 14.31065; & \quad 650 \lt p \leq 1000 \\[3ex]
+                0.097273p - 17.60065; & \quad p \gt 1000
+                \end{cases}
+                $
+            </p>
+
+            <br><br>
+
+            <div class="w3-padding-small w3-white">
+                <u>Information in Computer Science</u>: <b>Power Consumption and Monthly Bill Statement: Summer Bill
+                    Calculator</b>
+                <p>
+                    Please test the calculator and see the output. <br>
+                    Complete all fields. Then, click "Bill Statement".
+                </p>
+
+                <div class="w3-row-padding" style="margin-top:64px">
+                    <div class="w3-half w3-section">
+                        <ul class="w3-ul w3-card w3-hover-shadow">
+                            <li class="red w3-xlarge w3-padding-32 w3-center">Power Consumption</li>
+                        </ul>
+                        <form id="powerBillFormSummer" class="borderRed">
+                            <p class="marginForm"><label for="firstNamePowerSummer">First Name: </label><input
+                                    class="name" type="text" name="firstNamePowerSummer" id="firstNamePowerSummer"
+                                    autocomplete="off" required></p>
+                            <p class="marginForm"><label for="lastNamePowerSummer">Last Name: </label><input
+                                    class="name" type="text" name="lastNamePowerSummer" id="lastNamePowerSummer"
+                                    autocomplete="off" required></p>
+                            <p class="marginForm"><label for="initialReadingPowerSummer">Initial Reading: </label><input
+                                    class="bill" type="text" name="initialReadingPowerSummer"
+                                    id="initialReadingPowerSummer" autocomplete="off" required> KWh</p>
+                            <p class="marginForm"><label for="finalReadingPowerSummer">Final Reading: </label><input
+                                    class="bill" type="text" name="finalReadingPowerSummer" id="finalReadingPowerSummer"
+                                    autocomplete="off" required> KWh</p>
+                            <p class="marginForm"><label for="taxPowerSummer">Tax is </label><input class="tax"
+                                    type="text" name="taxPowerSummer" id="taxPowerSummer" autocomplete="off" required>
+                                in
+                                <select id="taxUnitPowerSummer" required>
+                                    <option disabled selected value> What option? </option>
+                                    <option value="percent">Percent</option>
+                                    <option value="decimal">Decimal</option>
+                                </select>
+                            </p>
+                            <br>
+                            <p class="w3-center"><button class="bill" onclick="powerBillFormSummer()">Bill
+                                    Statement</button>
+                                <input class="bill" type="reset" value="Reset">
+                            </p>
+                        </form>
+                    </div>
+                    <div class="w3-half w3-section">
+                        <ul class="w3-ul w3-card w3-hover-shadow">
+                            <li class="green w3-xlarge w3-padding-32 w3-center">Monthly Bill Statement</li>
+                        </ul>
+                        <div id="greetingPowerSummer"></div>
+                        <div id="datesPowerSummer"></div>
+                        <div id="initialReadingReportPowerSummer"></div>
+                        <div id="finalReadingReportPowerSummer"></div>
+                        <div id="powerConsumedSummer"></div>
+                        <div id="basicFeePowerSummer"></div>
+                        <div id="taxReportPowerSummer"></div>
+                        <div id="totalBillPowerSummer"></div>
+                        <div id="appreciationPowerSummer"></div>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+
+            <!-- Power Bill Calculator: Winter -->
+            <div class="w3-margin-bottom" id="powerBillCalculatorWinter">
+                <div class="khaki w3-hover-black w3-padding w3-center">
+                    <h6>English Language &rightarrow; Mathematics &rightarrow; Computer Science for the 2018 Winter
+                        Period (October - May) Residential Power Rates by Georgia Power</h6>
+                </div>
+            </div>
+
+            <p>
+                <u>Information in Mathematics</u>: <b>Piecewise Function</b>
+                <br><br>
+                $
+                c(p) =
+                \begin{cases}
+                0.056582p + 10; & \quad 0 \leq p \leq 650 \\[3ex]
+                0.048533p + 15.23185; & \quad 650 \lt p \leq 1000 \\[3ex]
+                0.047641p + 16.12385; & \quad p \gt 1000
+                \end{cases}
+                $
+            </p>
+
+            <br><br>
+            <i>
+                <b>Student:</b> Mr. C, where is the <u>Information in English</u>? <br>
+                <b>Teacher</b> Good question. <br>
+                Let us do a little critical thinking. <br>
+                Go ahead and write it. &#128522;
+            </i>
+            <br><br>
+
+            <div class="w3-padding-small w3-white">
+                <u>Information in Computer Science</u>: <b>Power Consumption and Monthly Bill Statement: Winter Bill
+                    Calculator</b>
+                <p>
+                    Please test the calculator and see the output. <br>
+                    Complete all fields. Then, click "Bill Statement".
+                </p>
+
+                <div class="w3-row-padding" style="margin-top:64px">
+                    <div class="w3-half w3-section">
+                        <ul class="w3-ul w3-card w3-hover-shadow">
+                            <li class="red w3-xlarge w3-padding-32 w3-center">Power Consumption</li>
+                        </ul>
+                        <form id="powerBillFormWinter" class="borderRed">
+                            <p class="marginForm"><label for="firstNamePowerWinter">First Name: </label><input
+                                    class="name" type="text" name="firstNamePowerWinter" id="firstNamePowerWinter"
+                                    autocomplete="off" required></p>
+                            <p class="marginForm"><label for="lastNamePowerWinter">Last Name: </label><input
+                                    class="name" type="text" name="lastNamePowerWinter" id="lastNamePowerWinter"
+                                    autocomplete="off" required></p>
+                            <p class="marginForm"><label for="initialReadingPowerWinter">Initial Reading: </label><input
+                                    class="bill" type="text" name="initialReadingPowerWinter"
+                                    id="initialReadingPowerWinter" autocomplete="off" required> KWh</p>
+                            <p class="marginForm"><label for="finalReadingPowerWinter">Final Reading: </label><input
+                                    class="bill" type="text" name="finalReadingPowerWinter" id="finalReadingPowerWinter"
+                                    autocomplete="off" required> KWh</p>
+                            <p class="marginForm"><label for="taxPowerWinter">Tax is </label><input class="tax"
+                                    type="text" name="taxPowerWinter" id="taxPowerWinter" autocomplete="off" required>
+                                in
+                                <select id="taxUnitPowerWinter" required>
+                                    <option disabled selected value> What option? </option>
+                                    <option value="percent">Percent</option>
+                                    <option value="decimal">Decimal</option>
+                                </select>
+                            </p>
+                            <br>
+                            <p class="w3-center"><button class="bill" onclick="powerBillFormWinter()">Bill
+                                    Statement</button>
+                                <input class="bill" type="reset" value="Reset">
+                            </p>
+                        </form>
+                    </div>
+                    <div class="w3-half w3-section">
+                        <ul class="w3-ul w3-card w3-hover-shadow">
+                            <li class="green w3-xlarge w3-padding-32 w3-center">Monthly Bill Statement</li>
+                        </ul>
+                        <div id="greetingPowerWinter"></div>
+                        <div id="datesPowerWinter"></div>
+                        <div id="initialReadingReportPowerWinter"></div>
+                        <div id="finalReadingReportPowerWinter"></div>
+                        <div id="powerConsumedWinter"></div>
+                        <div id="basicFeePowerWinter"></div>
+                        <div id="taxReportPowerWinter"></div>
+                        <div id="totalBillPowerWinter"></div>
+                        <div id="appreciationPowerWinter"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Example Calculators -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://scholarlycommunication.github.io/Presentations/Projects/CSharp/CSharpProjects.html"
+            class="w3-button w3-xlarge w3-square w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+
+    <!-- Project Requirements -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="projectRequirements">
+            <h2>Project Requirements</h2>
+
+            <h5>Minimum Requirements for Beginning C#: Desktop Application</h5>
+            <p>
+                May you please review these requirements? <br>
+                <b>These are the <u>minimum</u> requirements. Please <u>be creative.</u></b>
+                <br><br>
+                (1.) Please use appropriate name for your project application. <br>
+                The application should display <i>at least</i> the <b>same output of my calculator.</b> <br>
+                That implies that you <b>should test my calculator to see the output.</b> <br>
+                Your application may include more information.
+                <br><br>
+                (2.) The application should be a <b>desktop application.</b>
+                <br><br>
+                (3.) Set the <b>MinimumBox</b> property of the form to <b>True</b> <br>
+                We want to accommodate users with laptop/desktop smaller screen sizes too. <br>
+                They should have the ability to adjust your application to fit their screen sizes.
+                <br><br>
+                (4.) The Input/Output feature should be used.
+                <br><br>
+                <b>Error Handling</b> <br>
+                (5.) Alert the user/Display an appropriate error message to the user, if the Final Reading is less than
+                the Initial Reading.
+                <br><br>
+                (6.) Alert the user/Display an appropriate error message to the user, if the Initial Reading is
+                negative.
+                <br><br>
+                (7.) Alert the user/Display appropriate error message to the user, if the Final Reading is negative.
+                <br><br>
+                (8.) Alert the user/Display appropriate error message to the user, if the Tax is negative.
+                <br><br>
+                (9.) Use <b>only tax in percent.</b> Do not worry about tax in decimal.
+                <br><br>
+                (10.) <mark>Make sure your executable file runs by itself outside the project folder</mark> <br>
+                If it does run, include all these: (<b>documentation</b> of <b>all your Math work</b> and the
+                <b>.exe</b> file)
+                in OneDrive, create a shareable link, and post the link in the Midterm Project Drafts forum of the
+                course on Blackboard or send to me via email. <br>
+                You may also upload them directly if you prefer. <br>
+                I shall review and provide feedback. <br>
+                If your submission works well, I shall ask you to submit the Project folder.
+                The Project folder is the folder that is created when you create a new project. <br>
+                When you submit it, I shall review and provide feedback.
+                <br><br>
+                If it does not run, then you need to fix it. <br>
+                If you cannot fix it and you have reviewed the resources, please attend the Office Hours/Live Sessions
+                so I can help you.
+                <br><br>
+                When you are done (everything works well), please <b>zip</b>
+                the entire project: (documentation of the Math, executable file that runs by itself outside the Project
+                folder, and
+                the Project folder) into one folder; and submit the zipped folder (.zip only) in the actual Midterm
+                Project forum of the
+                Blackboard course.
+            </p>
+
+            <h5>Minimum Requirements for Advanced C#: Desktop Application</h5>
+            <p>
+                May you please review these requirements? <br>
+                <b>These are the <u>minimum</u> requirements. Please <u>be creative.</u></b>
+                <br><br>
+                (1.) Please use appropriate name for your project application. <br>
+                The application should display <i>at least</i> the <b>same output of my calculator.</b> <br>
+                That implies that you <b>should test my calculator to see the output.</b> <br>
+                Your application may include more information on the output.
+                <br><br>
+                (2.) The application should be a <b>desktop application.</b>
+                <br><br>
+                (3.) Set the <b>MinimumBox</b> property of the form to <b>True</b> <br>
+                We want to accommodate users with laptop/desktop smaller screen sizes too. <br>
+                They should have the ability to adjust your application to fit their screen sizes.
+                <br><br>
+                (4.) <b>Input/Output</b> feature should be used.
+                <br><br>
+                (5.) <b>Class</b> should be used.
+                <br><br>
+                (6.) <b>Constructor(s)</b> should be used.
+                <br><br>
+                (7.) <b>Property/Properties</b> should be used. <br>
+                The class members: <i>Initial Reading</i> and the <i>Final Reading</i> should be <i>private</i>.
+                <br><br>
+                (8.) <b>Method(s)</b> should be used.
+                <br><br>
+                <b>Error Handling</b> <br>
+                (9.) Alert the user/Display an appropriate error message to the user, if the Final Reading is less than
+                the
+                Initial Reading.
+                <br><br>
+                (10.) Alert the user/Display an appropriate error message to the user, if the Initial Reading is
+                negative.
+                <br><br>
+                (11.) Alert the user/Display appropriate error message to the user, if the Final Reading is negative.
+                <br><br>
+                (12.) Alert the user/Display appropriate error message to the user, if the Tax is negative.
+                <br><br>
+
+                For the requirements for Numbers (9.), (10.), and (11.) <br>
+                Because the power consumption values are only nonnegative integers: <br>
+                Alternatively; you may use the
+                <a href="https://docs.microsoft.com/en-us/dotnet/desktop/winforms/controls/numericupdown-control-windows-forms?view=netframeworkdesktop-4.8"
+                    target="_blank">NumericUpDown Control</a> <br>
+                (www.docs.microsoft.com/en-us/dotnet/desktop/winforms/controls/numericupdown-control-windows-forms?view=netframeworkdesktop-4.8)
+                <br>
+                The control will ensure that the user enters only nonnegative values (zero and positive values).
+                <br><br>
+
+                (13.) Use <b>only tax in percent.</b> Do not worry about tax in decimal.
+                <br><br>
+
+                (14.) <mark>Make sure your executable file runs by itself outside the project folder</mark> <br>
+                If it does run, include all these: (<b>documentation</b> of <b>all your Math work</b> and the
+                <b>.exe</b> file)
+                in OneDrive, create a shareable link, and post the link in the Midterm Project Drafts forum of the
+                course on Blackboard or send to me via email. <br>
+                You may also upload them directly if you prefer. <br>
+                I shall review and provide feedback. <br>
+                If your submission works well, I shall ask you to submit the Project folder.
+                The Project folder is the folder that is created when you create a new project. <br>
+                When you submit it, I shall review and provide feedback.
+                <br><br>
+
+                If it does not run, then you need to fix it. <br>
+                If you cannot fix it and you have reviewed the resources, please attend the Office Hours/Live Sessions
+                so I can
+                help you.
+                <br><br>
+
+                When you are done (everything works well), please <b>zip</b>
+                the entire project: (documentation of the Math, executable file that runs by itself outside the Project
+                folder,
+                and
+                the Project folder) into one folder; and submit the zipped folder (.zip only) in the actual Midterm
+                Project
+                forum of the
+                Blackboard course.
+            </p>
+        </div>
+    </div>
+    <!-- End Project Requirements -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://scholarlycommunication.github.io/Presentations/Projects/CSharp/CSharpProjects.html"
+            class="w3-button w3-xlarge w3-square w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+
+    <!-- Students Projects -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="studentsProjects">
+            <h2>Students Projects</h2>
+            <p>
+                These are some of the nice projects done by my students. <br>
+                Some of them are Midterm Projects while some are Final Projects. <br>
+                Because of FERPA (Federal Educational Rights and Privacy Act) laws, only the first names of my students
+                are
+                written. <br>
+                <i>No worries, these files are safe to run.</i> &#128522;
+            </p>
+
+            <h4>Beginning C#: Functional Programming Approach</h4>
+            <h5>Desktop Applications</h5>
+            <p>
+                (1.) <a href="https://1drv.ms/u/s!AueBlxRFtOuIhd8qm6iLE1fiqTyF3w?e=YZR6aT" target="_blank"><b>North
+                        Canton
+                        Water Rates</b></a> by <span
+                    style="font-weight: bold; font-family: 'Times New Roman', Times, serif; font-size: 40px;">Melissa</span>
+                <br>
+                As at today: $04/30/2021$, the verifiable website for this application is: <a
+                    href="https://northcantonohio.gov/409/Water" target="_blank"><i>Water Utility Services | North
+                        Canton,
+                        OH</i></a> <br>
+                (https://northcantonohio.gov/409/Water) <br>
+                For a full breakdown of current Water Rates and regulations, consult Chapter 937 of the City's Codified
+                Ordinances <br>
+                <img src="projects/BeginningCSharp/MidtermProjects/north-canton-water-rates.png"
+                    alt="North Canton Water Utility Services"> <br><br>
+
+
+                (2.) <a href="https://1drv.ms/u/s!AueBlxRFtOuIheBdN6Z5hLKmSWwV6A?e=aW7adB"
+                    target="_blank"><b>$2020-2021$
+                        Federal Tax: All Filing Options</b></a> by <span
+                    style="font-weight: bold; font-family: 'Times New Roman', Times, serif; font-size: 40px;">Tyler</span>
+                <br>
+                As at today: $05/10/2021$, the verifiable website for this application is: <a
+                    href="https://www.irs.com/articles/2020-federal-tax-rates-brackets-standard-deductions/"
+                    target="_blank"><i>IRS.com (This is NOT IRS.gov)</i></a> <br>
+                (https://www.irs.com/articles/2020-federal-tax-rates-brackets-standard-deductions/) <br><br>
+
+
+                (3.) <a href="https://1drv.ms/u/s!AueBlxRFtOuIhc8nnMgjGkcdsa0I5g?e=h0Qr3p" target="_blank"><b>City of
+                        Akron
+                        Current Water Rates</b></a> by <span
+                    style="font-weight: bold; font-family: 'Times New Roman', Times, serif; font-size: 40px;">Ian</span>
+                <br>
+                As at today: $04/08/2021$, the verifiable website for this application is: <a
+                    href="https://www.akronohio.gov/cms/site/dced0363af40e9b7/index.html" target="_blank"><i>Water and
+                        Sewer
+                        Rates: City of Akron</i></a> <br>
+                (https://www.akronohio.gov/cms/site/dced0363af40e9b7/index.html) <br>
+                <img src="projects/BeginningCSharp/MidtermProjects/current-water-rates-City-of-Akron.png"
+                    alt="Current Water Rates: City of Akron, Ohio"> <br><br>
+
+
+
+            </p>
+
+            <h4>Advanced C#: Object-oriented Programming Approach</h4>
+            <h5>Desktop Applications</h5>
+            <div>
+                (1.) <a href="https://1drv.ms/u/s!AueBlxRFtOuIhcARZYyOpJ915ALBJA?e=krGVr8" target="_blank"><b>Cost of
+                        Attendance Calculator for Undergraduate Students at Saint Peter's University</b></a> by
+                <span
+                    style="font-weight: bold; font-family: 'Times New Roman', Times, serif; font-size: 40px;">Angel</span>
+                <br>
+                As at today: 12/15/2020, the verifiable website for this application is: <a
+                    href="https://www.saintpeters.edu/enrollment-services/student-financial-aid/cost-of-attendance/undergraduate-cost-of-attendance/"
+                    target="_blank"><i>Cost of Attendance for Undergraduate Students at Saint Peter's University</i></a>
+                <br>
+                (https://www.saintpeters.edu/enrollment-services/student-financial-aid/cost-of-attendance/undergraduate-cost-of-attendance/)
+                <br>
+                <img src="projects/AdvancedCSharp/FinalProjects/cost-of-attendance-calculator-Saint-Peters-University-1.png"
+                    alt="Saint Peters University: Cost of Attendance Calculator 1"> <br>
+                <img src="projects/AdvancedCSharp/FinalProjects/cost-of-attendance-calculator-Saint-Peters-University-2.png"
+                    alt="Saint Peters University: Cost of Attendance Calculator 2"> <br>
+                <img src="projects/AdvancedCSharp/FinalProjects/cost-of-attendance-calculator-Saint-Peters-University-3.png"
+                    alt="Saint Peters University: Cost of Attendance Calculator 3"> <br><br>
+
+                (2.) <a href="https://1drv.ms/u/s!AueBlxRFtOuIhfki_onLyMLmli2aFw?e=aqROlr" target="_blank">
+                    <b>Mississippi Power: Residential Electric Service: Single Phase: Summer Billing Months: June
+                        through
+                        September</b>
+                </a> by <span
+                    style="font-weight: bold; font-family: 'Times New Roman', Times, serif; font-size: 40px;">Brooke</span>
+                <br>
+                As at today: 12/30/2021, the verifiable website for this application is:
+                <a href="https://www.mississippipower.com/content/dam/mississippi-power/pdfs/residential/pricing-and-rates/standard-application-rates/2021/june/R-59.pdf"
+                    target="_blank">
+                    <i>Mississippi Power: Residential Electric Service</i>
+                </a> <br>
+                (https://www.mississippipower.com/content/dam/mississippi-power/pdfs/residential/pricing-and-rates/standard-application-rates/2021/june/R-59.pdf)
+                <br>
+                <div class="w3-center">
+                    <object data="projects/AdvancedCSharp/MidtermProjects/Mississippi-Power.pdf" width="1300"
+                        height="700"></object>
+                </div>
+
+                <br><br>
+
+                (3.) <a href="https://1drv.ms/u/s!AueBlxRFtOuIhcAQ3AiSKP0erkm2iw?e=685MTp"
+                    target="_blank"><b>Registration Form to TRYOUT for the Cleveland Crunch</b></a>
+                by <span
+                    style="font-weight: bold; font-family: 'Times New Roman', Times, serif; font-size: 40px;">Ryan</span>
+                <br>
+                As at today: 12/15/2020, the verifiable website for this application is: <a
+                    href="https://theclevelandcrunch.com/tryouts" target="_blank"><i>Register to TRYOUT for the
+                        Cleveland
+                        Crunch</i></a> <br>
+                (Text file containing the information is automatically generated. As you register more users, the
+                information is
+                added to the text file. When you <u>Load File</u>, you will see everything you typed previously.) <br>
+                (https://theclevelandcrunch.com/tryouts) <br><br>
+
+                (4.) <a href="https://1drv.ms/u/s!AueBlxRFtOuIhb8jljRIvuaIb7X0lg?e=XCUKZL" target="_blank"><b>$2018$
+                        Federal
+                        Tax:
+                        All Filing Options</b></a> by <span
+                    style="font-weight: bold; font-family: 'Times New Roman', Times, serif; font-size: 40px;">Zachary
+                    S.</span> <br>
+                Desktop version of my <a
+                    href="https://samuelchukwuemeka.github.io/piecewise-functions#incomeTaxCalculator"
+                    target="_blank">Web version</a> <br>
+                As at today: 12/03/2020, the verifiable website for this application is: <a
+                    href="https://www.forbes.com/sites/kellyphillipserb/2018/03/07/new-irs-announces-2018-tax-rates-standard-deductions-exemption-amounts-and-more/?sh=120ee3ae3133"
+                    target="_blank"><i>Forbes</i></a> <br>
+                (https://www.forbes.com/sites/kellyphillipserb/2018/03/07/new-irs-announces-2018-tax-rates-standard-deductions-exemption-amounts-and-more/?sh=120ee3ae3133)
+                <br><br>
+
+                (5.) <a href="https://1drv.ms/u/s!AueBlxRFtOuIhb8oKulYxhxHiVWVFQ?e=GJ8R0d" target="_blank"><b>City of
+                        Dover, Ohio: Dover Light and Power: Residential Rates</b></a> by
+                <span
+                    style="font-weight: bold; font-family: 'Times New Roman', Times, serif; font-size: 40px;">Mark</span>
+                <br>
+                As at today: 12/03/2020, the verifiable website for this application is:
+                <a href="https://www.doverohio.com/compare-rates" target="_blank"><i>Welcome to the City of Dover, Ohio
+                        - Compare Rates</i></a> <br>
+                (https://www.doverohio.com/compare-rates) <br>
+                <img src="projects/AdvancedCSharp/MidtermProjects/city-of-dover-residential-power-rates.png"
+                    alt="City of Dover: Residential Power Rates">
+                <br><br>
+
+                (6.) <a href="https://1drv.ms/u/s!AueBlxRFtOuIhcAUyfvf_jIFTwJr3A?e=NccDyg" target="_blank"><b>2020 -
+                        2021 Federal Tax: All Filing Options</b></a>
+                by <span
+                    style="font-weight: bold; font-family: 'Times New Roman', Times, serif; font-size: 40px;">Zachary
+                    S.</span> <br>
+                As at today: 12/03/2020, the verifiable website for this application is:
+                <a href="https://www.irs.com/articles/2020-federal-tax-rates-brackets-standard-deductions/"
+                    target="_blank"><i>IRS.com (This is NOT IRS.gov)</i></a> <br>
+                (https://www.irs.com/articles/2020-federal-tax-rates-brackets-standard-deductions/)
+                <br><br>
+
+                (7.) <a href="https://1drv.ms/u/s!AueBlxRFtOuIhcAGmY4bRh8EGwCNhw?e=Hb2TzG" target="_blank"><b>2020-2021
+                        Federal Tax: Single, Married Filing Jointly or Qualifying Widow(er), and Married Filing
+                        Separately Filing Options</b></a>
+                by <span
+                    style="font-weight: bold; font-family: 'Times New Roman', Times, serif; font-size: 40px;">Angel</span>
+                <br>
+                As at today: 12/03/2020, the verifiable website for this application is:
+                <a href="https://www.debt.org/tax/brackets/" target="_blank"><i>Debt.org: 2020 Tax Brackets & Rates for
+                        Each Income Level</i></a> <br>
+                (https://www.debt.org/tax/brackets/)
+                <br><br>
+
+                (8.) <a href="https://1drv.ms/u/s!AueBlxRFtOuIhbxznsymSOq1knbaWg?e=tBr7qG" target="_blank"><b> 2020-2021
+                        Federal Tax: Head of Household Filing Option</b></a> by
+                <span style="font-weight: bold; font-family: 'Times New Roman', Times, serif; font-size: 40px;">Zachary
+                    C.</span> <br>
+                As at today: 12/03/2020, the verifiable website for this application is:
+                <a href="https://www.irs.com/articles/2020-federal-tax-rates-brackets-standard-deductions/"
+                    target="_blank"><i>IRS.com (This is NOT IRS.gov)</i></a> <br>
+                (https://www.irs.com/articles/2020-federal-tax-rates-brackets-standard-deductions/)
+                <br><br>
+
+                (9.) <a href="https://1drv.ms/u/s!AueBlxRFtOuIhcAFqvatK8cgYkRg6g?e=dPJoeO" target="_blank"><b>Georgia
+                        Public Service Commission: Winter Rate (October - May)</b></a> by
+                <span
+                    style="font-weight: bold; font-family: 'Times New Roman', Times, serif; font-size: 40px;">Keith</span>
+                <br>
+                As at today: 12/03/2020, the verifiable website for this application is:
+                <a href="http://www.psc.state.ga.us/calc/electric/GPcalc.asp" target="_blank"><i>Georgia Power Bill
+                        Calculator: Winter Rate (October - May)</i></a> <br>
+                (http://www.psc.state.ga.us/calc/electric/GPcalc.asp) <br>
+                <img src="projects/AdvancedCSharp/MidtermProjects/georgia-power-rates.png" alt="Georgia Power Rates">
+                <br>
+                <img src="projects/AdvancedCSharp/MidtermProjects/georgia-power-winter.png" alt="Georgia Power Winter">
+                <br><br>
+
+                (10.) <a href="https://1drv.ms/u/s!AueBlxRFtOuIhcAEHteX-u8rAQcyDQ?e=qiSZcC"
+                    target="_blank"><b>Residential Pricing - Standard Family Dwelling Rate | Alabama Power: Winter
+                        (Oct-May)</b></a>
+                by <span
+                    style="font-weight: bold; font-family: 'Times New Roman', Times, serif; font-size: 40px;">Joshua</span>
+                <br>
+                As at today: 12/03/2020, the verifiable website for this application is:
+                <a href="https://www.alabamapower.com/residential/residential-pricing-and-rates/standard-family-dwelling-rate.html"
+                    target="_blank"><i>Residential Pricing - Standard Family Dwelling Rate | Alabama Power</i></a> <br>
+                (https://www.alabamapower.com/residential/residential-pricing-and-rates/standard-family-dwelling-rate.html)
+                <br>
+                The calculator is based on old rates:
+                <pre>
+                    Winter (Oct-May)
+                    Base Charge: $14.50 
+                    First 750 kWH: $0.100511
+                    Over 750 kWH: $0.088511
+                </pre>
+
+                <a href="https://www.al.com/news/2020/12/alabama-power-rates-to-climb-2-percent-next-year.html"
+                    target="_blank">Alabama Power increased their rates</a> <br>
+                (https://www.al.com/news/2020/12/alabama-power-rates-to-climb-2-percent-next-year.html)
+                <br><br>
+
+                (11.) <a href="https://1drv.ms/u/s!AueBlxRFtOuIhcAPQM5hRWA0bphoOQ?e=IE0t2m"
+                    target="_blank"><b>Descriptive Statistics of the Kent State University, Regional Campus enrollment
+                        counts for years 2000 through 2020</b></a>
+                by
+                <span
+                    style="font-weight: bold; font-family: 'Times New Roman', Times, serif; font-size: 40px;">Mark</span>
+                <br>
+                As at today: 12/15/2020, the verifiable website for this application is:
+                <a href="https://www-s3-live.kent.edu/s3fs-root/s3fs-public/file/RC%20Retention%20Rates%202020%20Fall_0.pdf "
+                    target="_blank">Kent State University Regional Campus Retention: $2000$ through $2020$</a> <br>
+                (https://www-s3-live.kent.edu/s3fs-root/s3fs-public/file/RC%20Retention%20Rates%202020%20Fall_0.pdf )
+                <br><br>
+
+                (12.) <a href="https://1drv.ms/u/s!AueBlxRFtOuIhcASP8UVZZeUjV4fgg?e=bCKfbR" target="_blank"><b>Canton
+                        Charge (G League affiliate of the NBA Cleveland Cavaliers) Player Summary Statistics</b></a> by
+                <span style="font-weight: bold; font-family: 'Times New Roman', Times, serif; font-size: 40px;">Zachary
+                    C.</span> <br>
+                As at today: 12/15/2020, the verifiable website for this application is:
+                <a href="https://canton.gleague.nba.com/" target="_blank">Canton Charge Player Statistics</a> <br>
+                (Once copied, the information can be pasted in any document) <br>
+                (https://canton.gleague.nba.com/)
+
+            </div>
+
+            <br><br>
+            <i>
+                The teacher should guide each student to the successful completion of the project. <br>
+                Let students know you are willing to help.
+            </i>
+        </div>
+    </div>
+    <!-- End Students Projects -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://scholarlycommunication.github.io/Presentations/Projects/CSharp/CSharpProjects.html"
+            class="w3-button w3-xlarge w3-square w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+
+    <!-- Resources -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="resources">
+            <h2>Resources</h2>
+            <p>
+                <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank">C# Documentation:
+                    Microsoft</a> <br><br>
+                <a href="https://www.tutlane.com/tutorial/csharp/" target="_blank">C# Tutorial - Tutlane (Free)</a>
+                <br><br>
+                <a href="https://www.w3schools.com/cs/default.asp" target="_blank">C# Tutorial: W3schools.com (Free)</a>
+                <br><br>
+                <a href="https://www.tutorialspoint.com/csharp/index.htm" target="_blank">C# Tutorial - Tutorials Point
+                    (Free)</a>
+                <br><br>
+                <a href="https://csharpforums.net/" target="_blank">C# Developer Community</a> <br><br>
+                <a href="https://www.oreilly.com/library/view/temporary-access/" target="_blank">O'Reilly Online
+                    Learning</a> <br>
+                <i>
+                    For <b>Kent State University students</b>, Select your Institution > Choose “Not Listed? Click
+                    here.” <br>
+                    Enter your Kent State University email address and click Let’s Go
+                </i>
+                <br><br>
+                <a href="https://training.kent.edu/" target="_blank">LinkedIn Learning (Kent State University)</a>
+                <br><br>
+                <a href="https://www.itexams.com/vendor/Microsoft" target="_blank">Microsoft Exams - ITExams (Free Past
+                    Questions and Answers But Requires Patience)</a>
+                <br><br>
+                <a href="https://www.w3resource.com/" target="_blank">Tutorials, Exercises, and Solutions from
+                    W3Resource (Free)</a>
+                <br><br>
+                <a href="https://www.w3resource.com/csharp-exercises/" target="_blank">C# Programming Exercises and
+                    Solutions from
+                    W3Resource (Free)</a> <br><br>
+                <a href="https://www.sololearn.com/Courses/" target="_blank">SoloLearn (Free)</a> <br><br>
+                <a href="https://www.chukwuemekasamuel.com/CSharpNotesForProfessionals.pdf" target="_blank">C# Notes for
+                    Professionals: Stack Overflow Documentation</a> <br><br>
+                <a href="https://www.chukwuemekasamuel.com/CSharpNotesForProfessionals.pdf" target="_blank">C# Notes for
+                    Professionals: Stack Overflow Documentation</a> <br><br>
+                <a href="https://en.wikibooks.org/wiki/Category:Book:C_Sharp_Programming" target="_blank">Wikibooks: C#
+                    Programming</a> <br><br>
+                <a href="https://stackoverflow.com/" target="_blank">Stack Overflow: Question and Answer Forum for
+                    Computer Science</a> <br><br>
+                <a href="https://www.lynda.com/" target="_blank">Lynda.com from LinkedIn (Start for Free. Then, not
+                    free)</a> <br><br>
+                <a href="https://www.codecademy.com/" target="_blank">Codecademy (Start for Free. Then, not free)</a>
+            </p>
+        </div>
+    </div>
+    <!-- End Resources -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://scholarlycommunication.github.io/Presentations/Projects/CSharp/CSharpProjects.html"
+            class="w3-button w3-xlarge w3-square w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+
+    <!-- References -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="references">
+            <h3>References</h3>
+            <p>
+                Chukwuemeka, S.D (2024, April 30). <i>Samuel Chukwuemeka Tutorials: Math, Science, and Technology.</i>
+                Retrieved from <a href="https://scholarlycommunication.github.io/Presentations/"
+                    target="_blank">https://scholarlycommunication.github.io/Presentations/</a>
+                <br><br>
+                Farrell, J. (2018). Microsoft Visual C#: An Introduction to Object-Oriented Programming. Cengage
+                Learning.
+                <br><br>
+                BillWagner. (2019). C# docs - get started, tutorials, reference. Microsoft.Com.
+                https://docs.microsoft.com/en-us/dotnet/csharp/
+                <br><br>
+                (2020). Goalkicker.Com. https://www.goalkicker.com/CSharpBook/CSharpNotesForProfessionals.pdf
+                <br><br>
+
+            </p>
+        </div>
+    </div>
+    <!-- End References -->
+
+
+    <!-- END PAGE CONTENT -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://scholarlycommunication.github.io/Presentations/Projects/CSharp/CSharpProjects.html"
+            class="w3-button w3-xlarge w3-square w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="khaki w3-center w3-padding-24">
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-3NJS4BW8RZ' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2020 &nbsp; SamDom4Peace Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+
+    <script src="scripts/piecewise-functions.js"></script>
+    <script src="scripts/messages3.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

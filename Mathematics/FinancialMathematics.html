@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+  <title>Texas Instruments (TI) Calculators for Finance Problems</title>
+
+
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+    content="Samuel Chukwuemeka gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in Texas Instruments (TI) calculators for finance problems.">
+
+  <meta name="keywords"
+    content="samuel, chukwuemeka, math, mathematics, mathematics of finance, financial mathematics, 
+                financial math, simple interest, compound interest, continuous compound interest, annual percentage yield, 
+                apy, annuity, ordinary annuity, annuity due, amortization, present value, future value, sinking fund, rule of 78, 
+                loan amortization, mortgage payments, stocks, bonds, investment decision rules, debt financing, time value of money,
+                project evaluation, refund fraction, coupon bonds, bond coupons, bond coupon amount, bond coupon number, bond price, 
+                face value, par value, bond coupon rate, yield to maturity, market value, Texas Instruments, TI calculator, TVM, time value of money">
+
+  <link href="styles/Mathematics.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="https://scholarlycommunication.github.io/Presentations/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Presentations
+      </a>
+
+      <a href="#introduction" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Introduction</a>
+
+      <a href="#objectives" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Objectives</a>
+
+      <a href="#symbols" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Symbols</a>
+
+      <a href="#formulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formulas</a>
+
+      <a href="#formulasPDF" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formulas (PDF)</a>
+
+      <a href="#compoundInterest" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Compound
+        Interest</a>
+      <a href="#continuousCompoundInterest" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Continuous
+        Compound Interest</a>
+      <a href="#annualPercentageYield" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Annual
+        Percentage Yield</a>
+
+      <a href="#sinkingFund" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Ordinary Annuity:
+        Future Value and Sinking Fund</a>
+
+      <a href="#amortization" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Ordinary Annuity:
+        Present Value and Amortization</a>
+
+      <a href="#references" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">References</a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Introduction</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>The Mathematics of Finance using Texas Instruments Graphing Calculators</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="introduction" style="margin-top: 50px">
+      <h2>Welcome to VMATYC 2025 and to our Session</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br>
+        My name is <b>Sam</b>uel <b>Dom</b>inic Chukwuemeka (also known as <b>SamDom</b> For Peace). <br>
+        I appreciate your attendance to this session. <br>
+        If you do not mind, may we please take little time to introduce one another? <br>
+        Name: <br>
+        School/College/University: <br>
+        Courses you teach:
+        <br><br>
+        <b>Single Three-Year Software License Request Form</b> <br>
+        You may request for a complimentary three-year software license by completing the form at: <a
+          href="https://ti-enews-education.ti.com/syllabus"
+          target="_blank">https://ti-enews-education.ti.com/syllabus</a>
+        <br><br>
+        You may use any of these <a href="https://education.ti.com/en/products" target="_blank">TI calculators</a>: <br>
+        TI-83 Plus <br>
+        TI-84 Plus series <br>
+        <!--
+        <i>For this session, we shall use the <a
+            href="http://mn.testnav.com/client/index.html#login?username=LGN265231722&password=L5E4J8P8"
+            target="_blank">TI-84 Plus CE</a></i> <br>
+        -->
+        TI-Nspire CX series <br>
+        TI-89 Titanium <br>
+        TI-73 Explorer <br><br>
+        There are at least two approaches to using the TI-calculators for finance problems. <br>
+        <u>1st Approach:</u> <b>Direct Input of Substituted Values</b> <br>
+        (1.) Find the applicable
+        <a href="https://mathematicscourses.github.io/QuantitativeReasoning/MathematicsFinance/financialMathematics.html#formulas"
+          target="_blank">Formula</a> <br>
+        (2.) Substitute the values directly in the formula. <br>
+        (3.) Enter it directly in the calculator. <br>
+        (<i>Please see <b>Show/Hide Answer</b></i> for examples.)
+        <br><br>
+        <u>2nd Approach:</u> <b>Time Value of Money (TVM) Solver</b> <br>
+        The <b>Finance</b> app is required. <br>
+        It can be assessed by pressing the <b>APPS</b> button, then pressing the <b>1: Finance</b> app <br>
+        We begin with the <b>TVM Solver</b> (known as the Time Value of Money Solver) which is found as the first app
+        under the CALC menu (CALC &rightarrow; 1: TVM Solver ...)
+        <br><br>
+        <img src="images/FinanceApp.png" alt="Finance App">
+        <br><br>
+        <img src="images/TVM-Solver.png" alt="TVM Solver">
+        <br><br>
+        For calculations involving: <br>
+        Compound Interest <br>
+        Continuous Compound Interest <br>
+        Annuity <br>
+        Amortization <br>
+        We use the TVM-Solver
+        <br><br>
+        <img src="images/Calculations-1st.png" alt="Calculations-1st">
+        <br><br>
+        <b>N</b> is the total number of compounding periods (years). <br>
+        $N = mt$ <br>
+        This is the product of the number of compounding periods per year and the time (in years).
+        <br><br>
+        <b>I%</b> is the interest rate. <br>
+        If it is 3%, type 3. Do not include the %.
+        <br><br>
+        <b>PV</b> is the present value. <br>
+        This is the Principal or Investment
+        <br><br>
+        <b>PMT</b> is the periodic payment. <br>
+        This specifically applies to Annuity and Amortization.
+        <br><br>
+        <b>FV</b> is the future value. <br>
+        This is the Amount.
+        <br><br>
+        <b>P/Y</b> is the number of payments per year. <br>
+        <b>C/Y</b> is the number of compounding periods per year. <br>
+        For Compound Interest and Continuous Compound Interest calculations, $P/Y = C/Y$
+        <br><br>
+        <b>PMT:END:BEGIN</b> Is the payment made at the end or at the beginning of the year?
+        <br><br>
+        <b>Notable Notes:</b> <br>
+        (1.) No field should be blank. <br>
+        Put a value in every field. <br>
+        If the field does not apply for the question, put a 0 in that field. <br>
+        For the value that you would like to find, put 0 <i>initially</i>.
+        <br><br>
+        (2.) For any cash outflow, put a negative sign. <br>
+        For any cash inflow, put a positive sign.
+        <br><br>
+        (3.) Indicate whether the payment is made at the END or at the BEGIN of a period. <br>
+        When the <i>black</i> focus is on any of those options, move to the field that you want to calculate.
+        <br><br>
+        (4.) Clear the 0 that you put in initially in that field. <br>
+        Press the ALPHA key <br>
+        That takes us to the SOLVE menu which is above the ENTER key. So, press the ENTER key. <br>
+        That gives the value of what you want to calculate.
+        <br><br>
+        For calculations involving: <br>
+        Annual Percentage Rate <br>
+        Annual Percentage Yield <br>
+        We use the <b>Eff</b> and <b>Nom</b> functions as applicable. <br>
+        Use the codes as applicable: <br>
+        <code>Nom(APY, m)</code> <br>
+        <code>Eff(APR, m)</code>
+        <br><br>
+        <img src="images/Calculations-2nd.png" alt="Calculations-2nd">
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive criticisms are welcome at anytime before,
+        during or after the presentation. <br>
+        Let us discuss the examples. <br>
+        Thank you.
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Objectives -->
+    <div class="w3-container w3-padding-32" id="objectives">
+      <div class="w3-row-padding">
+        <h2>Objectives</h2>
+        <p>
+          The <b>Mathematics of Finance</b> is designed to: <br>
+          (1.) Meet one of the learning objectives of the VCCS (Virginia Community College System) standards for:
+          <br>
+          <a href="https://courses.vccs.edu/courses/MTH130-FundamentalsofReasoning" target="_blank">MTH 130:
+            Fundamentals of Reasoning</a> <br>
+          <i>
+            (Presents elementary concepts of algebra, linear graphing, <b>financial literacy</b>, descriptive
+            statistics, and measurement & geometry. ).
+          </i>
+          <br><br>
+          <a href="https://courses.vccs.edu/courses/MTH154-QuantitativeReasoning" target="_blank">MTH 154:
+            Quantitative Reasoning</a> <br>
+          <i>
+            (Presents topics in proportional reasoning, modeling, <b>financial literacy</b> and validity studies (logic
+            and set theory).).
+          </i>
+          <br><br>
+          <a href="https://courses.vccs.edu/courses/MTH165-FiniteMath" target="_blank">MTH
+            165: Finite Math</a> <br>
+          <i>
+            (Presents topics in systems of equations, matrices, linear programming, <b>mathematics of finance</b>,
+            counting theory, probability, and Markov Chains.).
+          </i>
+
+          <br><br>
+
+          (2.) Meet the QM (Quality Matters) and USDOE (United States Department of Education) requirements for
+          distance education as regards the provision of RSI (Regular and Substantive Interaction). <br>
+          <a href="https://www.federalregister.gov/documents/2020/09/02/2020-18636/distance-education-and-innovation"
+            target="_blank">Federal Register: Distance Education and Innovation</a> <br>
+          <a href="https://www.stjohns.edu/sites/default/files/2021-08/New_Federal_Requirements_for_Distance_Education.pdf"
+            target="_blank">St. John's University: New Federal Requirements for Distance Education: Regular and
+            Substantive Interaction (RSI)</a> <br>
+          Student &ndash; Content Interaction: Very high <br>
+          Student &ndash; Student Interaction: High <br>
+          Student &ndash; Faculty Interaction: High
+          <br><br>
+          (3.) Solve finance problems using technology: Texas Instruments (TI) calculators.
+          <br><br>
+          (4.) Solve finance problems using spreadsheets: Microsoft Excel and/or Google spreadsheets.
+
+          <br><br>
+
+          <u>Skills Measured/Acquired</u> <br>
+          (1.) Use of prior knowledge <br>
+          (2.) Critical Thinking <br>
+          (3.) Interdisciplinary connections/applications <br>
+          (4.) Technology <br>
+          (5.) Active participation through direct questioning <br>
+          (6.) Research
+        </p>
+      </div>
+    </div>
+    <!-- End Objectives -->
+
+    <!-- Symbols -->
+    <div class="w3-container w3-padding-32" id="symbols">
+      <div class="w3-row-padding">
+        <h2>Symbols and Meanings</h2>
+
+        <ul class="w3-ul white">
+          <li>$Per\:\:annum$ OR $Per\:\:year$ OR $Annually$ OR $Yearly$ means for a year (per $1$ year)</li>
+          <li>$SI$ OR $I$ = Simple Interest or Dividend or Yield or Return (<span>$</span>)</li>
+          <li>$P$ = Principal or Present Value or Investment (<span>$</span>)</li>
+          <li>$r$ = Rate or Annual Interest Rate or Annual Percentage Rate (%)</li>
+          <li>$APR$ = Rate or Annual Percentage Rate (%)</li>
+          <li>$t$ = Time $(years)$</li>
+          <li>$A$ = Amount or Future Value (<span>$</span>)</li>
+          <li>$CI$ OR $I$ = Compound Interest or Yield or Dividend or Return(<span>$</span>)</li>
+          <li>$m$ = Number of Compounding Periods Per Year </li>
+          <li>$n$ = Total Number of Compounding Periods $(years)$</li>
+          <li>$CCI$ = Continuous Compound Interest or Yield or Dividend or Return(<span>$</span>)
+          </li>
+          <li>$APY$ = Annual Percentage Yield or Effective Interest Rate or True Interest Rate (%)
+          </li>
+          <li>$FV$ = Future Value (<span>$</span>)</li>
+          <li>$PMT$ = periodic payment (<span>$</span>)</li>
+          <li>$PMTs$ = total periodic payments (<span>$</span>)</li>
+          <li>$PV$ = Present Value of all payments (<span>$</span>)</li>
+          <li>$payoff$ = payoff amount for a mortgage</li>
+          <li>$k$ = number of remaining payments</li>
+          <li>$CFV$ = Combined Future Value (<span>$</span>)</li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Symbols -->
+
+    <!-- Formulas -->
+    <div class="w3-container w3-padding-32" id="formulas">
+      <div class="w3-row-padding">
+        <h2>Formulas</h2>
+
+        <h3>Simple Interest</h3>
+        <p>
+          $
+          (1.)\:\: SI = Prt \\[3ex]
+          (2.)\:\: SI = A - P \\[3ex]
+          (3.)\:\: P = \dfrac{SI}{rt} \\[5ex]
+          (4.)\:\: t = \dfrac{SI}{Pr} \\[5ex]
+          (5.)\:\: r = \dfrac{SI}{Pt} \\[5ex]
+          (6.)\:\: A = P + SI \\[3ex]
+          (7.)\:\: A = P(1 + rt) \\[3ex]
+          (8.)\:\: P = \dfrac{A}{1 + rt} \\[5ex]
+          (9.)\:\: t = \dfrac{A - P}{Pr} \\[5ex]
+          (10.)\:\: r = \dfrac{A - P}{Pt} \\[5ex]
+          (11.)\:\: SI = \dfrac{Art}{1 + rt}
+          $
+        </p>
+        <br>
+        <h3>Compound Interest</h3>
+        <p>
+          $
+          (1.)\:\: A = P\left(1 + \dfrac{r}{m}\right)^{mt} \\[7ex]
+          (2.)\:\: P = \dfrac{A}{\left(1 + \dfrac{r}{m}\right)^{mt}} \\[10ex]
+          (3.)\:\: r = m\left[\left(\dfrac{A}{P}\right)^{\dfrac{1}{mt}} - 1\right] \\[10ex]
+          (4.)\:\: r = m\left(10^{\dfrac{\log\left(\dfrac{A}{P}\right)}{mt}} - 1\right) \\[10ex]
+          (5.)\:\: t = \dfrac{\log\left(\dfrac{A}{P}\right)}{m\log\left(1 + \dfrac{r}{m}\right)} \\[7ex]
+          (6.)\:\: A = P + CI \\[3ex]
+          (7.)\:\: CI = A - P
+          $
+        </p>
+
+        <p class="w3-center">
+          <b>Values of <i>m</i></b>
+        </p>
+        <table>
+          <tr>
+            <th class="w3-green" style="width: 50%;">If Compounded:</th>
+            <th class="w3-green" style="width: 50%;"><i>m</i> = </th>
+          </tr>
+          <tr>
+            <td>
+              Annually
+            </td>
+            <td>
+              1 (1 time per year) <br>
+              Also means every twelve months
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Semiannually
+            </td>
+            <td>
+              2 (2 times per year) <br>
+              Also means every six months
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Quarterly
+            </td>
+            <td>
+              4 (4 times per year) <br>
+              Also means every three months
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Monthly
+            </td>
+            <td>
+              12 (12 times per year) <br>
+              Also means every month
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Weekly
+            </td>
+            <td>
+              52 (52 times per year)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Daily (Ordinary/Banker's Rule)
+            </td>
+            <td>
+              360 (360 times per year)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Daily (Exact)
+            </td>
+            <td>
+              365 (365 times per year)
+            </td>
+          </tr>
+        </table>
+
+        <br>
+        <h3>Continuous Compound Interest</h3>
+        <p>
+          $
+          (1.)\:\: A = Pe^{rt} \\[4ex]
+          (2.)\:\: P = \dfrac{A}{e^{rt}} \\[7ex]
+          (3.)\:\: t = \dfrac{\ln \left(\dfrac{A}{P}\right)}{r} \\[7ex]
+          (4.)\:\: r = \dfrac{\ln \left(\dfrac{A}{P}\right)}{t} \\[7ex]
+          (5.)\:\: A = P + CCI \\[3ex]
+          (6.)\:\: CCI = A - P \\[3ex]
+          $
+        </p>
+
+        <br>
+        <h3>APY for Compound Interest</h3>
+        <p>
+          $
+          (1.)\:\: APY = \left(1 + \dfrac{r}{m}\right)^m - 1 \\[7ex]
+          (2.)\:\: r = m\left[(APY + 1)^{\dfrac{1}{m}} - 1\right] \\[7ex]
+          (3.)\:\: r = m\left(\sqrt[m]{APY + 1} - 1\right)
+          $
+        </p>
+
+        <br>
+        <h3>APY for Continuous Compound Interest</h3>
+        <p>
+          $
+          (1.)\:\: APY = e^r - 1 \\[4ex]
+          (2.)\:\: r = \ln(APY + 1)
+          $
+        </p>
+
+        <br>
+        <h3>Future Value of Ordinary Annuity</h3>
+        <p>
+          $
+          (1.)\:\: FV = m * PMT * \left[\dfrac{\left(1 + \dfrac{r}{m}\right)^{mt} - 1}{r}\right] \\[10ex]
+          (2.)\;\; FV = PMT * \dfrac{\left[\left(1 + \dfrac{r}{m}\right)^{mt} - 1\right]}{\dfrac{r}{m}} \\[10ex]
+          (3.)\:\: t = \dfrac{\log\left[\dfrac{r * FV}{m * PMT} + 1\right]}{m * \log\left(1 + \dfrac{r}{m}\right)}
+          \\[10ex]
+          (4.)\:\: Total\:\:PMTs = PMT * m * t \\[3ex]
+          (5.)\:\: CI = FV - Total\:\:PMTs \\[5ex]
+          (6.)\:\: n = mt
+          $
+        </p>
+
+        <br>
+        <h3>Sinking Fund</h3>
+        <p>
+          $
+          (1.)\:\: PMT = \dfrac{r * FV}{m * \left[\left(1 + \dfrac{r}{m}\right)^{mt} - 1\right]} \\[10ex]
+          (2.)\:\: t = \dfrac{\log\left[\dfrac{r * FV}{m * PMT} + 1\right]}{m * \log\left(1 + \dfrac{r}{m}\right)}
+          \\[10ex]
+          (3.)\:\: Total\:\:PMTs = PMT * m * t \\[3ex]
+          (4.)\:\: CI = FV - Total\:\:PMTs \\[3ex]
+          (5.)\:\: n = mt
+          $
+        </p>
+
+        <br>
+        <h3>Present Value of Ordinary Annuity</h3>
+        <p>
+          $
+          (1.)\:\: PV = m * PMT * \left[\dfrac{1 - \left(1 + \dfrac{r}{m}\right)^{-mt}}{r}\right] \\[10ex]
+          (2.)\:\: t = -\dfrac{\log\left[1 - \dfrac{r * PV}{m * PMT}\right]}{m * \log\left(1 +
+          \dfrac{r}{m}\right)} \\[10ex]
+          (3.)\:\: n = mt \\[3ex]
+          (4.)\:\: Total\:\:PMTs = PMT * m * t \\[3ex]
+          (5.)\:\: CI = Total\:\:PMTs - PV
+          $
+        </p>
+
+        <br>
+        <h3>Amortization</h3>
+        <p>
+          $
+          (1.)\:\: PMT = \dfrac{PV}{m} * \left[\dfrac{r}{1 - \left(1 + \dfrac{r}{m}\right)^{-mt}}\right] \\[10ex]
+          (2.)\:\: t = -\dfrac{\log\left[1 - \dfrac{r * PV}{m * PMT}\right]}{m * \log\left(1 +
+          \dfrac{r}{m}\right)} \\[10ex]
+          (3.)\:\: n = mt \\[3ex]
+          (4.)\:\: Payoff = PMT * n * \left[\dfrac{1 - \left(1 + \dfrac{r}{n}\right)^{-k}}{r}\right] \\[10ex]
+          (5.)\:\: Total\:\:PMTs = PMT * m * t \\[3ex]
+          (6.)\:\: CI = Total\:\:PMTs - PV \\[3ex]
+          (7.)\:\: CI = PMT * m * t - PV \\[3ex]
+          (8.)\:\: Number\:\:of\:\:payments = m * t \\[3ex]
+          (9.)\:\: Down\:\:Payment = Given\:\:Rate * Purchase\:\:Price \\[3ex]
+          (10.)\:\: Amount\:\:of\:\:Mortgage = Purchase\:\:Price - Down\:\:Payment \\[3ex]
+          (11.)\:\: Payment\:\:for\:\:x\:\:points\:\:at\:closing = x\:\:as\:\:\% * Amount\:\:of\:\:Mortgage
+          $
+        </p>
+      </div>
+    </div>
+    <!-- End Formulas -->
+
+    <!-- Formulas PDF -->
+    <div class="w3-container w3-padding-32" id="formulasPDF">
+      <div class="w3-row-padding">
+        <h2>Formulas (PDF)</h2>
+        These formulas accommodate the TI-83 and the TI-84 models that do not have the fraction format:
+        <b>n/d</b>: $\dfrac{numerator}{denominator}$ <br>
+        (<i>Please see the formulas in <span style="color: red;">red</span></i>)
+        <br><br>
+        <object data="Notes/FormulasTest2-Expanded.pdf" width="1400" height="700"></object>
+      </div>
+    </div>
+    <!-- End Formulas PDF -->
+
+    <!-- Questions and Answers -->
+    <!-- Compound Interest -->
+    <h4 id="compoundInterest">Compound Interest</h4>
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) <b>ACT</b> A formula used to compute the current value of a savings account is $A = P(1 + r)^n$, where
+          <i>A</i> is the current value; <i>P</i> is the amount deposited; <i>r</i> is the rate of interest for 1
+          compounding period, expressed as a decimal; and <i>n</i> is the number of compounding periods. <br>
+          Which of the following is closest to the value of a savings account after 5 years if <span>$10,000</span> is
+          deposited at 4% annual interest compounded yearly?
+          <br><br>
+          $
+          F.\;\; \$10,400 \\[3ex]
+          G.\;\; \$12,167 \\[3ex]
+          H.\;\; \$42,000 \\[3ex]
+          J.\;\; \$52,000 \\[3ex]
+          K.\;\; \$53,782 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionMF1')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCMF1')">Calculator Solution</button>
+          <div class="result" id="solutionMF1">
+            <br>
+            $
+            P = \$10,000 \\[3ex]
+            r = 4\% = \dfrac{4}{100} = 0.04 \\[5ex]
+            n = 1(5) = 5\;years \\[3ex]
+            A = P(1 + r)^n \\[3ex]
+            A = 10000(1 + 0.04)^5 \\[3ex]
+            A = 10000(1.04)^5 \\[3ex]
+            A = 10000(1.216652902) \\[3ex]
+            A = 12166.52902 \\[3ex]
+            A \approx \$12,167 \\[3ex]
+            $
+            <img src="images/Answers/Number1.png" alt="Number 1">
+          </div>
+          <div class="result" id="solutionCMF1">
+            <br>
+            <img src="images/Answers/Calculator1.png" alt="Calculator 1">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.) <b>JAMB</b> If the population of a town was 240000 in January 1998 and it increased by 2% each year, what
+          would be the population of the town in January 2000?
+          <br><br>
+          $
+          A.\:\: 480,000 \\[3ex]
+          B.\:\: 249,696 \\[3ex]
+          C.\:\: 249,600 \\[3ex]
+          D.\:\: 244,800 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionMF2')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCMF2')">Calculator Solution</button>
+          <div class="result" id="solutionMF2">
+            <br>
+            We can solve this question in two ways: by using Quantitative Reasoning and the Compound Interest Formula
+            <br>
+            Use any way that is faster for you.
+            <br><br>
+            $
+            \underline{\text{First Approach: Quantitative Reasoning}} \\[3ex]
+            \text{From January 1998 to January 2000} \implies 2000 - 1998 = 2\;years \\[3ex]
+            From\:\:January,1998\:\:to\:\:January, 2000 \\[3ex]
+            Population\:\:in\:\:1998 = 240000 \\[3ex]
+            2\%\:\:increase\:\:for\:\:1999 = \dfrac{2}{100} * 240000 = 2(2400) = 4800 \\[5ex]
+            Population\:\:in\:\:1999 = 240000 + 4800 = 244800 \\[3ex]
+            2\%\:\:increase\:\:for\:\:2000 = \dfrac{2}{100} * 244800 = 2(2448) = 4896 \\[5ex]
+            Population\:\:in\:\:2000 = 244800 + 4896 = 249696 \\[3ex]
+            $
+            Ceteris paribus, the population of the town in January, $2000$ would be $249,696$ people
+            <br><br>
+            $
+            \underline{\text{Second Approach: Compound Interest Formula}} \\[3ex]
+            \text{From January 1998 to January 2000} \implies 2000 - 1998 = 2\;years \\[3ex]
+            P = 240000 \\[3ex]
+            r = 2\% = \dfrac{2}{100} = 0.02 \\[5ex]
+            t = 2\:years \\[3ex]
+            m = 1 \\[3ex]
+            A = ? \\[3ex]
+            A = P\left(1 + \dfrac{r}{m}\right)^{mt} \\[5ex]
+            A = 240000\left(1 + \dfrac{0.02}{1}\right)^{1(2)} \\[5ex]
+            A = 240000(1 + 0.02)^2 \\[4ex]
+            A = 240000(1.02)^2 \\[4ex]
+            A = 240000(1.0404) \\[3ex]
+            A = 249696 \\[3ex]
+            $
+            Ceteris paribus, the population of the town in January, $2000$ would be $249,696$ people
+            <br><br>
+            <i>
+              Ask students their preferred method. <br>
+              They should give reasons for their choices.
+            </i>
+            <br><br>
+            <img src="images/Answers/Number2.png" alt="Number 2">
+          </div>
+          <div class="result" id="solutionCMF2">
+            <br>
+            <img src="images/Answers/Calculator2.png" alt="Calculator 2">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.) Habakkuk wants to have <span>$</span>16000 in the future. <br>
+          He intends to deposit some money in a company that pays 9% interest rate compounded semiannually. <br>
+          How much should he deposit now to have that amount in 5 years time?
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMF3')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCMF3')">Calculator Solution</button>
+          <div class="result" id="solutionMF3">
+            <br>
+            The question is asking us to calculate the principal.
+            <br><br>
+            $
+            A = \$16000 \\[3ex]
+            r = 9\% = \dfrac{9}{100} = 0.09 \\[5ex]
+            m = 2 \:\:(compounded\:\: semiannually) \\[3ex]
+            t = 5 \\[3ex]
+            P = \dfrac{A}{\left(1 + \dfrac{r}{m}\right)^{mt}} \\[7ex]
+            P = \dfrac{16000}{\left(1 + \dfrac{0.09}{2}\right)^{2 * 5}} \\[7ex]
+            P = \dfrac{16000}{(1 + 0.045)^{10}} \\[5ex]
+            P = \dfrac{16000}{(1.045)^{10}} \\[5ex]
+            P = \dfrac{16000}{1.552969422} \\[5ex]
+            P = 10302.84291 \\[3ex]
+            P = \$10302.84 \\[3ex]
+            $
+            He should deposit <span>$</span>10302.84 now in order to earn <span>$</span>16000.00 in 5 years ceteris
+            paribus
+            <br><br>
+            <img src="images/Answers/Number3.png" alt="Number 3">
+          </div>
+          <div class="result" id="solutionCMF3">
+            <br>
+            <img src="images/Answers/Calculator3.png" alt="Calculator 3">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.) How long will it take an investment of <span>$</span>10,000 to double if the investment earns interest at
+          the rate of 10% per year compounded monthly?
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMF4')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCMF4')">Calculator Solution</button>
+          <div class="result" id="solutionMF4">
+            <br>
+            $
+            P = \$10000 \\[3ex]
+            A = double\:\:P = 2(10000) = \$20000 \\[3ex]
+            r = 10\% = \dfrac{10}{100} = 0.1 \\[5ex]
+            Compounded\:\:Monthly \implies m = 12 \\[3ex]
+            t = ? \\[3ex]
+            t = \dfrac{\log\left(\dfrac{A}{P}\right)}{m\log\left(1 + \dfrac{r}{m}\right)} \\[7ex]
+            \dfrac{A}{P} = \dfrac{20000}{10000} = 2 \\[5ex]
+            \dfrac{r}{m} = \dfrac{0.1}{12} = 0.0083333 \\[5ex]
+            t = \dfrac{\log 2}{12 * \log(1 + 0.0083333)} \\[5ex]
+            t = \dfrac{0.301029995}{12 * \log(1.0083333)} \\[5ex]
+            t = \dfrac{0.301029995}{12 * 0.003604124} \\[5ex]
+            t = \dfrac{0.301029995}{0.043249491} \\[5ex]
+            t = 6.96031301 \\[3ex]
+            t \approx 6.96 \\[3ex]
+            $
+            It will take about 6.96 years for the investment of <span>$</span>10,000 to double at the rate of 10% per
+            year compounded monthly.
+            <br><br>
+            <img src="images/Answers/Number4.png" alt="Number 4">
+            <br><br>
+            <i>
+              Given the answers in 7 decimal places, ask students to explain the reason for the different approximate
+              answers. <br>
+              Which answer is more precise? <br>
+              To get the approximate answer given by the calculator and the Finance App, what needs to be done?
+            </i>
+          </div>
+          <div class="result" id="solutionCMF4">
+            <br>
+            <img src="images/Answers/Calculator4-1st.png" alt="Calculator 4-1st">
+            <br><br>
+            <img src="images/Answers/Calculator4-2nd.png" alt="Calculator 4-2nd">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.) Five and a half years ago, Peter invested <span>$</span>20,000 which is worth <span>$</span>39,253.55
+          today if the rate is compounded quarterly. <br>
+          What rate of interest is used?
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMF5')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCMF5')">Calculator Solution</button>
+          <div class="result" id="solutionMF5">
+            <br>
+            $
+            t = 5\dfrac{1}{2}\: years = 5.5\: years \\[5ex]
+            P = \$20000 \\[3ex]
+            A = \$39253.55 \\[3ex]
+            Compounded\:\:Quarterly \implies m = 4 \\[3ex]
+            r = ? \\[3ex]
+            r = m\left[\left(\dfrac{A}{P}\right)^{\dfrac{1}{mt}} - 1\right] \\[7ex]
+            mt = 4(5.5) = 22 \\[3ex]
+            \dfrac{1}{mt} = \dfrac{1}{22} = 0.0454545455 \\[5ex]
+            \dfrac{A}{P} = \dfrac{39253.55}{20000} = 1.9626775 \\[5ex]
+            \left(\dfrac{A}{P}\right)^{\dfrac{1}{mt}} = 1.9626775^{0.0454545455} = 1.031125 \\[7ex]
+            \left(\dfrac{A}{P}\right)^{\dfrac{1}{mt}} - 1 = 1.031125 - 1 = 0.031125 \\[7ex]
+            m\left[\left(\dfrac{A}{P}\right)^{\dfrac{1}{mt}} - 1\right] = 4(0.031125) = 0.1245 \\[7ex]
+            0.1245\:\:to\:\:\% = 0.1245(100) = 12.45\% \\[3ex]
+            r = 12.45\% \\[3ex]
+            $
+            The rate of interest is 12.45%
+            <br><br>
+            <img src="images/Answers/Number5.png" alt="Number 5">
+          </div>
+          <div class="result" id="solutionCMF5">
+            <br>
+            <img src="images/Answers/Calculator5.png" alt="Calculator 5">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.) <span>$</span>2000 is deposited in an account that pays an APR of 8.5​% compounded annually. <br>
+          How long will it take for the balance to reach ​<span>$</span>100,000​?
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMF6')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCMF6')">Calculator Solution</button>
+          <div class="result" id="solutionMF6">
+            <br>
+            $
+            r = 8.5\% = \dfrac{8.5}{100} = 0.085 \\[5ex]
+            Compounded\:\:annually\rightarrow m = 1 \\[3ex]
+            P = \$2000 \\[3ex]
+            A = \$100000 \\[3ex]
+            t = ? \\[3ex]
+            t = \dfrac{\log\left(\dfrac{A}{P}\right)}{m\log\left(1 + \dfrac{r}{m}\right)} \\[7ex]
+            t = \dfrac{\log\left(\dfrac{100000}{2000}\right)}{1 * \log\left(1 + \dfrac{0.085}{1}\right)} \\[7ex]
+            t = \dfrac{\log (50)}{1 * \log(1 + 0.085)} \\[5ex]
+            t = \dfrac{\log (50)}{1 * \log(1.085)} \\[5ex]
+            t = \dfrac{\log (50)}{\log(1.085)} \\[5ex]
+            t = 47.95321928 \\[3ex]
+            t \approx 48\:years \\[3ex]
+            $
+            <img src="images/Answers/Number6.png" alt="Number 6">
+          </div>
+          <div class="result" id="solutionCMF6">
+            <br>
+            <img src="images/Answers/Calculator6-1st.png" alt="Calculator 6-1st">
+            <br><br>
+            <img src="images/Answers/Calculator6-2nd.png" alt="Calculator 6-2nd">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Compound Interest -->
+
+    <br><br>
+
+    <!-- Continuous Compound Interest -->
+    <h4 id="continuousCompoundInterest">Continuous Compound Interest</h4>
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.) Malachi invested a sum of <span>$</span>800 into an account that pays interest at the rate of 2.9%
+          per year, compounded continuously. <br>
+          How much money will be in the account after 8 years? <br>
+          Round to the nearest hundredth as needed.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMF7')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCMF7')">Calculator Solution</button>
+          <div class="result" id="solutionMF7">
+            <br>
+            $
+            \underline{\text{Continuous Compound Interest}} \\[3ex]
+            P = \$800 \\[3ex]
+            t = 8\: years \\[3ex]
+            r = 2.9\% = \dfrac{2.9}{100} = 0.029 \\[5ex]
+            A = Pe^{rt} \\[5ex]
+            A = 800 * e^{0.029 * 8} \\[5ex]
+            = 800 * e^{0.232} \\[5ex]
+            = 800 * 1.261119729 \\[2ex]
+            = 1008.895783 \\[3ex]
+            A \approx \$1008.90 \\[3ex]
+            $
+            <img src="images/Answers/Number7.png" alt="Number 7">
+          </div>
+          <div class="result" id="solutionCMF7">
+            <br>
+            <img src="images/Answers/Calculator7.png" alt="Calculator 7">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.) The future value of Rita's investment in 7 years at 5% per annum compounded continuously is
+          <span>$</span>7500. <br>
+          What is the present value of her investment?
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMF8')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCMF8')">Calculator Solution</button>
+          <div class="result" id="solutionMF8">
+            <br>
+            $
+            \underline{\text{Continuous Compound Interest}} \\[3ex]
+            P = ? \\[3ex]
+            t = 7\: years \\[3ex]
+            r = 5\% = \dfrac{5}{100} = 0.05 \\[5ex]
+            A = \$7500 \\[3ex]
+            P = \dfrac{A}{e^{rt}} \\[6ex]
+            P = \dfrac{7500}{e^{0.05(7)}} \\[6ex]
+            P = \dfrac{7500}{e^{0.35}} \\[6ex]
+            P = \dfrac{7500}{1.419067549} \\[5ex]
+            P = 5285.160673 \\[3ex]
+            P \approx \$5285.16 \\[3ex]
+            $
+            <img src="images/Answers/Number8.png" alt="Number 8">
+          </div>
+          <div class="result" id="solutionCMF8">
+            <br>
+            <img src="images/Answers/Calculator8.png" alt="Calculator 8">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.) Deborah invested <span>$</span>2000 at an interest rate, <i>k</i> compounded continuously. <br>
+          The fund amounted to <span>$</span>2504.65 in 5 years. <br>
+          Calculate the interest rate.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMF9')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCMF9')">Calculator Solution</button>
+          <div class="result" id="solutionMF9">
+            <br>
+            $
+            \underline{\text{Continuous Compound Interest}} \\[3ex]
+            P = \$2000 \\[3ex]
+            r = k \\[3ex]
+            A = \$2504.65 \\[3ex]
+            t = 5\:years \\[3ex]
+            r = \dfrac{\ln \left({\dfrac{A}{P}}\right)}{t} \\[7ex]
+            r = \dfrac{\ln \left({\dfrac{2504.65}{2000}}\right)}{5} \\[7ex]
+            = \dfrac{\ln (1.252325)}{5} \\[5ex]
+            = \dfrac{0.225001824}{5} \\[5ex]
+            = 0.045000365 \\[3ex]
+            to\:\:percent = 0.045000365(100) = 4.5000365 \\[3ex]
+            r \approx 4.5\% \\[3ex]
+            $
+            <img src="images/Answers/Number9.png" alt="Number 9">
+          </div>
+          <div class="result" id="solutionCMF9">
+            <br>
+            <img src="images/Answers/Calculator9.png" alt="Calculator 9">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.) If the population of SamDom For Peace City is growing at 1.5% compounded continuously, how
+          long will it take the population to triple?
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMF10')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCMF10')">Calculator Solution</button>
+          <div class="result" id="solutionMF10">
+            <br>
+            $
+            P = ? \\[3ex]
+            A = 3P...triple \\[3ex]
+            r = 1.5\% = \dfrac{1.5}{100} = 0.015 \\[5ex]
+            t = ? \\[3ex]
+            t = \dfrac{\ln \left(\dfrac{A}{P}\right)}{r} \\[7ex]
+            t = \dfrac{\ln \left(\dfrac{3P}{P}\right)}{0.015} \\[7ex]
+            = \dfrac{\ln 3}{0.015} \\[5ex]
+            = \dfrac{1.09861229}{0.015} \\[5ex]
+            = 73.2408192 \\[3ex]
+            \approx 73.24\:years \\[3ex]
+            $
+            Ceteris paribus, it will take approximately 73.24 years for the population of SamDom For Peace
+            City to triple in size, if the population is growing at a rate of 1.5% compounded continuously.
+            <br><br>
+            <img src="images/Answers/Number10.png" alt="Number 10">
+          </div>
+          <div class="result" id="solutionCMF10">
+            <br>
+            <img src="images/Answers/Calculator10-1st.png" alt="Calculator 10-1st">
+            <br><br>
+            <img src="images/Answers/Calculator10-2nd.png" alt="Calculator 10-2nd">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Continuous Compound Interest -->
+
+    <br><br>
+
+    <!-- Annual Percentage Yield -->
+    <h4 id="annualPercentageYield">Annual Percentage Yield</h4>
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.) Determine the effective rate of interest for a nominal rate of 5% per year compounded: <br>
+          (a.) Annually <br>
+          (b.) Semiannually <br>
+          (c.) Quarterly <br>
+          (d.) Monthly <br>
+          (e.) Continuously
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMF11')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCMF11')">Calculator Solution</button>
+          <div class="result" id="solutionMF11">
+            <br>
+            $
+            r = 5\% = \dfrac{5}{100} = 0.05 \\[5ex]
+            (a.) \\[3ex]
+            \underline{Annually} \\[3ex]
+            Compounded\:\:annually \rightarrow m = 1 \\[3ex]
+            APY = \left(1 + \dfrac{r}{m}\right)^m - 1 \\[7ex]
+            APY = \left(1 + \dfrac{0.05}{1}\right)^{1} - 1 \\[7ex]
+            = \left(1 + 0.05\right)^{1} - 1 \\[5ex]
+            = (1.05)^1 - 1 \\[3ex]
+            = 1.05 - 1 \\[3ex]
+            = 0.05 \\[3ex]
+            to\:\:percent = 0.05(100) = 5\% \\[3ex]
+            APY = 5\% \\[5ex]
+            (b.) \\[3ex]
+            \underline{Semiannually} \\[3ex]
+            Compounded\:\:semiannually \rightarrow m = 2 \\[3ex]
+            APY = \left(1 + \dfrac{r}{m}\right)^m - 1 \\[7ex]
+            APY = \left(1 + \dfrac{0.05}{2}\right)^{2} - 1 \\[7ex]
+            = \left(1 + 0.025\right)^{2} - 1 \\[5ex]
+            = (1.025)^2 - 1 \\[3ex]
+            = 1.050625 - 1 \\[3ex]
+            = 0.050625 \\[3ex]
+            to\:\:percent = 0.050625(100) = 5.0625\% \\[3ex]
+            APY = 5.0625\% \\[5ex]
+            (c.) \\[3ex]
+            \underline{Quarterly} \\[3ex]
+            Compounded\:\:quarterly \rightarrow m = 4 \\[3ex]
+            APY = \left(1 + \dfrac{r}{m}\right)^m - 1 \\[7ex]
+            APY = \left(1 + \dfrac{0.05}{4}\right)^{4} - 1 \\[7ex]
+            = \left(1 + 0.0125\right)^{4} - 1 \\[5ex]
+            = (1.0125)^4 - 1 \\[3ex]
+            = 1.05094534 - 1 \\[3ex]
+            = 0.05094534 \\[3ex]
+            to\:\:percent = 0.05094534(100) = 5.094534\% \\[3ex]
+            APY = 5.094534\% \\[5ex]
+            (d.) \\[3ex]
+            \underline{Monthly} \\[3ex]
+            Compounded\:\:monthly \rightarrow m = 12 \\[3ex]
+            APY = \left(1 + \dfrac{r}{m}\right)^m - 1 \\[7ex]
+            APY = \left(1 + \dfrac{0.05}{12}\right)^{12} - 1 \\[7ex]
+            = \left(1 + 0.00416666667\right)^{12} - 1 \\[5ex]
+            = (1.00416667)^{12} - 1 \\[3ex]
+            = 1.05116194 - 1 \\[3ex]
+            = 0.05116194 \\[3ex]
+            to\:\:percent = 0.05116194(100) = 5.116194\% \\[3ex]
+            APY = 5.116194\% \\[5ex]
+            (e.) \\[3ex]
+            \underline{Continuously} \\[3ex]
+            APY = e^r - 1 \\[4ex]
+            APY = e^{0.05} - 1 \\[4ex]
+            = 1.0512711 - 1 \\[3ex]
+            = 0.0512711 \\[3ex]
+            to\:\:percent = 0.0512711(100) \\[3ex]
+            APY = 5.12711\% \\[3ex]
+            $
+            <img src="images/Answers/Number11-1st.png" alt="Number 11-1st">
+            <br><br>
+            <img src="images/Answers/Number11-2nd.png" alt="Number 11-2nd">
+            <br><br>
+            <img src="images/Answers/Number11-3rd.png" alt="Number 11-3rd">
+            <br><br>
+            <img src="images/Answers/Number11-4th.png" alt="Number 11-4th">
+            <br><br>
+            <img src="images/Answers/Number11-5th.png" alt="Number 11-5th">
+            <br><br>
+          </div>
+          <div class="result" id="solutionCMF11">
+            <br>
+            <img src="images/Answers/Calculator11-1st.png" alt="Calculator 11-1st">
+            <br><br>
+            <img src="images/Answers/Calculator11-2nd.png" alt="Calculator 11-2nd">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.) A loan company wants to offer a CD (Certificate of deposit) with a monthly company rate that has an APY
+          of 7.5%. <br>
+          What annual nominal rate compounded monthly should they use?
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMF12')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCMF12')">Calculator Solution</button>
+          <div class="result" id="solutionMF12">
+            <br>
+            $
+            APY = 7.5\% = \dfrac{7.5}{100} = 0.075 \\[5ex]
+            Compounded\:\:monthly \rightarrow m = 12 \\[3ex]
+            r = m\left[(APY + 1)^{\dfrac{1}{m}} - 1\right] \\[7ex]
+            r = 12 * \left[(0.075 + 1)^{\dfrac{1}{12}} - 1\right] \\[7ex]
+            = 12 * \left[(1.075)^{\dfrac{1}{12}} - 1\right] \\[7ex]
+            = 12 * \left[(1.075)^{0.0833333333} - 1\right] \\[5ex]
+            = 12 * \left[1.00604492 - 1\right] \\[5ex]
+            = 12 * 0.00604492 \\[3ex]
+            = 0.07253904 \\[3ex]
+            to\:\:percent = 0.07253904(10) = 7.253904 \\[3ex]
+            r \approx 7.25\% \\[3ex]
+            $
+            <img src="images/Answers/Number12.png" alt="Number 12">
+          </div>
+          <div class="result" id="solutionCMF12">
+            <br>
+            <img src="images/Answers/Calculator12.png" alt="Calculator 12">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Annual Percentage Yield -->
+
+    <br><br>
+
+    <!-- Ordinary Annuity: Future Value and Sinking Fund -->
+    <h4 id="sinkingFund">Ordinary Annuity: Future Value and Sinking Fund</h4>
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.) Calculate the future value of a <span>$</span>300 per week ordinary annuity at 4.5% per year
+          compounded weekly for $8\dfrac{1}{2}$ years. <br>
+          Assume 52 weeks in a year.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMF13')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCMF13')">Calculator Solution</button>
+          <div class="result" id="solutionMF13">
+            <br>
+            This is a case of the <b>Future Value of Ordinary Annuity</b>
+            <br><br>
+            $
+            \underline{Future\:\:Value\:\:of\:\:Ordinary\:\:Annuity} \\[3ex]
+            PMT = \$300 \\[3ex]
+            r = 4.5\% = \dfrac{4.5}{100} = 0.045 \\[5ex]
+            Compounded\:\:weekly \rightarrow m = 52 \\[3ex]
+            t = 8\dfrac{1}{2}\:years = 8.5\:years \\[5ex]
+            FV = ? \\[3ex]
+            FV = m * PMT * \left[\dfrac{\left(1 + \dfrac{r}{m}\right)^{mt} - 1}{r}\right] \\[10ex]
+            FV = 52 * 300 * \left[\dfrac{\left(1 + \dfrac{0.045}{52}\right)^{52 * 8.5} - 1}{0.045}\right]
+            \\[10ex]
+            = 15600 * \left[\dfrac{\left(1 + 0.000865384615\right)^{442} - 1}{0.045}\right] \\[10ex]
+            = 15600 * \left[\dfrac{\left(1.000865384615\right)^{442} - 1}{0.045}\right] \\[7ex]
+            = 15600 * \left[\dfrac{1.46570241 - 1}{0.045}\right] \\[5ex]
+            = 15600 * \left[\dfrac{0.46570241}{0.045}\right] \\[5ex]
+            = \dfrac{15600 * 0.46570241}{0.045} \\[5ex]
+            = \dfrac{7264.9576}{0.045} \\[5ex]
+            = 161443.502 \\[3ex]
+            FV \approx \$161,443.50 \\[3ex]
+            $
+            Ceteris paribus, the future value of a <span>$</span>300 per week ordinary annuity at 4.5% per year
+            compounded weekly for $8\dfrac{1}{2}$ years is about <span>$</span>161,443.50
+            <br><br>
+            <img src="images/Answers/Number13.png" alt="Number 13">
+          </div>
+          <div class="result" id="solutionCMF13">
+            <br>
+            <img src="images/Answers/Calculator13.png" alt="Calculator 13">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.) Phoebe's goal is to create a college fund for her child. <br>
+          She found a fund that offers an APR of 6%. <br>
+          How much should she deposit monthly to accumulate ​<span>$</span>89000 in 13 ​years?
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMF14')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCMF14')">Calculator Solution</button>
+          <div class="result" id="solutionMF14">
+            <br>
+            This is a case of <b>Sinking Fund</b>
+            <br><br>
+            $
+            r = 6\% = \dfrac{6}{100} = 0.06 \\[5ex]
+            Monthly\;\;deposits \rightarrow Compounded\:\:monthly \rightarrow m = 12 \\[3ex]
+            FV = \$89000 \\[3ex]
+            t = 13\;years \\[3ex]
+            PMT = \dfrac{r * FV}{m * \left[\left(1 + \dfrac{r}{m}\right)^{mt} - 1\right]} \\[9ex]
+            = \dfrac{0.06 * 89000}{12 * \left[\left(1 + \dfrac{0.06}{12}\right)^{12 * 13} - 1\right]} \\[9ex]
+            = \dfrac{5340}{12 * \left[(1 + 0.005)^{156} - 1\right]} \\[5ex]
+            = \dfrac{5340}{12 * \left[(1.005)^{156} - 1\right]} \\[5ex]
+            = \dfrac{5340}{12 * (2.177236639 - 1)} \\[5ex]
+            = \dfrac{5340}{12 * 1.177236639} \\[5ex]
+            = \dfrac{5340}{14.12683966} \\[5ex]
+            = 378.0038655 \\[3ex]
+            \approx \$378.00 \\[3ex]
+            $
+            Phoebe should deposit about <span>$</span>378.00 in the college fund to have
+            <span>$</span>89000 in 13 years ceteris paribus.
+            <br><br>
+            <img src="images/Answers/Number14.png" alt="Number 14">
+          </div>
+          <div class="result" id="solutionCMF14">
+            <br>
+            <img src="images/Answers/Calculator14.png" alt="Calculator 14">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.) At age 43, Augustine started saving for retirement. <br>
+          He found an investment plan that pays an APR of 6%. <br>
+          How long does he have to make a monthly deposit of <span>$</span>1464.60 to have <span>$</span>0.8 million in
+          retirement?
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMF15')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCMF15')">Calculator Solution</button>
+          <div class="result" id="solutionMF15">
+            <br>
+            This is a case of the <b>Future Value of Ordinary Annuity</b>
+            <br><br>
+            $
+            PMT = \$1464.60 \\[3ex]
+            r = 6\% = \dfrac{6}{100} = 0.06 \\[5ex]
+            Monthly\;\;payments \rightarrow Compounded\:\:monthly \rightarrow m = 12 \\[3ex]
+            FV = \$0.8\;million = \$800,000 \\[3ex]
+            t = ? \\[5ex]
+
+            t = \dfrac{\log\left(\dfrac{r * FV}{m * PMT} + 1\right)}{m * \log\left(1 + \dfrac{r}{m}\right)}
+            \\[10ex]
+            t = \dfrac{\log\left(\dfrac{0.06 * 800000}{12 * 1464.60} + 1\right)}{12 * \log\left(1 +
+            \dfrac{0.06}{12}\right)} \\[10ex]
+            t = \dfrac{\log\left(\dfrac{48000}{17575.2} + 1\right)}{12 * \log(1 + 0.005)} \\[10ex]
+            t = \dfrac{\log(2.731121125 + 1)}{12 * \log(1.005)} \\[6ex]
+            t = \dfrac{\log(3.731121125)}{12 * 0.0021660618} \\[5ex]
+            t = \dfrac{0.571839348}{0.0259927411} \\[5ex]
+            t = 21.99996321 \\[3ex]
+            t \approx 22\;years \\[3ex]
+            $
+            <img src="images/Answers/Number15.png" alt="Number 15">
+          </div>
+          <div class="result" id="solutionCMF15">
+            <br>
+            <img src="images/Answers/Calculator15-1st.png" alt="Calculator 15-1st">
+            <br><br>
+            <img src="images/Answers/Calculator15-2nd.png" alt="Calculator 15-2nd">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Ordinary Annuity: Future Value and Sinking Fund -->
+
+    <br><br>
+
+    <!-- Ordinary Annuity: Present Value and Amortization -->
+    <h4 id="amortization">Ordinary Annuity: Present Value and Amortization</h4>
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.) Calculate the present value of a <span>$</span>300 per month ordinary annuity at 4% per year
+          compounded monthly for 12 years.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMF16')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCMF16')">Calculator Solution</button>
+          <div class="result" id="solutionMF16">
+            <br>
+            This is a case of the <b>Present Value of Ordinary Annuity</b>
+            <br><br>
+            $
+            \underline{Present\:\:Value\:\:of\:\:Ordinary\:\:Annuity} \\[3ex]
+            PMT = \$300 \\[3ex]
+            r = 4\% = \dfrac{4}{100} = 0.04 \\[5ex]
+            Compounded\:\:monthly \rightarrow m = 12 \\[3ex]
+            t = 12\:years \\[3ex]
+            PV = ? \\[3ex]
+            PV = m * PMT * \left[\dfrac{1 - \left(1 + \dfrac{r}{m}\right)^{-mt}}{r}\right] \\[10ex]
+            PV = m * PMT * \left[\dfrac{1 - \left(1 + \dfrac{r}{m}\right)^{-1 * m * t}}{r}\right] \\[10ex]
+            PV = 12 * 300 * \left[\dfrac{1 - \left(1 + \dfrac{0.04}{12}\right)^{-1 * 12 * 12}}{0.04}\right]
+            \\[10ex]
+            = 3600 * \left[\dfrac{1 - \left(1 + 0.00333333333\right)^{-144}}{0.04}\right] \\[7ex]
+            = 3600 * \left[\dfrac{1 - \left(1.00333333333\right)^{-144}}{0.04}\right] \\[7ex]
+            = 3600 * \left[\dfrac{1 - 0.619277519}{0.04}\right] \\[5ex]
+            = 3600 * \left[\dfrac{0.380722481}{0.04}\right] \\[5ex]
+            = \dfrac{3600 * 0.380722481}{0.04} \\[5ex]
+            = \dfrac{1370.60093}{0.04} \\[5ex]
+            PV = 34265.0233 \\[3ex]
+            PV \approx \$34,265.02 \\[3ex]
+            $
+            <img src="images/Answers/Number16.png" alt="Number 16">
+          </div>
+          <div class="result" id="solutionCMF16">
+            <br>
+            <img src="images/Answers/Calculator16.png" alt="Calculator 16">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.) Felicity's parents set up a <span>$</span>27,000 trust fund for her. <br>
+          She is to receive the money over a 6-year period in equal installments at the end of each year. <br>
+          If the trust fund earns interest at the rate of 4% per year compounded annually, calculate the amount
+          she will receive at the end of each year.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMF17')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCMF17')">Calculator Solution</button>
+          <div class="result" id="solutionMF17">
+            <br>
+            This is a case of <b>Amortization</b>
+            <br><br>
+            $
+            PV = \$27000 \\[3ex]
+            t = 6\:years \\[3ex]
+            r = 4\% = \dfrac{4}{100} = 0.04 \\[5ex]
+            Compounded\:\:annually \rightarrow m = 1 \\[3ex]
+            PMT = ? \\[3ex]
+            PMT = \dfrac{PV}{m} * \left[\dfrac{r}{1 - \left(1 + \dfrac{r}{m}\right)^{-mt}}\right] \\[10ex]
+            PMT = \dfrac{PV}{m} * \left[\dfrac{r}{1 - \left(1 + \dfrac{r}{m}\right)^{-1 * m * t}}\right]
+            \\[10ex]
+            PMT = \dfrac{27000}{1} * \left[\dfrac{0.04}{1 - \left(1 + \dfrac{0.04}{1}\right)^{-1 * 1 *
+            6}}\right] \\[10ex]
+            = 27000 * \left[\dfrac{0.04}{1 - \left(1 + 0.04\right)^{-6}}\right] \\[7ex]
+            = 27000 * \left[\dfrac{0.04}{1 - \left(1.04\right)^{-6}}\right] \\[7ex]
+            = 27000 * \left[\dfrac{0.04}{1 - 0.7903145257}\right] \\[5ex]
+            = 27000 * \left[\dfrac{0.04}{0.2096854743}\right] \\[5ex]
+            = \dfrac{27000 * 0.04}{0.2096854743} \\[5ex]
+            = \dfrac{1080}{0.2096854743} \\[5ex]
+            = 5150.571367 \\[3ex]
+            PMT \approx \$5,150.57 \\[3ex]
+            $
+            <img src="images/Answers/Number17.png" alt="Number 17">
+          </div>
+          <div class="result" id="solutionCMF17">
+            <br>
+            <img src="images/Answers/Calculator17.png" alt="Calculator 17">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.) Upright Capital, an investment firm purchased some acres of land for 5 million. <br>
+          The firm made an initial down payment of 10% and obtained financing for the balance. <br>
+          If the loan is to be amortized over 14 years at an interest rate of 5.1% per year compounded quarterly, find
+          the required quarterly payment.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMF18')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCMF18')">Calculator Solution</button>
+          <div class="result" id="solutionMF18">
+            <br>
+            This is a case of <b>Amortization</b> <br><br>
+            $
+            Purchase\:\:Price = \$5,000,000 \\[3ex]
+            10\%\:\:down\:\:payment = \dfrac{10}{100} * 5000000 = 25(24) = \$500000 \\[5ex]
+            PV = \$5000000 - \$500000 = \$4500000 \\[3ex]
+            t = 14\:years \\[3ex]
+            r = 5.1\% = \dfrac{5.1}{100} = 0.051 \\[5ex]
+            Compounded\:\:monthly \rightarrow m = 4 \\[3ex]
+            PMT = ? \\[3ex]
+            PMT = \dfrac{PV}{m} * \left[\dfrac{r}{1 - \left(1 + \dfrac{r}{m}\right)^{-mt}}\right] \\[10ex]
+            PMT = \dfrac{PV}{m} * \left[\dfrac{r}{1 - \left(1 + \dfrac{r}{m}\right)^{-1 * m * t}}\right]
+            \\[10ex]
+            PMT = \dfrac{4500000}{4} * \left[\dfrac{0.051}{1 - \left(1 + \dfrac{0.051}{4}\right)^{-1 * 4 *
+            14}}\right] \\[10ex]
+            = 1125000 * \left[\dfrac{0.051}{1 - \left(1 + 0.012575\right)^{-56}}\right] \\[7ex]
+            = 1125000 * \left[\dfrac{0.051}{1 - \left(1.01275\right)^{-56}}\right] \\[7ex]
+            = 1125000 * \left[\dfrac{0.051}{1 - 0.4918966854}\right] \\[5ex]
+            = 1125000 * \left[\dfrac{0.051}{0.5081033146}\right] \\[5ex]
+            = \dfrac{1125000 * 0.051}{0.5081033146} \\[5ex]
+            = \dfrac{57375}{0.5081033146} \\[5ex]
+            = 112919.9483 \\[3ex]
+            PMT \approx \$112,919.95 \\[3ex]
+            $
+            <img src="images/Answers/Number18.png" alt="Number 18">
+          </div>
+          <div class="result" id="solutionCMF18">
+            <br>
+            <img src="images/Answers/Calculator18.png" alt="Calculator 18">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.) Grace Auto Sales is offering a financing package consisting of a 4.5% APR (Annual Percentage Rate)
+          compounded monthly for their used vehicles. <br>
+          Rebecca wants her monthly payments to be at most <span>$</span>400. <br>
+          If the maximum amount that can be used to finance the purchase is <span>$</span>17542, how long will she need
+          to make the monthly payments?
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMF19')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCMF19')">Calculator Solution</button>
+          <div class="result" id="solutionMF19">
+            <br>
+            This is a case of <b>Present Value of Ordinary Annuity</b>
+            <br><br>
+            $
+            r = 4.5\% = \dfrac{4.5}{100} = 0.045 \\[5ex]
+            Compounded\:\:monthly \rightarrow m = 12 \\[3ex]
+            PMT = \$400 \\[3ex]
+            PV = \$17542 \\[3ex]
+            t = ? \\[5ex]
+            t = -\dfrac{\log\left[1 - \dfrac{r * PV}{m * PMT}\right]}{m * \log\left(1 +
+            \dfrac{r}{m}\right)} \\[10ex]
+            t = -\dfrac{\log\left[1 - \dfrac{0.045 * 17542}{12 * 400}\right]}{12 * \log\left(1 +
+            \dfrac{0.045}{12}\right)} \\[10ex]
+            t = -\dfrac{\log\left[1 - \dfrac{789.39}{4800}\right]}{12 * \log\left(1 + 0.00375\right)} \\[8ex]
+            t = -\dfrac{\log(1 - 0.16445625)}{12 * \log(1.00375)} \\[6ex]
+            t = -\dfrac{\log(0.83554375)}{12 * 0.0016255583} \\[6ex]
+            t = -\dfrac{-0.078030805}{0.0195066994} \\[5ex]
+            t = 4.000205429 \\[3ex]
+            t \approx 4\;years \\[3ex]
+            $
+            She will need to make the monthly payments of <span>$</span>400 for at least 4 years (48-month term).
+            <br><br>
+            <img src="images/Answers/Number19.png" alt="Number 19">
+          </div>
+          <div class="result" id="solutionCMF19">
+            <br>
+            <img src="images/Answers/Calculator19-1st.png" alt="Calculator 19-1st">
+            <br><br>
+            <img src="images/Answers/Calculator19-2nd.png" alt="Calculator 19-2nd">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.) The Phoenician Hotels has agreed to pay Sarah 40 installments of <span>$</span>25,000 per year
+          in her lawsuit against them. <br>
+          They intend to pay her <span>$</span>25,000 immediately and will make the other payments at the end of
+          each of each year for the remaining years. <br>
+          How much should they have in the bank to guarantee the payments, assuming that the balance on deposit
+          with the bank earns interest at the rate of 4% per year compounded yearly?
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMF20')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCMF20')">Calculator Solution</button>
+          <div class="result" id="solutionMF20">
+            <br>
+            40 installmental payments <br>
+            Immediate payment of $\$25000$ <br>
+            Remaining payments = 40 &minus; 1 = 39 payments = 39 years <br>
+            This is a case of the <b>Present Value of Ordinary Annuity</b>
+            <br><br>
+            $
+            \underline{\text{Present Value of Ordinary Annuity}} \\[3ex]
+            PMT = \$25000 \\[3ex]
+            r = 4\% = \dfrac{4}{100} = 0.04 \\[5ex]
+            Compounded\:\:yearly \rightarrow m = 1 \\[3ex]
+            t = 39\:years \\[3ex]
+            PV = ? \\[3ex]
+            PV = m * PMT * \left[\dfrac{1 - \left(1 + \dfrac{r}{m}\right)^{-mt}}{r}\right] \\[10ex]
+            PV = m * PMT * \left[\dfrac{1 - \left(1 + \dfrac{r}{m}\right)^{-1 * m * t}}{r}\right] \\[10ex]
+            PV = 1 * 25000 * \left[\dfrac{1 - \left(1 + \dfrac{0.04}{1}\right)^{-1 * 1 * 39}}{0.04}\right]
+            \\[10ex]
+            = 25000 * \left[\dfrac{1 - \left(1 + 0.04\right)^{-39}}{0.04}\right] \\[7ex]
+            = 25000 * \left[\dfrac{1 - \left(1.04\right)^{-39}}{0.04}\right] \\[7ex]
+            = 25000 * \left[\dfrac{1 - 0.2166206064}{0.04}\right] \\[5ex]
+            = 25000 * \left[\dfrac{0.7833793936}{0.04}\right] \\[5ex]
+            = \dfrac{25000 * 0.7833793936}{0.04} \\[5ex]
+            = \dfrac{19584.48484}{0.04} \\[5ex]
+            PV = 489612.121 \\[3ex]
+            PV \approx \$489,612.12 \\[3ex]
+            $
+            To guarantee payments, The Phoenician Hotels should have: <br><br>
+            $
+            25000 + 489612.121 \\[3ex]
+            = 514612.121 \\[3ex]
+            \approx \$514,612.12 \\[3ex]
+            $
+            <img src="images/Answers/Number20.png" alt="Number 20">
+          </div>
+          <div class="result" id="solutionCMF20">
+            <br>
+            <img src="images/Answers/Calculator20.png" alt="Calculator 20">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Ordinary Annuity: Present Value and Amortization -->
+
+    <!-- End Questions and Answers -->
+
+
+    <!-- References -->
+    <div class="w3-container w3-padding-32" id="references">
+      <div class="w3-row-padding">
+        <h5>References</h5>
+        <p>
+          Chukwuemeka, S.D (2025, March 20). <i>Samuel Chukwuemeka Tutorials: Math, Science, and Technology.</i>
+          Retrieved from <a
+            href="https://mathematicscourses.github.io/QuantitativeReasoning/MathematicsFinance/financialMathematics.html"
+            target="_blank">https://mathematicscourses.github.io/QuantitativeReasoning/MathematicsFinance/financialMathematics.html</a>
+          <br><br>
+          <i>TI Products | Calculators and Technology | Texas Instruments</i>. (n.d.). Education.ti.com.
+          https://education.ti.com/en/products
+        </p>
+      </div>
+    </div>
+    <!-- End References -->
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-center w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <div id="google_translate_element"></div>
+    <script>
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-S4PFFZ0RE6' }, 'google_translate_element');
+      }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <p>&copy; 2025&nbsp; SamDom4Peace &nbsp;Designs.</p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+  <!-- Required for hCaptcha. -->
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+</body>
+
+</html>

@@ -1,0 +1,323 @@
+html,
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Times New Roman', 'David', 'Bell MT';
+    line-height: 2.3;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Times New Roman', 'David', 'Bell MT';
+    font-size: 25px;
+    line-height: 2.3;
+    height: 100%;
+}
+
+/* Page Colors */
+
+.cornsilk {
+    color: black;
+    background-color: cornsilk;
+}
+
+.w3-dark-blue {
+    color: white !important;
+    background-color: darkblue !important;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Book Antiqua', 'Times New Roman', 'Consolas', 'David', 'Bell MT';
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+a:hover {
+    color: red;
+}
+
+/* Main Layout */
+
+.backgroundImage {
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.presentation-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.left-section,
+.right-section {
+    flex: 1;
+}
+
+.center-section {
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.image {
+    border-radius: 12px;
+    max-width: 350px;
+    height: auto;
+}
+
+/* Buttons */
+
+.w3-button {
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+.w3-button:hover {
+    color: black !important;
+    background-color: cornsilk !important;
+}
+
+/* Containers */
+
+.w3-container {
+    padding: 0.01em 16px;
+}
+
+.w3-container:after,
+.w3-container:before,
+.w3-panel:after,
+.w3-panel:before,
+.w3-row:after,
+.w3-row:before,
+.w3-row-padding:after,
+.w3-row-padding:before,
+.w3-cell-row:before,
+.w3-cell-row:after,
+.w3-clear:after,
+.w3-clear:before,
+.w3-bar:before,
+.w3-bar:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.w3-center {
+    text-align: center !important;
+}
+
+.w3-padding-24 {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+}
+
+.w3-padding-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+
+/* Modal */
+
+.w3-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    overflow: auto;
+    padding-top: 100px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.w3-modal-content {
+    background-color: white;
+    margin: auto;
+    width: 900px;
+    max-width: 95%;
+}
+
+.w3-buttonClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px;
+    color: white;
+    cursor: pointer;
+    z-index: 99999;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.w3-buttonClose:hover {
+    background-color: cornsilk !important;
+    color: black !important;
+}
+
+.w3-display-container {
+    position: relative;
+}
+
+.w3-display-topright {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.w3-round {
+    border-radius: 4px;
+}
+
+.w3-xlarge {
+    font-size: 24px !important;
+}
+
+.w3-animate-zoom {
+    animation: animatezoom 0.6s;
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    .presentation-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-section,
+    .right-section,
+    .center-section {
+        width: 100%;
+    }
+
+    .image {
+        max-width: 280px;
+    }
+}
+
+/* ==========================================
+   PRESENTATIONS PAGE LAYOUT
+   ========================================== */
+
+.backgroundImage {
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Keep photo centered */
+.w3-display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.image {
+    border-radius: 12px;
+    display: block;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Mobile Layout */
+@media only screen and (max-width: 900px) {
+
+    .w3-display-topleft,
+    .w3-display-topright,
+    .w3-display-middle {
+        position: static;
+        transform: none;
+        width: 100%;
+    }
+
+    .w3-display-middle {
+        text-align: center;
+        margin: 25px 0;
+    }
+
+    .w3-display-topleft,
+    .w3-display-topright {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width:900px) {
+
+    .w3-display-topleft,
+    .w3-display-middle,
+    .w3-display-topright {
+        position: static;
+        transform: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .w3-display-middle {
+        margin: 25px 0;
+    }
+}
+
+/* Give the page more vertical breathing room */
+.backgroundImage {
+    min-height: 1400px;
+    position: relative;
+}
+
+/* Footer lower */
+footer {
+    margin-top: 100px;
+    clear: both;
+}
+
+.left-panel {
+    position: absolute;
+    top: 70px;
+    left: 2%;
+    width: 32%;
+}
+
+.right-panel {
+    position: absolute;
+    top: 70px;
+    right: 2%;
+    width: 32%;
+}
